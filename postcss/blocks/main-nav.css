@@ -1,0 +1,14 @@
+.main-nav__items {
+  list-style: none;
+  margin:0;
+  padding:0;
+  font-size: 0;
+}
+
+.main-nav__item {
+  display: inline-block;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  vertical-align: top;
+  padding-right: 40px;
+}

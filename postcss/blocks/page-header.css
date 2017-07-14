@@ -1,0 +1,10 @@
+.page-header {
+  @mixin container;
+  display: flex;
+}
+
+.page-header__logo {
+  width: 202px;
+  height: 49px;
+  margin-right: 10px;
+}
