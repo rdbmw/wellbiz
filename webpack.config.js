@@ -15,9 +15,12 @@ module.exports = {
           use: [
             {
               loader: 'css-loader',
-              options: { importLoaders: 1 },
+              options: { importLoaders: 1, sourceMap: true },
             },
-            'postcss-loader',
+            {
+              loader: 'postcss-loader',
+              options: { sourceMap: true },
+            }
           ],
         }),
       },
