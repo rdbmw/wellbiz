@@ -2,3 +2,13 @@
   padding-left: 40px;
   background: transparent url('../img/phone.png') no-repeat;
 }
+
+.phone__number {
+  font-weight: 700;
+}
+
+.phone__description {
+  font-size: $fs_small;
+  line-height: $lh;
+  color: $color-viber;
+}

@@ -1,0 +1,17 @@
+.page-footer {
+  background-color: #34333b;
+}
+
+.page-footer__wrapper {
+  @mixin container;
+  padding-top: 21px;
+  display: flex;
+}
+
+.footer__logo {
+  flex-shrink: 0;
+  width: 202px;
+  height: 50px;
+  margin-left: 0;
+  margin-right: 3%;
+}

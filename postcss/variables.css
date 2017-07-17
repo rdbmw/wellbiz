@@ -1,5 +1,12 @@
-$tablet-width: 768px;
-$desktop-width: 1300px;
-$body-bg: #ccffff;
-$fontsize: 12px;
-$lineheight: 18px;
+$tablet-width: 900px;
+$desktop-width: 1270px;
+$slider-width: 1230px;
+$body-bg: #eaeae6;
+$text-color: #383838;
+$color-viber: #4e4e4e;
+$color-slider: #252525;
+$color-price: #f74444;
+$fs: 14px;
+$lh: 18px;
+$fs_small: 13px;
+$lh_small: 18px;

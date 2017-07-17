@@ -1,11 +1,15 @@
 body {
-  font-size: $fontsize;
-  line-height: $lineheight;
-  font-family: Arial, sans-serif;
+  font-size: $fs;
+  /*line-height: $lh;*/
+  line-height: 1.15;
+  /*color: $text-color;*/
+  color: $color-slider;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
+  margin: 0px;
 }
 
-img {
+/*img {
   width: 100%;
   height: auto;
-}
+}*/

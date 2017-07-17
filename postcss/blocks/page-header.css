@@ -1,10 +1,25 @@
 .page-header {
   @mixin container;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
 }
 
 .page-header__logo {
+  flex-shrink: 0;
   width: 202px;
   height: 49px;
-  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.page-header__callback {
+  @mixin btn;
+  background-color: #408fe7;
+  margin-left: 3%;
+
+  &:hover {
+    background-color: #3986db;
+  }
 }
