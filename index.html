@@ -7,10 +7,32 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://localhost:8050/styles.css">
 	<script src="http://localhost:35729/livereload.js?snipver=1"></script>
+	<script src="js/jquery.documentReady.js"></script>
+	<script src="js/scripts.js?v=0.0.01"></script>
 </head>
 
 <body>
 	<header class="page-header">
+		<div class="mobilenav-container">
+			<!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+			<input id="toggle" type="checkbox">
+
+			<!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+
+			<!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+			<label class="toggle-container" for="toggle">
+				<!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+				<span class="button button-toggle"></span>
+			</label>
+
+			<!-- Навигация -->
+			<nav class="mobile-nav">
+				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Создание бизнеса</a>
+				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Ведение бизнеса</a>
+				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Ликвидация бизнеса</a>
+				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Контакты</a>
+			</nav>
+		</div>
 		<div class="page-header__logo">
 			<img src="img/logo.png" width="202" height="49" alt="">
 		</div>
@@ -36,7 +58,7 @@
 				<input type="radio" id="btn-3" name="toggle">
 				<div class="slider__inner">
 					<div class="slider__slides">
-						<div class="slide">
+						<div class="slide" data-trans="0">
 							<div class="slide__description">
 								<img class="decoration_quote" src="img/quote.png">
 								<div class="decoration_number">01</div>
@@ -57,7 +79,7 @@
 							</div>
 							<img class="slide__img" src="img/slide1.png" alt="Регистрация ООО">
 						</div>
-						<div class="slide">
+						<div class="slide" data-trans="1">
 							<div class="slide__description">
 								<img class="decoration_quote" src="img/quote.png">
 								<div class="decoration_number">02</div>
@@ -77,7 +99,7 @@
 							</div>
 							<img class="slide__img" src="img/slide2.png" alt="Регистрация ИП">
 						</div>
-						<div class="slide">
+						<div class="slide" data-trans="2">
 							<div class="slide__description">
 								<img class="decoration_quote" src="img/quote.png">
 								<div class="decoration_number">03</div>
@@ -147,7 +169,7 @@
 						<p class="cause__details">Вы получаете поддержку пять дней в неделю без больничных и отпусков.</p>
 					</div>
 					<div class="cause cause--pic3">
-						<p class="cause__title">Экономия бюджета<br>и времени</p>
+						<p class="cause__title">Экономия бюджета и времени</p>
 						<p class="cause__details">С нами вы платите меньше средств,чем на содержание собственного сотрудника. Вся работа выполняется в срок</p>
 					</div>
 					<div class="cause cause--pic4">
@@ -167,21 +189,26 @@
 				<h2 class="stuff__slogan">Выбирайте професионалов своего дела!</h2>
 	 			<p class="stuff__description">Мы закрепим за вами опытного специалиста</p>
 				<div class="stuff__persons">
-					<div class="person">
-						<img src="img/person1.png" alt="" class="person__foto">
-						<div class="person__legenda">
-							<div class="person__name">Миннибаева Татьяна Сергеевна</div>
-							<div class="person__position">Ведущий специалист в области юрисприденции</div>
-							<div class="person__responsibility">Вы можете обратиться ко мне по вопросам:</div>
-							<ul class="person__features">
-								<li class="person__feature">Права населения;</li>
-								<li class="person__feature">По пенсионным спорам, когда требуется установить факт принадлежности трудовой книжки, в ситуациях занижения пенсионных выплат и т.д.;</li>
-								<li class="person__feature">Нарушения ваших потребительских прав при покупке товаров, получении услуг;</li>
-								<li class="person__feature">Остальные вопросы, касаемые юридического сопровождения</li>
-							</ul>
+					<div class="person-list-wrapper">
+						<div class="person-list">
+							<div class="person">
+								<img src="img/person1.png" alt="" class="person__foto">
+								<div class="person__legenda">
+									<div class="person__name">Миннибаева Татьяна Сергеевна</div>
+									<div class="person__position">Ведущий специалист в области юрисприденции</div>
+									<div class="person__responsibility">Вы можете обратиться ко мне по вопросам:</div>
+									<ul class="person__features">
+										<li class="person__feature">Права населения;</li>
+										<li class="person__feature">По пенсионным спорам, когда требуется установить факт принадлежности трудовой книжки, в ситуациях занижения пенсионных выплат и т.д.;</li>
+										<li class="person__feature">Нарушения ваших потребительских прав при покупке товаров, получении услуг;</li>
+										<li class="person__feature">Остальные вопросы, касаемые юридического сопровождения</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 						<button type="button" class="person__forward">вперед</button>
 						<button type="button" class="person__backward">назад</button>
+						<div class="stuff__decoration">подробнее о нас</div>
 					</div>
 					<div class="stuff__persons-about">
 						<div class="stuff__about-title">Мы гордимся своими специалистами!</div>
@@ -294,8 +321,29 @@
 		</section>
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__wrapper">
+		<div class="page-footer__top">
 			<img src="img/logo_white.png" class="footer__logo" width="202" height="50" alt="">
+			<div class="page-footer__worktime">
+				пн.-пт.<br>9.00-18.00. без перерыва
+			</div>
+			<div class="page-footer__location">
+				г.Ростов-на-Дону, ул. Города Волос, д. 119<br>(вход с ул. Тельмана)
+			</div>
+			<div class="page-footer__phone">
+				+7 (963) 123-45-67 <br><span>Viber, WhatsApp</span>
+			</div>
+		</div>
+		<div class="page-footer__bottom">
+			<div class="page-footer__company"> &copy; ООО "Верные решения" Все права сохранены</div>
+			<ul class="page-footer__links">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Политика конфедициальности</a></li>
+				<li><a href="#">Оферта</a></li>
+			</ul>
+			<div class="page-footer__social">
+				<span>Следите за нами:</span>
+				<a href="#"><img src="img/vk.png" alt=""></a>
+			</div>
 		</div>
 	</footer>
 </body>

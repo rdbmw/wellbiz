@@ -1,17 +1,24 @@
 .page-header {
   @mixin container;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+  }
 }
 
 .page-header__logo {
   flex-shrink: 0;
   width: 202px;
   height: 49px;
-  margin-left: 0;
+  margin-left: 100px;
   margin-right: 3%;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .page-header__callback {

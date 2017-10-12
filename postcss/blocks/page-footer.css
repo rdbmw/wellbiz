@@ -1,17 +1,77 @@
 .page-footer {
   background-color: #34333b;
+  color: white;
 }
 
-.page-footer__wrapper {
+.page-footer__top, .page-footer__bottom {
   @mixin container;
-  padding-top: 21px;
+  padding-top: 16px;
   display: flex;
+  position: relative;
+  /*justify-content: space-between;*/
 }
 
+.page-footer__top {
+  padding-bottom: 17px;
+}
 .footer__logo {
   flex-shrink: 0;
   width: 202px;
   height: 50px;
   margin-left: 0;
-  margin-right: 3%;
+  margin-right: 17%;
+}
+
+.page-footer__worktime {
+  padding-left: 30px;
+  background: transparent url('../img/watch.svg') no-repeat;
+  font-size: 12px;
+  margin-right: 6%;
+}
+
+.page-footer__location {
+  padding-left: 30px;
+  background: transparent url('../img/map.svg') no-repeat;
+  font-size: 12px;
+  margin-right: 6%;
+}
+
+.page-footer__phone {
+  padding-left: 30px;
+  background: transparent url('../img/phone_footer.png') no-repeat;
+  font-size: 12px;
+}
+
+.page-footer__top::after {
+  position: absolute;
+  content: '';
+  width: 146%;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: -23%;
+}
+
+.page-footer__company {
+  font-size: 12px;
+  margin-right: 6%;
+}
+
+.page-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.page-footer__links li {
+  display: inline-block;
+  margin-right: 6%;
+}
+
+.page-footer__links li a{
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
 }

@@ -1,6 +1,9 @@
 .main-nav {
-  display: flex;
-  flex-grow: 1;
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-grow: 1;
+  }
 }
 
 .main-nav__items {

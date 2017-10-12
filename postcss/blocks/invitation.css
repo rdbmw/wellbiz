@@ -1,0 +1,40 @@
+.invitation {
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
+}
+
+.invitation__wrapper {
+  @mixin container;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 30px;
+}
+
+.invitation__slogan {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.invitation__text {
+  margin:auto;
+  width:60%;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.invitation__btn {
+  @mixin btn;
+  background-color: #ff5b5b;
+  margin-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  &:hover {
+    background-color: #ed5353;
+  }
+}
