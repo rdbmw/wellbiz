@@ -1,0 +1,284 @@
+.modal-content {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 270px;
+  /*overflow: hidden;*/
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 51;
+
+  @media (min-width: $mobile-albom-width) {
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 100px;
+    width: 430px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.modal-content__close {
+  position: absolute;
+  top: 0px;
+  right: -40px;
+  width: 29px;
+  height: 29px;
+  font-size: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid $color-menu;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    right: -58px;
+  }
+}
+
+.modal-content__close:before,
+.modal-content__close:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 7px;
+  width: 12px;
+  height: 1px;
+  background-color: $color-menu;
+}
+
+.modal-content__close:before {
+  transform: rotate(45deg);
+}
+
+.modal-content__close:after {
+  transform: rotate(-45deg);
+}
+
+.modal-content__title {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #252525;
+  text-align: center;
+
+  @media (min-width: $mobile-albom-width) {
+  }
+
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.modal-content__scroll {
+  max-height: calc(100vh - 170px);
+  overflow-y: auto;
+}
+
+.lead-form {
+  width: 86%;
+  margin: 0 auto;
+  padding: 12px 0;
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.lead-form label {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #252525;
+  text-align: left;
+
+  @media (min-width: $mobile-albom-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+
+  & span {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      font-size: 13px;
+      color: #7e7e7e;
+    }
+  }
+}
+
+.lead-form input[type="text"] {
+  margin-top: 6px;
+  margin-bottom: 13px;
+  padding: 8px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #464646;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  outline: none;
+
+  @media (min-width: $mobile-albom-width) {
+  }
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.lead-form .lead-pd {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #7e7e7e;
+  text-align: left;
+  vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+
+.lead-form .lead-ok {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #252525;
+  text-align: center;
+}
+
+.modal-content__error {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: red;
+  text-align: center;
+}
+
+.lead-form__btn  {
+  @mixin btn;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #ff5b5b;
+  background-color: #fff;
+  color: inherit;
+  position: relative;
+
+  &:hover {
+    background-color: #ed5353;
+    color: #fff;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 86px;
+  }
+}
+
+@keyframes turn360 {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.lead-form__btn--loading {
+  background-color: #ed5353;
+  color: #fff;
+}
+
+.lead-form__btn--loading::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-left: 2px solid transparent;
+  border-radius: 50%;
+  animation: turn360  1s infinite linear;
+}
+
+/*.lead-form__btn--ok {
+  margin-bottom: 50px;
+}
+
+
+.modal-content__ok {
+  margin-top: 20px;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  color: $text-color-main;
+  text-align: center;
+  display: block;
+  vertical-align: top;
+
+  @media (min-width: $mobile-albom-width) {
+    margin-top: 70px;
+    margin-left: 2%;
+    display: inline-block;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 2%;
+    margin-top: 120px;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: left;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5%;
+    margin-top: 150px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: $color-overlay;
+  opacity: 0.95;
+}
+
+/*.blur {
+  filter: blur(10px);
+}*/
+
+.hidden {
+  display:none;
+}

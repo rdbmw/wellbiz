@@ -1,7 +1,12 @@
 .slider-wrapper {
-  width: 100%;
-  height: 400px;
-  background-color: $body-bg;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color: $body-bg;
+  }
 }
 
 .slider {

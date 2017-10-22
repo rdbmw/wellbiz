@@ -1,7 +1,9 @@
 $desktop-width: 1270px;
 $tablet-width: 870px;
 $slider-items: 3;
-
+$color-menu: #ff5b5b;
+$color-menu-active: #f64848;
+$color-overlay: #1c1c1c;
 
 $body-bg: #eaeae6;
 $text-color: #383838;

@@ -4,14 +4,25 @@
 }
 
 .company__slogan {
-  font-size: 30px;
-  line-height: 50px;
+  padding: 0 10px;
+  font-size: 25px;
+  line-height: 35px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
 
 .company__description {
-  padding: 0 120px;
+  padding: 0 10px;
   line-height: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 120px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 230px;
@@ -21,17 +32,25 @@
 .company__test-drive {
   @mixin btn;
   background-color: #ff5b5b;
-  margin-top: 30px;
+  margin-top: 15px;
 
   &:hover {
     background-color: #ed5353;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .company__services {
-  font-size: 0px;
-  margin-top: 50px;
-  display: flex;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 0px;
+    margin-top: 50px;
+    display: flex;
+  }
 }
 
 .company__service {

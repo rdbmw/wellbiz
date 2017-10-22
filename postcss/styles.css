@@ -13,6 +13,8 @@
 @import 'blocks/five.css';
 @import 'blocks/stuff.css';
 @import 'blocks/reviews.css';
+@import 'blocks/review-full.css';
 @import 'blocks/news.css';
 @import 'blocks/invitation.css';
 @import 'blocks/page-footer.css';
+@import 'blocks/modal.css';

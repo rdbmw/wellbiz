@@ -5,29 +5,51 @@
 }
 
 .five__slogan {
-  font-size: 30px;
-  line-height: 50px;
+  padding: 0 10px;
+  font-size: 25px;
+  line-height: 35px;
   font-weight: 400;
   margin-bottom: 0px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
 
 .five__description {
   font-size: 17px;
-  line-height: 50px;
+  line-height: 35px;
   font-weight: 400;
   margin-top: 0px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 50px;
+  }
 }
 
 .five__causes {
+  margin-top: 0px;
   display: flex;
-  margin-top: 36px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 36px;
+    flex-wrap: nowrap;
+  }
 }
 
 .five__four {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100%/2);
-  margin-top: 23px;
+  flex-basis: calc(100%/1);
+  margin-top: 0px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: calc(100%/2);
+    margin-top: 23px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-basis: calc(100%/3*2);
@@ -35,7 +57,7 @@
 }
 
 .cause {
-  padding-left: 25%;
+  padding-left: 95px;
   text-align: left;
 
   margin-right: 3%;
@@ -101,10 +123,16 @@
 .five__one {
   /*display: flex;
   flex-wrap: wrap;*/
-  width: calc(100%/2);
+  flex-basis: calc(100%/1);
   background: #f0efe8 url('../img/pic5.jpg') 100% 100% no-repeat;
   text-align: left;
   position: relative;
+  min-height: 480px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: calc(100%/2);
+    min-height: auto;
+  }
 
   @media (min-width: $desktop-width) {
     flex-basis: calc(100%/3*1);
@@ -112,27 +140,47 @@
 }
 
 .cause__title--one {
-  margin-left: 47px;
   margin-top: 37px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: left;
-  width: 55%;
+  width: 80%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 47px;
+    margin-right: 0px;
+    width: 55%;
+  }
 }
 
 .cause__details--one {
-  margin-left: 47px;
   margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: left;
-  width: 55%;
+  width: 80%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 47px;
+    margin-right: 0px;
+    width: 55%;
+  }
 }
 
 .cause__link {
   @mixin lnk;
   text-align: left;
   font-weight: 700;
-  margin-left: 47px;
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: #255a94;
   /*border-bottom: 1px dashed #255a94;*/
+
+  @media (min-width: $tablet-width) {
+    margin-left: 47px;
+    margin-right: 0px;
+  }
 }
 
 .cause__link span{

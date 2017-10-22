@@ -1,11 +1,15 @@
 .news {
-  @mixin container;
-  text-align: center;
-  padding-top: 2px;
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  position: relative;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @mixin container;
+    text-align: center;
+    padding-top: 2px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+  }
 }
 
 .news__slogan {
@@ -44,6 +48,7 @@
 .news__item {
   flex-basis: 22.5%;
   margin-top: 16px;
+  flex-shrink: 0;
 }
 
 .news__date {
@@ -67,6 +72,7 @@
 
 .news__foto {
   margin-top: 28px;
+  width: 100%;
 }
 
 .news__text {
@@ -82,7 +88,7 @@
   background-color: #f1f1f1;
   position: absolute;
   top: 7%;
-  right: 2.5%;
+  right: 30px;
 }
 
 .news__backward {
@@ -90,5 +96,5 @@
   background-color: #f1f1f1;
   position: absolute;
   top: 7%;
-  right: 7.8%;
+  right: 95px;
 }

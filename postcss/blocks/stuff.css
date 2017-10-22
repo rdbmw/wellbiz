@@ -9,23 +9,37 @@
 }
 
 .stuff__slogan {
-  font-size: 30px;
-  line-height: 50px;
+  padding: 0 10px;
+  font-size: 25px;
+  line-height: 35px;
   font-weight: 400;
   margin-bottom: 0px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 30px;
+    line-height: 50px;
+  }
 }
 
 .stuff__description {
   font-size: 17px;
-  line-height: 50px;
+  line-height: 35px;
   font-weight: 400;
   margin-top: 0px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 50px;
+  }
 }
 
 .stuff__persons {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
@@ -37,9 +51,18 @@
   flex-basis: calc(100%);
   flex-shrink: 0;
   position: relative;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 
   @media (min-width: $desktop-width) {
     flex-basis: calc(100%/3*2);
+  }
+
+  & input[type=radio] {
+    display: none;
   }
 }
 
@@ -47,18 +70,24 @@
   position: absolute;
   transform: rotate(-90deg);
   transform-origin: left center 0;
-  left: 6%;
-  bottom: 0%;
-  padding-left: 50px;
+  left: 6.5%;
+  bottom: -5px;
+  padding-left: 61px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #252525;
+  font-weight: 700;
+
 }
 
 .stuff__decoration::before{
   position:absolute;
   content: "";
-  width: 40px;
+  width: 42px;
   height: 1px;
   background-color: red;
-  top: 0;
+  top: 2px;
   bottom: 0;
   left: 0;
 }
@@ -133,6 +162,18 @@
    }
 }
 
+#btn-11:checked ~ .person-list {
+  transform: translate(0);
+}
+
+#btn-12:checked ~ .person-list {
+  transform: translate(calc(-100%/3));
+}
+
+#btn-13:checked ~ .person-list {
+  transform: translate(calc(-100%/3*2));
+}
+
 .person__forward {
   @mixin scroll_forward;
   position: absolute;
@@ -168,6 +209,11 @@
   font-size: 18px;
   line-height: 31px;
   margin-top: 2px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 
   @media (min-width: $desktop-width) {
 

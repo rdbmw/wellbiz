@@ -36,11 +36,12 @@ module.exports = {
       { test: /\.jpg$/, loader: 'url-loader?name=[name].[ext]&outputPath=img/&limit=1&mimetype=image/jpg' },
       { test: /\.png$/, loader: 'url-loader?name=[name].[ext]&outputPath=img/&limit=1&mimetype=image/png' },
       { test: /\.svg$/, loader: 'url-loader?name=[name].[ext]&outputPath=img/&limit=1&mimetype=image/svg+xml' },
-      { test: /\.(woff|woff2|ttf|eot)/, loader: 'url-loader?name=[name].[ext]&outputPath=font/&limit=1&limit=1' }
+      { test: /\.(woff|woff2|ttf|eot|otf)/, loader: 'url-loader?name=[name].[ext]&outputPath=font/&limit=1&limit=1' }
     ],
   },
   output: {
-    path: path.resolve(__dirname, 'css'),
+    path: path.resolve(__dirname, 'public'),
+    filename: "[name].js"
   },
   plugins: [
     new ExtractTextPlugin('styles.css'),

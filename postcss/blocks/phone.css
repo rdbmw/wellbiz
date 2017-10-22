@@ -1,6 +1,13 @@
 .phone {
+  margin-top: 10px;
+  margin-left: 10px;
   padding-left: 40px;
   background: transparent url('../img/phone.png') no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 }
 
 .phone__number {

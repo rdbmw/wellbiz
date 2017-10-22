@@ -2,7 +2,6 @@ $items: 4;
 $transition-duration: 0.5s;
 $transition-delay: 0.07s;
 
-
  /*Basic styles */
 
 .mobilenav-container {
@@ -15,7 +14,7 @@ $transition-delay: 0.07s;
   height: 534px;*/
   /*background-color: #533557;*/
   overflow: hidden;
-  z-index:101;
+  z-index: 41;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -109,12 +108,17 @@ $transition-delay: 0.07s;
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 25px;
+  margin: 20px;
+  margin-left: 15px;
   background-color: transparent;
   border: none;
   cursor: pointer;
   border-radius: 100%;
   transition: calc($transition-duration + 0.1s);
+
+  @media (min-width: $tablet-width) {
+    margin: 25px;
+  }
 
    /*Shadow on hover*/
   &:hover {
@@ -150,10 +154,14 @@ $transition-delay: 0.07s;
 
 .mobile-nav {
   display: inline-block;
-  margin: 25px 100px 25px 20px;
+  margin: 20px 100px 25px 10px;
    /*Don't want pointer-events as menu is closed*/
   pointer-events: none;
   transition: $transition-duration;
+
+  @media (min-width: $tablet-width) {
+    margin: 25px 100px 25px 20px;
+  }
 }
 
  /*Showing nav items as lines, making up the hamburger menu icon*/

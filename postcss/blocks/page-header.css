@@ -1,20 +1,24 @@
 .page-header {
   @mixin container;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px auto;
-  }
+
 }
 
 .page-header__logo {
   flex-shrink: 0;
   width: 202px;
   height: 49px;
-  margin-left: 100px;
-  margin-right: 3%;
+  margin-left: 115px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 100px;
+    margin-right: 3%;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
@@ -25,8 +29,15 @@
   @mixin btn;
   background-color: #408fe7;
   margin-left: 3%;
+  margin-top: 10px;
+  padding: 10px 17px 10px 17px;
 
   &:hover {
     background-color: #3986db;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
+    padding: 10px 28px 10px 28px;
   }
 }
