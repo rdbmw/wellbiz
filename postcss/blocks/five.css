@@ -72,7 +72,7 @@
 }
 
 .cause--pic1 {
-  background: transparent url('../img/human.png') 10px 15px no-repeat;
+  background: transparent url('../public/img/human.png') 10px 15px no-repeat;
 
   @media (min-width: $desktop-width) {
     background-position: 12% 20%;
@@ -80,21 +80,21 @@
 }
 
 .cause--pic2 {
-  background: transparent url('../img/steps.png') 10px 35px no-repeat;
+  background: transparent url('../public/img/steps.png') 10px 35px no-repeat;
   @media (min-width: $desktop-width) {
     background-position: 12% 20%;
   }
 }
 
 .cause--pic3 {
-  background: transparent url('../img/clock.png') 10px 35px no-repeat;
+  background: transparent url('../public/img/clock.png') 10px 35px no-repeat;
   @media (min-width: $desktop-width) {
     background-position: 12% 20%;
   }
 }
 
 .cause--pic4 {
-  background: transparent url('../img/hands.png') 10px 35px no-repeat;
+  background: transparent url('../public/img/hands.png') 10px 35px no-repeat;
   @media (min-width: $desktop-width) {
     background-position: 12% 20%;
   }
@@ -124,7 +124,7 @@
   /*display: flex;
   flex-wrap: wrap;*/
   flex-basis: calc(100%/1);
-  background: #f0efe8 url('../img/pic5.jpg') 100% 100% no-repeat;
+  background: #f0efe8 url('../public/img/pic5.jpg') 100% 100% no-repeat;
   text-align: left;
   position: relative;
   min-height: 480px;

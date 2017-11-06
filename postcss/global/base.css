@@ -1,3 +1,10 @@
+/*@font-face {
+  font-family: "Myriad Pro";
+  src: url("../public/fonts/MyriadPro.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}*/
+
 body {
   font-size: $fs;
   /*line-height: $lh;*/

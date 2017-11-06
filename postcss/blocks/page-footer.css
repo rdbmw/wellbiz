@@ -31,7 +31,7 @@
 
 .page-footer__worktime {
   padding-left: 35px;
-  background: transparent url('../img/watch.svg') 0px 7px no-repeat;
+  background: transparent url('../public/img/watch.svg') 0px 7px no-repeat;
   font-size: 13px;
   line-height: 18px;
   color: #e3e3e3;
@@ -45,7 +45,7 @@
 
 .page-footer__location {
   padding-left: 35px;
-  background: transparent url('../img/map.svg') 0px 5px no-repeat;
+  background: transparent url('../public/img/map.svg') 0px 5px no-repeat;
   font-size: 13px;
   line-height: 18px;
   color: #e3e3e3;
@@ -59,7 +59,7 @@
 
 .page-footer__phone {
   padding-left: 45px;
-  background: transparent url('../img/phone_footer.png') no-repeat;
+  background: transparent url('../public/img/phone_footer.png') no-repeat;
   font-size: 17px;
   line-height: 18px;
   color: #fff;

@@ -3,7 +3,7 @@
 
 @import 'global/normalize.css';
 @import 'global/base.css';
-
+/* index */
 @import 'blocks/page-header.css';
 @import 'blocks/gamburger.css';
 @import 'blocks/main-nav.css';
@@ -18,3 +18,11 @@
 @import 'blocks/invitation.css';
 @import 'blocks/page-footer.css';
 @import 'blocks/modal.css';
+/* reg-ooo */
+@import 'blocks/reg-ooo/top-block.css';
+@import 'blocks/reg-ooo/infographic.css';
+@import 'blocks/reg-ooo/allrus.css';
+@import 'blocks/reg-ooo/advantages-ooo.css';
+@import 'blocks/reg-ooo/tariff-ooo.css';
+@import 'blocks/reg-ooo/banks.css';
+@import 'blocks/reg-ooo/faq-ooo.css';

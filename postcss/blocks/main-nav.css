@@ -59,6 +59,7 @@
   transition: .5s ease-in-out;
   border-top: solid 1px $color-menu;
   box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.21);
+  z-index: 49;
 }
 
 .submenu__item {

@@ -1,0 +1,56 @@
+.tariff-ooo {
+  background: linear-gradient(#fff 417px, #f7f7f7 417px);
+  padding-bottom: 9px;
+}
+
+.tariff-ooo__wrapper {
+  @mixin container;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tariff-ooo__title {
+  width: 100%;
+  text-align: center;
+  color: $color-slider;
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-top: 45px;
+}
+
+.tariff-ooo__description {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  color: $color-slider;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.calc-ooo {
+  margin-top: 44px;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  display: flex;
+}
+
+.calc-ooo__part {
+  width : calc(100%/3*1);
+  background: #fff;
+
+  &--border-right {
+    border-right: 1px solid #e2e2e2;
+  }
+}
+
+.calc-ooo__title {
+  padding-top: 20px;
+  padding-bottom: 17px;
+  padding-left: 6.7%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  background: #f3f3f3;
+}

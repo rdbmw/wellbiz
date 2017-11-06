@@ -1,0 +1,65 @@
+</main>
+<footer class="page-footer">
+  <div class="page-footer__top">
+    <img src="img/logo_white.png" class="footer__logo" width="202" height="50" alt="">
+    <div class="page-footer__worktime">
+      пн.-пт.<br>9.00-18.00. без перерыва
+    </div>
+    <div class="page-footer__location">
+      г.Ростов-на-Дону, ул. Города Волос, д. 119<br>(вход с ул. Тельмана)
+    </div>
+    <div class="page-footer__phone">
+      +7 (963) 123-45-67 <br><span>Viber, WhatsApp</span>
+    </div>
+  </div>
+  <div class="page-footer__bottom">
+    <div class="page-footer__company"> &copy; ООО "Верные решения" Все права сохранены</div>
+    <ul class="page-footer__links">
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Политика конфедициальности</a></li>
+      <li><a href="#">Оферта</a></li>
+    </ul>
+    <div class="page-footer__social">
+      <span>Следите за нами:</span>
+      <a href="#"><img src="img/vk.png" alt=""></a>
+    </div>
+  </div>
+</footer>
+<div class="modal-content hidden" id="callback">
+  <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+  <h2 class="modal-content__title">Заказать звонок</h2>
+  <div class="modal-content__scroll">
+    <form class="lead-form" id="leadForm">
+      <input type="hidden" id="leadComment">
+      <div class="lead-form__group">
+        <label for="name" class="">Ваше имя <span>(нигде не публикуется)</span></label>
+        <input type="text" id="name">
+      </div>
+      <div class="lead-form__group">
+        <label for="phone" class="">Номер телефона <span>(нигде не публикуется)</span></label>
+        <input type="text" id="phone">
+      </div>
+      <p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
+      <div class="modal-content__error" id="error"></div>
+      <button class="lead-form__btn" id="submitbtn" type="submit">Отправить запрос</button>
+    </form>
+  </div>
+</div>
+<div class="modal-content hidden" id="callback_ok">
+  <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+  <h2 class="modal-content__title">Ваша заявка отправлена</h2>
+  <div class="modal-content__scroll">
+    <form class="lead-form" id="leadForm">
+      <p class="lead-ok">
+        Менеджер нашей компании свяжется с Вами
+        в ближайшее время. Благодарим Вас за проявленный
+        интерес к нашим услугам!
+      </p>
+      <button class="lead-form__btn" id="submitbtn_ok" type="submit">Вернуться на сайт</button>
+    </form>
+  </div>
+</div>
+<div class="modal-overlay hidden"></div>
+</body>
+
+</html>

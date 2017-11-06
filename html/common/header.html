@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Консалтинговая компания "Верные решения" - регистрация ООО и ИП, бухгалтерские услуги, составление и сдача отчетности.</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css?v=0.0.01"> -->
+	<script src="js/jquery.documentReady.js"></script>
+	<script src="js/scripts.js?v=0.0.01"></script>
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="mobilenav-container">
+			<!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+			<input id="toggle" type="checkbox">
+
+			<!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+
+			<!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+			<label class="toggle-container" for="toggle">
+				<!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+				<span class="button button-toggle"></span>
+			</label>
+
+			<!-- Навигация -->
+			<nav class="mobile-nav">
+				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Создание бизнеса</a>
+				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Ведение бизнеса</a>
+				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Ликвидация бизнеса</a>
+				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Контакты</a>
+			</nav>
+		</div>
+		<div class="page-header__logo">
+			<img src="img/logo.png" width="202" height="49" alt="">
+		</div>
+		<nav class="main-nav">
+			<ul class="main-nav__items">
+				<li class="main-nav__item main-nav__item--sub">
+					<a class="main-nav__link" href="#">Создание бизнеса</a>
+					<ul class="submenu">
+						<li class="submenu__item"><a href="#">Регистрация ИП</a></li>
+						<li class="submenu__item"><a href="/registratsiya-ooo.html">Регистрация ООО</a></li>
+						<li class="submenu__item"><a href="#">Регистрация ТСЖ</a></li>
+						<li class="submenu__item"><a href="#">Открытие расчетного счета</a></li>
+						<li class="submenu__item"><a href="#">Аренда юридического адреса</a></li>
+						<li class="submenu__item"><a href="#">Печати</a></li>
+					</ul>
+				</li>
+				<li class="main-nav__item main-nav__item--sub">
+					<a class="main-nav__link" href="#">Ведение бизнеса</a>
+					<ul class="submenu">
+						<li class="submenu__item"><a href="#">Постановка бухгалтерского учета</a></li>
+						<li class="submenu__item"><a href="#">Подготовка и сдача отчетности</a></li>
+						<li class="submenu__item"><a href="#">Возмещение НДС</a></li>
+						<li class="submenu__item"><a href="#">Налоговые проверки</a></li>
+						<li class="submenu__item"><a href="#">Внесение изменений</a></li>
+					</ul>
+				</li>
+				<li class="main-nav__item main-nav__item--sub">
+					<a class="main-nav__link" href="#">Ликвидация бизнеса</a>
+					<ul class="submenu">
+						<li class="submenu__item"><a href="#">Ликвидация ИП</a></li>
+						<li class="submenu__item"><a href="#">Ликвидация ООО</a></li>
+						<li class="submenu__item"><a href="#">Купля-продажа</a></li>
+						<li class="submenu__item"><a href="#">Банкротство</a></li>
+					</ul>
+				</li>
+				<li class="main-nav__item" class="main-nav__link"><a class="main-nav__link" href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="phone">
+			<div class="phone__number">+7&nbsp;(963)&nbsp;123&nbsp;45&nbsp;67</div>
+			<div class="phone__description">Viber, WhatsApp</div>
+		</div>
+		<button type="button" class="page-header__callback jscallback">Заказать звонок</button>
+	</header>
+	<main class="main-content">

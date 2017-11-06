@@ -1,0 +1,132 @@
+$point: calc(100%/3*2);
+
+.top-block {
+  background: linear-gradient(to right, #f3f4f2 $point, #ebebeb $point);
+}
+
+.top-block__wrapper {
+  @mixin container;
+  display: flex;
+}
+
+.top-block__left {
+  padding-top: 17px;
+  background-color: #f3f4f2;
+  width: calc(100%/3*2);
+  display: flex;
+  position: relative;
+}
+
+.top-block__decoration {
+  position: absolute;
+  top: 26px;
+  left: 32%;
+  z-index: 0;
+}
+
+
+.top-block__img {
+  margin-top: 9px;
+  margin-left: 6.5%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.top-block__details {
+  margin-top: 55px;
+  margin-left: 12.3%;
+  padding-right: 3%;
+  z-index: 1;
+}
+
+.top-block__title {
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  color: $color-slider;
+  font-size: 32px;
+  line-height: 33px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 55px;
+
+  & span {
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 700;
+  }
+}
+
+.top-block__description {
+  color: #616161;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.top-block__advantages {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-right: 2%;
+  list-style: none;
+}
+
+.top-block__advantages li {
+  color: $color-slider;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+
+  &::before {
+    color: $color-price;
+    content: "•";
+    padding-right: 10px;
+   }
+}
+
+.top-block__right {
+  padding-top: 17px;
+  background-color: #ebebeb;
+  width: calc(100%/3*1);
+}
+
+.top-block__title-right {
+  padding-right: 5%;
+  margin-top: 60px;
+  margin-left: 15%;
+  color: $color-slider;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  & span {
+    font-size: 24px;
+  }
+}
+
+.top-block__description-right {
+  padding-right: 5%;
+  margin-top: 30px;
+  margin-left: 15%;
+  color: $color-slider;
+  font-size: 14px;
+  line-height: 22px;
+
+  & span {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.top-block__btn {
+  padding-right: 5%;
+  margin-top: 45px;
+  margin-left: 15%;
+  @mixin btn;
+  background-color: #ff5b5b;
+
+
+  &:hover {
+    background-color: #ed5353;
+  }
+}

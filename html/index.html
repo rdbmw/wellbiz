@@ -1,0 +1,166 @@
+<%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
+		<section class="slider-wrapper">
+			<div class="slider" id="top-slider">
+				<input type="radio" id="btn-1" name="toggle" value="1" checked>
+				<input type="radio" id="btn-2" name="toggle" value="2">
+				<input type="radio" id="btn-3" name="toggle" value="3">
+				<div class="slider__inner">
+					<div class="slider__slides">
+						<div class="slide">
+							<div class="slide__description">
+								<img class="decoration_quote" src="img/quote.png">
+								<div class="decoration_number">01</div>
+								<p class="slide__title">Регистрация ООО</p>
+								<p class="slide__sub-title">Осуществляем Регистрацию ООО на всей территории РФ.</p>
+								<ul class="slide__features">
+									<li class="slide__feature">Предоставляем юридические адреса</li>
+									<li class="slide__feature">Без затрат на нотариуса</li>
+									<li class="slide__feature">За одно посещение</li>
+									<li class="slide__feature">Консультация Юриста и Бухгалтера</li>
+									<li class="slide__feature">Открытие расчетного счета</li>
+								</ul>
+								<div class="slide__conditions">
+									<p>Стоимость услуги</p>
+									<p class="slide__cost">6 000 руб</p>
+									<p>Срок регистрации: 4 дня</p>
+								</div>
+							</div>
+							<img class="slide__img" src="img/slide1.png" alt="Регистрация ООО">
+						</div>
+						<div class="slide">
+							<div class="slide__description">
+								<img class="decoration_quote" src="img/quote.png">
+								<div class="decoration_number">02</div>
+								<p class="slide__title">Регистрация ИП</p>
+								<p class="slide__sub-title">Осуществляем Регистрацию ИП на всей территории РФ.</p>
+								<ul class="slide__features">
+									<li class="slide__feature">Без затрат на нотариуса</li>
+									<li class="slide__feature">За одно посещение</li>
+									<li class="slide__feature">Консультация Юриста и Бухгалтера</li>
+									<li class="slide__feature">Открытие расчетного счета</li>
+								</ul>
+								<div class="slide__conditions">
+									<p>Стоимость услуги</p>
+									<p class="slide__cost">4 000 руб</p>
+									<p>Срок регистрации: 4 дня</p>
+								</div>
+							</div>
+							<img class="slide__img" src="img/slide2.png" alt="Регистрация ИП">
+						</div>
+						<div class="slide">
+							<div class="slide__description">
+								<img class="decoration_quote" src="img/quote.png">
+								<div class="decoration_number">03</div>
+								<p class="slide__title">Бухгалтерские услуги</p>
+								<p class="slide__sub-title">Экономьте до 50% на ведении бухгалтерского учета!</p>
+								<ul class="slide__features">
+									<li class="slide__feature">100% ответственность по Договору</li>
+									<li class="slide__feature">Любые системы налогообложения</li>
+									<li class="slide__feature">Работаем с ВЭД</li>
+									<li class="slide__feature">Возмещение НДС</li>
+									<li class="slide__feature">Сопровождение налоговых проверок</li>
+								</ul>
+								<div class="slide__conditions">
+									<p>Нулевая отчетность - <span class="price">1 000</span> руб</p>
+									<p>ИП - от <span class="price">2 000</span> руб/мес</p>
+									<p>ООО - от <span class="price">3 000</span> руб/мес</p>
+									<a href="#" class="slide__link">Заказать тест-драйв</a>
+								</div>
+							</div>
+							<img class="slide__img" src="img/slide3.png" alt="Бухгалтерские услуги">
+						</div>
+					</div>
+				</div>
+				<div class="slider__controls">
+					<label for="btn-1"></label>
+					<label for="btn-2"></label>
+					<label for="btn-3"></label>
+				</div>
+				<button type="button" class="slide__forward">вперед</button>
+				<button type="button" class="slide__backward">назад</button>
+			</div>
+		</section>
+		<section class="company">
+			<h2 class="company__slogan">Принимайте Верные Решения вместе с нами!</h2>
+			<p class="company__description">Обращаясь в нашу компанию, Вы получаете целый штат профессиональных бухгалтеров и юристов по цене всего одного сотрудника. Квалифицированная помощь будет оказана на любых этапах Вашего бизнеса!</p>
+			<button type="button" class="company__test-drive">Заказать тест-драйв</button>
+			<div class="company__services">
+				<div class="company__service">
+					<a href="#" class="service__link">Бухгалтерское<br>обслуживание</a>
+					<img src="img/pic1.jpg" alt="">
+				</div>
+				<div class="company__service">
+					<a href="#" class="service__link">Предоставление<br>юридических адресов</a>
+					<img src="img/pic2.jpg" alt="">
+				</div>
+				<div class="company__service">
+					<a href="#" class="service__link">Юридическое<br>сопровождение</a>
+					<img src="img/pic3.jpg" alt="">
+				</div>
+				<div class="company__service">
+					<a href="#" class="service__link">Финансирование<br>и инвестиции</a>
+					<img src="img/pic4.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="five">
+			<h2 class="five__slogan">Пять причин, по которым выбирают именно нас</h2>
+			<p class="five__description">Более 30 клиентов сотрудничают с нами ежемесячно</p>
+			<div class="five__causes">
+				<div class="five__four">
+					<div class="cause cause--pic1">
+						<p class="cause__title">Прозрачность договорных отношений</p>
+						<p class="cause__details">У нас нет никаких скрытых платежей</p>
+					</div>
+					<div class="cause cause--pic2">
+						<p class="cause__title">Постоянная профессиональная поддержка</p>
+						<p class="cause__details">Вы получаете поддержку пять дней в неделю без больничных и отпусков.</p>
+					</div>
+					<div class="cause cause--pic3">
+						<p class="cause__title">Экономия бюджета и времени</p>
+						<p class="cause__details">С нами вы платите меньше средств,чем на содержание собственного сотрудника. Вся работа выполняется в срок</p>
+					</div>
+					<div class="cause cause--pic4">
+						<p class="cause__title">Гарантия качества и ответственности</p>
+						<p class="cause__details">Мы несём полную финансовую ответственность за качество своей работы</p>
+					</div>
+				</div>
+				<div class="five__one">
+					<p class="cause__title cause__title--one">Надежная защита Ваших интересов</p>
+					<p class="cause__details cause__details--one">Мы избавим вас от трудностей правовых вопросов. Вы будете четко знать кому, за что и сколько Вы платите</p>
+					<a href="#" class="cause__link jscallback"><span>Заказать звонок</span></a>
+				</div>
+			</div>
+		</section>
+		<%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %>
+		<%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %>
+		<section class="news">
+			<h2 class="news__slogan">Новости и акции</h2>
+			<a href="" class="news__link"><span>Все новости и акции</span></a>
+			<div class="news__list">
+				<div class="news__item">
+					<div class="news__date">04 июля 2017</div>
+					<a href="#" class="news__title">В Ленобласти в ДТП с грузовиком пострадали пассажиры автобуса</a>
+					<img src="img/news1.jpg" class="news__foto">
+				</div>
+				<div class="news__item">
+					<div class="news__date">04 июля 2017</div>
+					<a href="#" class="news__title">В Челябинской области нашли тело седьмого погибшего при ЧП с лодкой</a>
+					<p class="news__text">В Челябинской области спасатели нашли тело мужчины, погибшего при опрокидывании лодки, сообщает пресс-служба регионального ГУ МЧС. Трагедия случилась вечером 2 июля на озере Максимка Чесменского района.</p>
+				</div>
+				<div class="news__item">
+					<div class="news__date">04 июля 2017</div>
+					<a href="#" class="news__title">В Челябинской области нашли тело седьмого погибшего при ЧП с лодкой</a>
+					<img src="img/news3.jpg" class="news__foto">
+				</div>
+				<div class="news__item">
+					<div class="news__date">04 июля 2017</div>
+					<a href="#" class="news__title">В Ленобласти в ДТП с грузовиком пострадали пассажиры автобуса</a>
+					<img src="img/news4.jpg" class="news__foto">
+				</div>
+			</div>
+			<button type="button" class="news__forward">вперед</button>
+			<button type="button" class="news__backward">назад</button>
+		</section>
+		<%= require('html-loader?attrs=false&minimize=false!./common/invitation.html') %>
+<%= require('html-loader?attrs=false&minimize=false!./common/footer.html') %>
