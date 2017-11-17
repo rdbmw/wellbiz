@@ -1,0 +1,114 @@
+.faq-ooo {
+  @mixin container;
+
+}
+
+.faq-ooo__title {
+  margin-top: 38px;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #252525;
+  text-align: center;
+}
+
+.faq-ooo__description {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #252525;
+  text-align: center;
+  padding: 0 23%;
+  margin-top: 10px;
+}
+
+.faq-ooo__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 42px;
+}
+
+.faq-ooo__item {
+  width: 45%;
+  border: 1px solid #e2e2e2;
+  padding: 9px 10px;
+  margin-bottom: 24px;
+  position: relative;
+  font-size: 0px;
+  border-radius: 3px;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: 13px;
+    width: 13px;
+    top: 15px;
+    right: 20px;
+    border-right: 1px solid #ff5b5b;
+    border-bottom: 1px solid #ff5b5b;
+    transform: rotate(45deg);
+    transition: .5s ease-in-out;
+  }
+
+  &--active::after {
+    transform: rotate(-135deg);
+  }
+}
+
+.faq-ooo__question {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #1d4f85;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.faq-ooo__answer {
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 90%;
+  padding: 20px 5%;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+  z-index: 49;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #797979;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.faq-ooo__item--active .faq-ooo__answer {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.btn-faq {
+  @mixin btn;
+  padding: 13px 40px 13px 40px;
+  margin: 0px auto;
+  margin-top: 19px;
+  margin-bottom: 34px;
+  display: block;
+  background-color: #fff;
+  color: #252525;
+  border: 1px solid #ff5b5b;
+
+  &:hover {
+    background-color: #ed5353;
+    color: #fff;
+  }
+}

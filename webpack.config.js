@@ -99,6 +99,7 @@ module.exports = {
     extractCSS,
     generateHTML('index'),
     generateHTML('registratsiya-ooo'),
+    generateHTML('registratsiya-ip'),
     new HtmlWebpackExcludeAssetsPlugin()
     // new HtmlWebpackHarddiskPlugin()
   ],

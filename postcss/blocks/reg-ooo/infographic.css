@@ -146,6 +146,7 @@
   margin: 0 auto;
   margin-top: 46px;
   margin-bottom: 51px;
+  text-decoration: none;
 
   &:hover {
     background-color: #ed5353;
