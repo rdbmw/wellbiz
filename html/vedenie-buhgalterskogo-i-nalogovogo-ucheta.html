@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<%= require('html-loader?attrs=false&minimize=false!./common/assets.html') %>
+</head>
+<%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
+		<section class="top-block top-block--buh">
+			<div class="top-block__wrapper">
+				<div class="top-block__left">
+					<img src="img/decorbuh.png" alt="" class="top-block__decoration">
+					<div class="top-block__details">
+						<h1 class="top-block__title">Бухгалтерские услуги в<br>Ростове-на-Дону<br><span>Бухгалтерское обсулуживание предприятий любого масштаба</span></h1>
+						<div class="top-block__description">Прием в штат квалифицированных специалистов и оборудование их рабочих мест может оказаться в несколько раз дороже передачи их функций на аутсорсинг.</div>
+					</div>
+					<img src="img/womanbuh.png" alt="" class="top-block__img">
+				</div>
+				<div class="top-block__right">
+					<div class="top-block__title-right">Экономьте до 50% на ведении учета!</div>
+					<div class="top-block__description-right">Наши клиенты экономят 30-60% на выплате зарплаты бухгалтерам и оборудовании рабочих мест.</div>
+					<button type="button" class="top-block__btn jscallback">Заказать консультацию</button>
+					<div class="top-block__decoration-right">50%</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews  reviews--buh">
+		  <div class="reviews__wrapper">
+		    <h2 class="reviews__slogan">Обезопасьте свой бизнес, сотрудничая с нами</h2>
+				<p class="reviews__description--main">Тогда вы не пополните нашу копилку анти-историй</p>
+		    <p class="reviews__description">Имена ниже вымышлены и все совпадения случайны. Но теперь это наши реальные клиенты. Хотите с ними познакомиться?</p>
+		    <div class="reviews__list">
+		      <div class="review">
+						<div class="review__author">
+							<img src="img/avatar1.jpg" alt="" class="review__avatar">
+							<div class="review__details">
+								<div class="review__author-name"><strong>Марина Павлова</strong><br>01.02.2018</div>
+							</div>
+						</div>
+		        <div class="review__text review__text--big">
+		          <p><strong>Из-за конфликта бухгалтер уничтожил всю первичную документацию</strong><br><br>Направление деятельности компании - строительство, ситема налогообложения - УСН "доходы - расходы". Для корректного формирования отчетности за 2017 год в части отражения расходов...</p>
+		          <button type="button" class="review__more" data-full="0">•</button>
+		        </div>
+		      </div>
+		      <div class="review">
+						<div class="review__author">
+		          <img src="img/avatar2.jpg" alt="" class="review__avatar">
+		          <div class="review__details">
+		            <div class="review__author-name"><strong>Сергей Кузьмин</strong><br>01.12.2017</div>
+		          </div>
+		        </div>
+		        <div class="review__text review__text--big">
+		          <p><strong>Ведение недостоверного бухгалтерского учета</strong><br><br>При подготовке пакета документов для открытия кредитной линии выяснилось, что сторонний наемный бухгалтер сдавал в налоговую инспекцию по работающей компании нулевую отчетность...</p>
+							<button type="button" class="review__more" data-full="1">•</button>
+		        </div>
+		      </div>
+		      <div class="review">
+						<div class="review__author">
+		          <img src="img/avatar3.jpg" alt="" class="review__avatar">
+		          <div class="review__details">
+		            <div class="review__author-name"><strong>Ольга Аверьянова</strong><br>08.03.2018</div>
+		          </div>
+		        </div>
+		        <div class="review__text review__text--big">
+							<p><strong>Самостоятельное ведение учета мешало ведению бизнеса</strong><br><br>В новой компании в целях экономии отчетность формировал и сдавал директор. Пока не было сотрудников это было не сложно. Но появились обороты, приняли сотрудников, отчетность стала сложнее....</p>
+							<button type="button" class="review__more" data-full="2">•</button>
+						</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</section>
+		<div class="review-full hidden">
+		  <button class="review-full__close" type="button" title="Закрыть" data-full="0">Закрыть</button>
+		  <div class="review-full__author">
+		    <img src="img/avatar1.jpg" alt="" class="review-full__avatar">
+		    <div class="review-full__details">
+		      <div class="review-full__author-name">Марина Павлова, 01.02.2018</div>
+		      <div class="review-full__rating">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		      </div>
+		    </div>
+		  </div>
+		  <p class="review-full__text">
+				Направление деятельности компании - строительство, ситема налогообложения - УСН "доходы - расходы". Для корректного формирования отчетности за 2017 год в части отражения расходов на материалы нужна была первичная документация.<br><br>
+				После обращения руководителя компании в "Верные решения" были восстановлены первичные документы, списаны материалы, что позволило принять в расходы большую часть понесенных затрат и сформировать отчетность за 2017 г.<br><br>
+				По результатам проведенной работы руководитель принял решения заключить договор на бухгалтерское обслуживание. При этом стоимость бухгалтерских услуг по договору оказалась на 20% меньше, чем заработная плата шататного бухгалтера.
+		  </p>
+		</div>
+		<div class="review-full hidden">
+		  <button class="review-full__close" type="button" title="Закрыть" data-full="1">Закрыть</button>
+		  <div class="review-full__author">
+		    <img src="img/avatar2.jpg" alt="" class="review-full__avatar">
+		    <div class="review-full__details">
+		      <div class="review-full__author-name">Сергей Кузьмин, 01.12.2017</div>
+		      <div class="review-full__rating">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		      </div>
+		    </div>
+		  </div>
+		  <p class="review-full__text">
+				При подготовке пакета документов на кредит выяснилось, что сторонний наемный бухгалтер сдавал в налоговую инспекцию по работающей компании нулевую отчетность.<br><br>
+				Для решения проблемы специалистами компании "Верные решения" проведено восстановление бухгалтерского учета, сданы корректирующие налоговые декларации, что позволило клиенту успешно прокредитоваться на выгодных условиях.<br><br>
+				Как итог - заключен договор на бухгалтерское обслуживание, в рамках которого вся ответственность за правильность ведения учета лежит на бухгалтерской компании.
+		  </p>
+		</div>
+		<div class="review-full hidden">
+		  <button class="review-full__close" type="button" title="Закрыть" data-full="2">Закрыть</button>
+		  <div class="review-full__author">
+		    <img src="img/avatar3.jpg" alt="" class="review-full__avatar">
+		    <div class="review-full__details">
+		      <div class="review-full__author-name">Ольга Аверьянова, 08.03.2018</div>
+		      <div class="review-full__rating">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		      </div>
+		    </div>
+		  </div>
+		  <p class="review-full__text">
+				В новой компании в целях экономии отчетность формировал и сдавал директор. Пока не было сотрудников это было не сложно. Но появились обороты, приняли сотрудников, отчетность стала сложнее. У директора, из-за необходимости ведения учета, не оставалось времени на руководство предприятием.<br><br>
+				Для решения проблемы рассматривался вариант принятия штатного бухгалтера или аутсорсинг бухгалтерского учета. Для этого были запрошены условия бухгалтерского обслуживания в нескольких бухгалтерских компаниях Ростова-на-Дону. По результатам аналаза компания остановилась на предложении ООО "Верные решения".<br><br>
+				Результат бухгалтерского сопровождения в компании "Верные решения": получена квалифицированная помощь в ведении учета, составлении отчетности, расчету заработной платы. Дополнительно клиент получил экономию на налогах с заработной платы бухгалтера и гарантии, т.к. бухгалтерская компания несет полную ответственность за правильность и своевременность оплаты налогов и сданной отчетности.
+
+		  </p>
+		</div>
+		<section class="buh-guarantee">
+			<div class="buh-guarantee__wrapper">
+				<img src="img/decorbuh2.png" alt="" class="">
+				<div class="buh-guarantee__details">
+					<div class="buh-guarantee__title">Получите гарантии качества оказываемых услуг!</div>
+					<div class="buh-guarantee__description">Наша 100% ответственность перед вами будет оформлена договором.</div>
+				</div>
+				<button type="button" class="buh-guarantee__btn jscallback">Узнать о гарантиях</button>
+			</div>
+		</section>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %> -->
+		<section class="tariff-ooo tariff-ooo--buh" >
+			<div class="tariff-ooo__wrapper">
+				<div class="tariff-ooo__title" id="tariff">Стоимость бухгалтерских услуг</div>
+				<div class="tariff-ooo__description">Варьируется в зависимости от системы налогообложения и объема операций.</div>
+				<div class="tariff-ooo__discount">Акция! При заключении договора на бухгалтерское обслуживание - зарегистрируем ООО или ИП под ключ БЕСПЛАТНО!</div>
+				<form class="calc-buh">
+					<div class="calc-ip__part calc-ip__part--border-right">
+						<div class="calc-ip__title">Выберите опции:</div>
+						<div class="tariff_group-title">Правовая форма:</div>
+						<div class="calc-ip__group calc-ip__group--flex">
+							<label for="ipOOO" class="tgl-label">ИП</label>
+							<input class="tgl tgl-ios" id="ipOOO" type="checkbox"/>
+	 						<label class="tgl-btn" for="ipOOO"></label>
+							<label for="ipOOO" class="tgl-label-right">ООО</label>
+						</div>
+						<div class="calc-ip__group">
+							<input type="checkbox" name="" value="" id="buh2018"><span></span>
+							<label for="buh2018">Зарегистрирован в 2018г. (Скидка!)</label>
+						</div>
+						<div class="tariff_group-title tariff_group-title--border">Система налогообложения:</div>
+						<div class="calc-ip__group">
+							<input type="radio" name="nalsystem" value="usn6" id="radio-usn6" checked><span></span>
+							<label for="radio-usn6">УСН 6%, ЕНВД</label>
+						</div>
+						<div class="calc-ip__group">
+							<input type="radio" name="nalsystem" value="usn10" id="radio-usn10"><span></span>
+							<label for="radio-usn10">УСН 10%</label>
+						</div>
+						<div class="calc-ip__group">
+							<input type="radio" name="nalsystem" value="osno" id="radio-osno"><span></span>
+							<label for="radio-osno">ОСНО</label>
+						</div>
+					</div>
+					<div class="calc-ip__part calc-ip__part--border-right">
+						<div class="calc-ip__title">Расчет с пояснениями:</div>
+						<div class="calc-ip__tariff">Стоимость в месяц от: <span id="calc_result">2&nbsp;000</span><span class="calc-ooo__currency">руб.</span></div>
+						<div class="calc-ip__details">
+							В стоимость входит:
+							<ul class="calc-ip__list">
+								<li class="calc-ip__action">обработка первичной документации;</li>
+								<li class="calc-ip__action">расчет налогов, составление и сдача отчетности в ИФНС/ПФР/ФСС;</li>
+								<li class="calc-ip__action">полное консультационное сопровождение по юридическим, кадровым и финансовым вопросам;</li>
+								<li class="calc-ip__action">оптимизация налогов;</li>
+								<li class="calc-ip__action">взаимодействие с контролирующими органами.</li>
+
+							</ul>
+							<p class="calc-ip__comment">Для организаций, занимающихся ВЭД либо совмещающих несколько систем налогообложения, а так же имеющих обособленные подразделения, возможны повышающие коэффициенты.</p>
+						</div>
+					</div>
+					<div class="calc-ip__part calc-ip__part--lead">
+						<div class="calc-ip__title">Заявка на консультацию:</div>
+						<div class="calc-ip__lead">Оставьте заявку на бесплатную консультацию:</div>
+						<div class="calc-ip__group calc-ip__group--lead" id="for-name">
+							<label for="name">Как к Вам обращаться?<sup>*</sup></label><br>
+							<input type="text" name="" value="" id="name">
+						</div>
+						<div class="calc-ip__group calc-ip__group--lead" id="for-phone">
+							<label for="phone">Номер телефона<sup>*</sup></label><br>
+							<input type="text" name="" value="" id="phone">
+						</div>
+						<!-- <div class="calc-ip__group calc-ip__group--lead">
+							<label for="mail">Ваш электронный адрес</label><br>
+							<input type="text" name="" value="" id="mail">
+						</div> -->
+						<p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="/terms.html" target="_blank">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
+						<div id="sendleaderror"></div>
+						<button type="submit" class="btn-lead" id="sendlead">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %> -->
+		<section class="faq-ooo">
+			<div class="faq-ooo__title">Ответы на частые вопросы</div>
+			<div class="faq-ooo__description">Если вы не найдете ответ на свой вопрос, то вы можете <a href="#" class="jscallback">заказать консультацию</a> и мы свяжемся с вами в ближайшее время</div>
+			<div class="faq-ooo__list">
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Кто может не вести бухгалтерский учет?</div>
+					<div class="faq-ooo__answer">
+						<p>По закону только индивидуальные предприниматели, которые работают на УСН, либо применяют ЕНВД, могут не вести бухгалтерию в полном объеме. При этом они сохраняют за собой право пользоваться бланками бухгалтерской отчетности, например, при расчетах с контрагентами.</p>
+						<p>ИП на «Упрощенке» обязаны вести Книгу учета доходов и расходов, чтобы правильно выполнять свои налоговые обязательства.</p>
+						<p>ООО всегда ведут бухгалтерский учет в полном объеме с помощью штатного сотрудника либо сторонней организаций. Никаких исключений в этом случае нет.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какие штрафы за неправильное ведение учета?</div>
+					<div class="faq-ooo__answer">
+						<p>Если проверка налоговыми сотрудниками выявит нарушения в бухгалтерской документации и отчетности, то штрафные санкции будут наложены сразу: первое нарушение — 10 000, повторное — 30 000.</p>
+						<p>В том случае, если выявляются недочеты не за один отчетный период, штрафы могут быть намного выше. При этом, если проверяющие выяснят, что Вы своими действиями пытались снизить налоги и уменьшить налогооблагаемую базу, то в бюджет уйдет еще и 20% от суммы налога, который организация бы заплатила при правильном расчете. Эта сумма не может быть ниже 40 000.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Ежемесячное обслуживание или ежеквартальное?</div>
+					<div class="faq-ooo__answer">
+						<p>Ежемесячное бухгалтерское обслуживание – это возможность полностью отказаться от штатного бухгалтера, получив качественное обслуживание во всех бухгалтерских мелочах. В комплекс услуг входит полноценное ведение учета и обеспечение сдачи всей необходимой отчетности.</p>
+						<p>Ежеквартальное бухгалтерское сопровождение – Вы получаете грамотно подготовленную квартальную отчетность без ведения бухгалтерского учета. В этом режиме можно получить небольшие бухгалтерские услуги.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Во сколько обойдется ведение бухгалтерского учета?</div>
+					<div class="faq-ooo__answer">
+						<p>На консультации или во время заключения договора мы, совместно с Вами, рассчитываем объем бухгалтерских услуг, необходимых именно для Вашей организации. В итоговую сумму будет включены такие нюансы, как сфера деятельности предприятия, размер документооборота, режим используемой системы налогообложения. Наши цены приемлемы даже для малого бизнеса и гораздо выгоднее, чем найм штатного бухгалтера.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Что входит в полное ежемесячное обслуживание?</div>
+					<div class="faq-ooo__answer">
+						<p>Наша компания оказывает широкий спектр услуг по ведению бухгалтерского учета. Ежемесячно наши специалисты будут:</p>
+						<ul>
+							<li>формировать первичную документацию (счета-фактуры, акты, накладные и т.д.) с занесением их в базу 1С;</li>
+							<li>составлять и проводить платежные поручения;</li>
+							<li>рассчитывать и начислять заработную плату и дополнительные выплаты сотрудникам;</li>
+							<li>рассчитывать и проверять целесообразность налоговых выплат;</li>
+							<li>рассчитывать и проверять целесообразность налоговых выплат;</li>
+							<li>Обеспечивать индивидуальный подход и давать грамотные консультации по любому вопросу в рамках договора на оказание бухгалтерских услуг;</li>
+						</ul>
+						<p>Бонусом клиент получает подробные и полезные консультации по оптимизации налогообложения и законному уменьшению налогооблагаемой базы.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Можно ли ваши услуги учесть как расходы?</div>
+					<div class="faq-ooo__answer">
+						<p>Большинство наших клиентов, действительно, смогут с нами сэкономить еще и на налоге. Есть несколько вариантов:</p>
+						<ol>
+							<li>Если у Вас ОСН (общая система налогообложения), то сумму наших бухгалтерских услуг Вы включаете в затраты, перед тем, как рассчитать налог на прибыль (п.36 ст.264 НК РФ).</li>
+							<li>Для УСН «доходы минус расходы» услуги компании «Верные решения» включаются в расходы для расчета единого налога. (п. 15 ст. 346.16 НК РФ).</li>
+							<li>При УСН на 6% налогов только на доходы, расходы на бухгалтерское обслуживание не учитываются.</li>
+						</ol>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">А если начинается налоговая проверка?</div>
+					<div class="faq-ooo__answer">
+						<p>Наша компания полностью сопроводит налоговую проверку и обеспечит ее положительный результат. Вашего участия в этом процессе не потребуется, для специалистов «Верных решений» налоговая проверка – обычный рабочий момент, который не пугает, не вызывает паники, не стопорит нашу работу.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Кто возместит штрафные санкции?</div>
+					<div class="faq-ooo__answer">
+						<p>Наши специалисты полностью берут на себя ответственность за свою работу, но от ошибок или недочетов не застрахован никто. Если штрафы будут наложены из-за наших недочетов, то сумма штрафов и пеней будет возмещена Вам в полном объеме.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какие гарантии, что вы нас не бросите при проверке?</div>
+					<div class="faq-ooo__answer">
+						<p>Наша ответственность полностью оформлена договором на оказание услуг бухгалтерского учета. Более того, мы не боимся налоговых проверок, это обычные рабочие моменты. Если Вашу компанию преследуют незаконно или наложили необоснованные штрафные санкции, — специалисты ООО «Верные решения» представят Вас в суде и обжалуют незаконные решения налоговиков.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какую ответственность вы несете?</div>
+					<div class="faq-ooo__answer">
+						<p>Если Вы перейдете к нам на бухгалтерское обслуживание, то, согласно договора, мы отвечаем финансово и юридически за все санкции, наложенные после проверки, если это произошло по нашей вине. Подробно наша ответственность описана в документации, оформляющей наши отношения (договор).</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как передавать первичную документацию?</div>
+					<div class="faq-ooo__answer">
+						<p>Мы предлагаем несколько вариантов передачи документации нашим специалистам, Вы можете выбрать подходящий: курьерская доставка; сканы документов по электронной почте; самостоятельная доставка бумаг в наш офис.</p>
+						<p>Все нюансы (вид доставки, периодичность, список необходимых документов) будут обговорены перед заключением договора об оказании бухгалтерских услуг и обязательно зафиксированы в документах. Гарантия сохранности документов и конфиденциальности информации также прописана в договоре.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Вы будете делать нам новую базу или возьмете нашу?</div>
+					<div class="faq-ooo__answer">
+						<p>Нашим специалистам необходимо предоставить Вашу базу для проверки. Если после тщательного анализа не будет выявлено никаких критичных проблем, недочетов или существенных ошибок, то возможна работа в Вашей базе. В том случае, если Ваша база не соответствует стандартам, — мы создаем новую, переносим все необходимое в нее (справочники, остатки, последние данные из Вашей отчетности) и приступаем к работе.</p>
+						<p>Тот же алгоритм работы действителен и если Вы вели бухгалтерию в любой другой программе, формирующей отчетность.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как перейти к вам на бухгалтерское обслуживание?</div>
+					<div class="faq-ooo__answer">
+						<p>Очень просто, получите выгрузку из базы бухгалтерской программы, в которой ведется учет. Этого достаточно, чтобы мы начали бухгалтерское сопровождение Вашего бизнеса в полном объеме.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Нужно ли доплачивать за программу 1С?</div>
+					<div class="faq-ooo__answer">
+						<p>Общая сумма, которую Вы заплатите за обслуживание, прописана в договоре на услуги бухгалтерского учета с нашей организацией. Никаких дополнительных выплат или затрат у Вас не будет. Бухгалтерская программа также дополнительно не оплачивается.</p>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-faq jscallback">Заказать консультацию</button>
+		</section>
+		<%= require('html-loader?attrs=false&minimize=false!./common/invitation.html') %>
+<%= require('html-loader?attrs=false&minimize=false!./common/footer.html') %>

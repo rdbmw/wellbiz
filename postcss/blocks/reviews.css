@@ -59,6 +59,7 @@
   padding: 6%;
   padding-bottom: 20%;
   margin-bottom: 14px;
+
   &::before, &::after {
     content: "";
     position: absolute;
@@ -86,9 +87,15 @@
   line-height: 25px;
   min-height: 125px;
 
-  @media (min-width: $desktop-width) {
-    min-height: 75px;
+  @media (min-width: $tablet-width) {
+    min-height: 350px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 210px;
+  }
+
+
 }
 
 .review__text--big p {

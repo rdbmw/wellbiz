@@ -1,0 +1,102 @@
+.tgl {
+	display: none;
+
+	// add default box-sizing for this scope
+	&,
+  &:after,
+  &:before,
+	& *,
+  & *:after,
+  & *:before,
+	& + .tgl-btn {
+		box-sizing: border-box;
+		&::selection {
+			background: none;
+		}
+	}
+
+	+ .tgl-btn {
+		outline: 0;
+		display: block;
+		width: 100px;
+		height: 25px;
+		position: relative;
+		cursor: pointer;
+    user-select: none;
+		&:after,
+    &:before {
+			position: relative;
+			display: block;
+			content: "";
+			width: 50%;
+			height: 100%;
+		}
+
+		&:after {
+			left: 0;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&:checked + .tgl-btn:after {
+		left: 50%;
+	}
+}
+
+.tgl-ios {
+	+ .tgl-btn {
+		background: #f3f3f3;
+		border-radius: 20px;
+		padding: 2px;
+		transition: all .4s ease;
+		border: 1px solid #e2e2e2;
+		&:after {
+			border-radius: 20px;
+			background: #86d993;
+			transition:
+        left .3s cubic-bezier(
+          0.175, 0.885, 0.320, 1.275
+        ),
+        padding .3s ease, margin .3s ease;
+			/*box-shadow:
+        0 0 0 1px rgba(0,0,0,.1),
+        0 4px 0 rgba(0,0,0,.08);*/
+		}
+
+    &:hover:after {
+      will-change: padding;
+    }
+
+		&:active {
+			/*box-shadow: inset 0 0 0 2em #e8eae9;*/
+			&:after {
+				padding-right: 30px;
+			}
+		}
+	}
+
+	&:checked + .tgl-btn {
+    background: #f3f3f3;
+    &:active {
+      box-shadow: none;
+      &:after {
+        margin-left: -30px;
+      }
+    }
+	}
+}
+
+.calc-ip__group .tgl-label {
+	padding: 0;
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+.calc-ip__group .tgl-label-right {
+	padding: 0;
+	margin-left: 5px;
+	margin-right: 0px;
+}

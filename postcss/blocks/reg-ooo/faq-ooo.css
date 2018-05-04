@@ -5,11 +5,17 @@
 
 .faq-ooo__title {
   margin-top: 38px;
-  font-size: 30px;
-  line-height: 50px;
-  font-weight: 400;
   color: #252525;
   text-align: center;
+
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 25px;
+  }
 }
 
 .faq-ooo__description {
@@ -18,8 +24,12 @@
   font-weight: 400;
   color: #252525;
   text-align: center;
-  padding: 0 23%;
   margin-top: 10px;
+  padding: 0 3%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 23%;
+  }
 }
 
 .faq-ooo__list {
@@ -30,13 +40,17 @@
 }
 
 .faq-ooo__item {
-  width: 45%;
+  width: 95%;
   border: 1px solid #e2e2e2;
   padding: 9px 10px;
   margin-bottom: 24px;
   position: relative;
   font-size: 0px;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+  }
 
   &:hover, &:focus {
     text-decoration: none;
@@ -62,6 +76,7 @@
 }
 
 .faq-ooo__question {
+  margin-right: 35px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;

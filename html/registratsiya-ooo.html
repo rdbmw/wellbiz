@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<%= require('html-loader?attrs=false&minimize=false!./common/assets.html') %>
+</head>
 <%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
 		<section class="top-block">
 			<div class="top-block__wrapper">
@@ -5,25 +13,26 @@
 					<img src="img/doc.png" alt="" class="top-block__decoration">
 					<img src="img/man.png" alt="" class="top-block__img">
 					<div class="top-block__details">
-						<h1 class="top-block__title">Регистрация ООО<br><span>в Ростове-на-Дону на выгодных условиях</span></h1>
-						<div class="top-block__description">Наши специалисты каждый день регистрируют по несколько фирм и знают ответы на все интересующие Вас вопросы как по подготовке документов для регистрации ООО, так и по обеспечению дальнейшей деятельности предприятия.</div>
+						<h1 class="top-block__title">Регистрация ООО в ИФНС<br><span>Поможем открыть ООО в Ростове-на-Дону под ключ!</span></h1>
+						<div class="top-block__description">Решили заняться бизнесом? Нужно открыть ООО? Вы попали по верному адресу! Наши специалисты каждый день регистрируют по несколько фирм и знают ответы на все интересующие Вас вопросы как по подготовке документов для регистрации ООО, так и по обеспечению дальнейшей деятельности предприятия. К ним можно отнести:</div>
 						<ul class="top-block__advantages">
 							<li>участие в программах субсидий;</li>
 							<li>оптимизация налогообложения;</li>
-							<li>порядок работы с наличными.</li>
+							<li>порядок работы с наличными;</li>
+							<li>и многие другие!</li>
 						</ul>
 					</div>
 				</div>
 				<div class="top-block__right">
-					<div class="top-block__title-right">Уменьшите расходы на<br><span>6 000 руб!</span></div>
-					<div class="top-block__description-right">В отличии от других компаний мы зарегистрируем ООО без затрат на нотариальные услуги!<br><br>Это позволит вам сэкономить<br><span>4 000 - 6 000 руб!</span></div>
+					<div class="top-block__title-right">Уменьшите расходы на <br><span>6 000 руб!</span></div>
+					<div class="top-block__description-right">В отличии от других компаний мы зарегистрируем ООО без затрат на нотариальные услуги!<br><br><div>Это позволит вам сэкономить <br><span>4 000 - 6 000 руб!</span></div></div>
 					<button type="button" class="top-block__btn jscallback">Заказать консультацию</button>
 				</div>
 			</div>
 		</section>
 		<section class="infographic">
 			<div class="infographic__title">С нами вы получите больше, но за меньший срок</div>
-			<div class="infographic__description">Схема офромления ООО и выгода от сотрудничества с нами</div>
+			<div class="infographic__description">Схема оформления ООО и выгода от сотрудничества с нами</div>
 			<div class="schema">
 				<div class="schema__row1">
 					<div class="schema__row1-left">Обращение клиента в нашу компанию</div>
@@ -31,12 +40,8 @@
 					<div class="schema__row1-right">Получение документов<br><span>Открытие расчетного счета, печать и консультации</span></div>
 				</div>
 				<div class="schema__row2">
-					<div class="schema__row2-left">Подготовка документов в день обращения</div>
-					<div class="schema__row2-right">Через три дня</div>
-				</div>
-				<div class="schema__row3">
-					<div class="schema__row3-left">Экономите 1 день. Не берем деньги за срочность!</div>
-					<div class="schema__row3-right">Экономите 1 день. Откроем р/сч в день получения документов!</div>
+					<div class="schema__row2-left">Подготовка документов в день обращения<div>Экономите 1 день. Не берем деньги за срочность!</div></div>
+					<div class="schema__row2-right">Через три дня<div>Экономите 1 день. Откроем р/сч в день получения документов!</div></div>
 				</div>
 			</div>
 			<div class="infographic__details">Всего 4 дня и вы получаете готовую компанию с расчетным счетом, печатью и консультацией бухгалтера по дальнейшему ведению вашего бизнеса!</div>
@@ -47,7 +52,7 @@
 				<div class="allrus__title">Регистрируем по всей России</div>
 				<div class="allrus__description">Регистрируем ООО в других регионах, дистанционно, а так же онлайн.</div>
 				<div class="allrus__vars">
-					<div class="allrus__var">
+					<div class="allrus__var allrus__var--first">
 							<div class="allrus__var-title">Регистрация ООО в других регионах РФ для клиентов из Ростова-на-Дону</div>
 							<ul class="allrus__var-list">
 								<li>Подготовим пакет документов</li>
@@ -100,13 +105,18 @@
 						<img src="img/man2.jpg" alt="" class="advantages-ooo__one-img">
 					</div>
 				</div>
+				<div class="advantages-ooo__online advantages-ooo__online--mobile">
+					<button type="button" class="advantages-ooo__online-btn jscallback">Заказать онлайн</button>
+					<div class="advantages-ooo__online-text">Оставьте заявку и менеджер проконсультирует о схеме работы</div>
+				</div>
 			</div>
 		</section>
-		<%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %> -->
 		<section class="tariff-ooo" >
 			<div class="tariff-ooo__wrapper">
 				<div class="tariff-ooo__title" id="tariff">Стоимость регистрации ООО</div>
 				<div class="tariff-ooo__description">Варьируется в зависимости от необходимого вам набора услуг</div>
+				<div class="tariff-ooo__discount">Акция! При заключении договора на бухгалтерское обслуживание - откроем ООО под ключ БЕСПЛАТНО!</div>
 				<form class="calc-ooo">
 					<div class="calc-ooo__part calc-ooo__part--border-right">
 						<div class="calc-ooo__title">Выберите опции:</div>
@@ -127,57 +137,63 @@
 							<label for="foreign">Учредители - иностранцы</label>
 						</div>
 						<div class="calc-ooo__group calc-ooo__group--border">
-							<input type="checkbox" name="" value="" id="account"><span></span>
-							<label for="account">Расчетный счет НЕ в банке-партнере</label>
+							<!-- <button type="button" class="btn-calc">Рассчитать</button> -->
+							<input type="checkbox" name="" value="" id="onlydocs" checked disabled><span></span>
+							<label for="onlydocs">Только подготовка документов</label>
 						</div>
-						<div class="calc-ooo__group">
+						<div class="calc-ip__group">
+							<input type="checkbox" name="" value="" id="ifns"><span></span>
+							<label for="ifns">Регистрация в ИФНС + расчетный счет</label>
+						</div>
+						<!-- <div class="calc-ooo__group">
 							<input type="checkbox" name="" value="" id="usn"><span></span>
 							<label for="usn">Переход на УСН/ЕНВД</label>
-						</div>
+						</div> -->
 						<div class="calc-ooo__group calc-ooo__group--border">
 							<input type="checkbox" name="" value="" id="stamp"><span></span>
 							<label for="stamp">Изготовление печати</label>
 						</div>
 						<div class="calc-ooo__group">
-							<!-- <button type="button" class="btn-calc">Рассчитать</button> -->
-							<input type="checkbox" name="" value="" id="onlydocs"><span></span>
-							<label for="onlydocs">Только подготовка документов</label>
+							<input type="checkbox" name="" value="" id="account"><span></span>
+							<label for="account">Расчетный счет НЕ в банке-партнере</label>
 						</div>
 					</div>
 					<div class="calc-ooo__part calc-ooo__part--border-right">
 						<div class="calc-ooo__title">Расчет с пояснениями:</div>
-						<div class="cal-ooo__tariff">Стоимость: <span id="calc_result">6 500</span><span class="cal-ooo__currency">  руб.</span></div>
-						<div class="cal-ooo__details">
+						<div class="calc-ooo__tariff">Стоимость: <span id="calc_result">3 500</span><span class="calc-ooo__currency">  руб.</span></div>
+						<div class="calc-ooo__details">
 							В стоимость входит:
-							<ul class="cal-ooo__list">
-								<li class="cal-ooo__action" id="consultText">Консультация Юриста и Бухгалтера;</li>
-								<li class="cal-ooo__action cal-ooo__action--hide" id="addressText">Предоставление юридического адреса;</li>
-								<li class="cal-ooo__action">Подготовка полного пакета документов для регистрациии ООО;</li>
-								<li class="cal-ooo__action" id="ifnsText">Сдача и получение документов в ИФНС;</li>
-								<li class="cal-ooo__action" id="accountPartnerText">Открытие расчетного счета в банке-партнере;</li>
-								<li class="cal-ooo__action cal-ooo__action--hide" id="accountText">Открытие расчетного счета в любом банке;</li>
-								<li class="cal-ooo__action cal-ooo__action--hide" id="usnText">Переход ООО на УСН/ЕНВД;</li>
-								<li class="cal-ooo__action cal-ooo__action--hide" id="stampText">Изготовление печати;</li>
+							<ul class="calc-ooo__list">
+								<li class="calc-ooo__action calc-ooo__action--hide" id="addressText">Предоставление юридического адреса;</li>
+								<li class="calc-ooo__action">Подготовка полного пакета документов для регистрации ООО;</li>
+								<li class="calc-ooo__action calc-ooo__action--hide" id="consultText">Консультация Юриста и Бухгалтера;</li>
+								<li class="calc-ooo__action calc-ooo__action--hide" id="ifnsText">Сдача и получение документов в ИФНС;</li>
+								<li class="calc-ooo__action calc-ooo__action--hide" id="accountPartnerText">Открытие расчетного счета в банке-партнере;</li>
+								<li class="calc-ooo__action calc-ooo__action--hide" id="accountText">Открытие расчетного счета в любом банке;</li>
+								<li class="calc-ooo__action calc-ooo__action--hide" id="usnText">Переход ООО на УСН/ЕНВД;</li>
+								<li class="calc-ooo__action calc-ooo__action--hide" id="stampText">Изготовление печати;</li>
 							</ul>
-							<p class="cal-ooo__comment">Дополнительно оплачиваются госпошлина за открытие ООО (4 000 руб.) и, при необходимости, нотариальные услуги.</p>
+							<p class="calc-ooo__comment">Дополнительно оплачиваются госпошлина за открытие ООО (4 000 руб.) и, при необходимости, нотариальные услуги.</p>
 						</div>
 					</div>
 					<div class="calc-ooo__part">
 						<div class="calc-ooo__title">Заявка на консультацию:</div>
 						<div class="calc-ooo__lead">Оставьте заявку на бесплатную консультацию:</div>
-						<div class="calc-ooo__group calc-ooo__group--lead calc-ooo__group--error" >
+						<div class="calc-ooo__group calc-ooo__group--lead" id="for-name">
 							<label for="name">Как к Вам обращаться?<sup>*</sup></label><br>
 							<input type="text" name="" value="" id="name">
 						</div>
-						<div class="calc-ooo__group calc-ooo__group--lead calc-ooo__group--error">
+						<div class="calc-ooo__group calc-ooo__group--lead" id="for-phone">
 							<label for="phone">Номер телефона<sup>*</sup></label><br>
 							<input type="text" name="" value="" id="phone">
 						</div>
-						<div class="calc-ooo__group calc-ooo__group--lead calc-ooo__group--error">
+						<!-- <div class="calc-ooo__group calc-ooo__group--lead">
 							<label for="mail">Ваш электронный адрес<sup>*</sup></label><br>
 							<input type="text" name="" value="" id="mail">
-						</div>
-						<button type="submit" class="btn-lead">Отправить</button>
+						</div> -->
+						<p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="/terms.html" target="_blank">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
+						<div id="sendleaderror"></div>
+						<button type="submit" class="btn-lead" id="sendlead">Отправить</button>
 					</div>
 				</form>
 			</div>
@@ -187,45 +203,68 @@
 				<div class="banks__title">Мы рекомендуем</div>
 				<div class="banks__description">Партнеры, с которыми мы сотрудничаем и которых мы рекомендуем своим клиентам</div>
 				<div class="banks__list">
-					<div class="banks__list-half">
-						<script type="text/javascript" charset="utf-8" src="js/edge_includes/edge.6.0.0.min.js"></script>
-						<style>.edgeLoad-EDGE-952087221 { visibility:hidden; }</style>
-						<script>
-							AdobeEdge.loadComposition('js/edge_includes/240x400', 'EDGE-952087221', {
-								scaleToFit: "none",
-								centerStage: "none",
-								minW: "0px",
-								maxW: "undefined",
-								width: "240px",
-								height: "400px"
-							}, {"dom":{}}, {"dom":{}});
-						</script>
-						<div id="Stage" class="EDGE-952087221"></div>
+					<div class="banks__list-half banks__list-half--left">
+						<div id="Stage" class="EDGE-952087221">
+							<a href="https://alfabank.ru/sme/quick/invitation/?code=ROSVERRESH" target="_blank"><img src="img/banner_alfa.jpg" alt=""></a>
+						</div>
 						<div class="alfa">
 							<div class="alfa__title">Оставьте заявку на открытие счета в Альфа-Банке в удобное время</div>
 							<ul class="alfa__advantages">
 								<li class="alfa__advantage">Высокое качество обслуживания</li>
 								<li class="alfa__advantage">Выгодные условия открытия счета</li>
-								<li class="alfa__advantage">Еще что-то</li>
 							</ul>
-							<button type="button" class="btn-alfa">Открыть счет</button>
+							<a href="https://alfabank.ru/sme/quick/invitation/?code=ROSVERRESH" target="_blank" class="btn-alfa">Открыть счет</a>
 						</div>
 					</div>
-					<div class="banks__list-half">
+					<div class="banks__list-half banks__list-half--right">
 						<div class="banks__list-title">Наши партнеры:</div>
-						<div class="banks__logo"><img src="img/bank_open.png" alt=""></div>
-						<div class="banks__logo"><img src="img/bank_alfa.png" alt=""></div>
-						<div class="banks__logo"><img src="img/bank_vtb.png" alt=""></div>
-						<div class="banks__logo"><img src="img/bank_rosbank.png" alt=""></div>
+						<div class="banks__logo banks__logo--sber"><img src="img/bank_sber.svg" alt=""></div>
+						<div class="banks__logo"><img src="img/bank_vozr.png" alt=""></div>
+						<div class="banks__logo"><img src="img/bank_psb.png" alt=""></div>
+						<div class="banks__logo"><img src="img/bank_raif.png" alt=""></div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %> -->
 		<section class="faq-ooo">
 			<div class="faq-ooo__title">Ответы на частые вопросы</div>
-			<div class="faq-ooo__description">Если вы не найдете ответ на свой вопрос, то вы можете <a href="#">заказать консультацию</a> и мы свяжемся с вами в близжайшее время</div>
+			<div class="faq-ooo__description">Если вы не найдете ответ на свой вопрос, то вы можете <a href="#" class="jscallback">заказать консультацию</a> и мы свяжемся с вами в ближайшее время</div>
 			<div class="faq-ooo__list">
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какие документы нужны для регистрации ООО?</div>
+					<div class="faq-ooo__answer">
+						<p>Если Вы решили открыть ООО с помощью наших специалистов, то Вам необходимо предоставить паспорт учредителей/директора, ИНН учредителей/директора, гарантийное письмо от собственника юридического адреса либо подтверждение права на собственность. Больше от Вас не потребуется ничего, регистрация ООО будет проведена нами в самые короткие сроки.</p>
+						<p>Полный же пакет документов состоит из: заявления по форме № Р11001, госпошлины 4 000р., Устава в 2х экземплярах, Решения о создании общества или Протокола общего собрания учредителей, а так же гарантийного письма.</p>
+						<p>Внимание! Если Вы ошибетесь в каком либо из документов, то ИФНС откажет в регистрации. Государственная пошлина при этом не возвращается.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как быстро произойдет регистрация ООО?</div>
+					<div class="faq-ooo__answer">
+						<p>Срок регистрации ООО – 3 рабочих дня, в некоторых случаях этот срок может быть продлен. Обычно «затягивают» оформление, если представители налоговой службы находят недочеты в бумагах или предоставленных сведениях: адрес массовой регистрации, неверный выбор кодов ОКВЭД, учредители с сомнительным прошлым.</p>
+						<p>Чтобы избежать этих проблем, достаточно поручить процесс оформления пакета документов и общения с контролирующими органами специалистам ООО «Верные решения». Вы получите максимально комфортное решение за приемлемую цену.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какие документы вы получаете после регистрации?</div>
+					<div class="faq-ooo__answer">
+						<p>После успешной регистрации общества с ограниченной ответственностью, клиент получает на руки следующий пакет бумаг:</p>
+						<ul>
+							<li>Свидетельство о государственной регистрации общества ограниченной ответственностью;</li>
+							<li>Свидетельство о постановке на учет в налоговом органе по месту нахождения организации;</li>
+							<li>Лист записи, подтверждающий внесение данных в Госреестр ООО (ЕГРЮЛ);</li>
+							<li>Устав организации, заверенный налоговой службой.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как правильно выбрать коды ОКВЭД?</div>
+					<div class="faq-ooo__answer">
+						<p>Чтобы упростить себе задачу, достаточно обратиться в ООО «Верные решения», наши специалисты подберут верные коды ОКВЭД, которые не вызовут вопросов у налоговой службы. При заказе регистрации ООО у нас этот процесс уже входит в общую стоимость услуги.</p>
+						<p>Если Вы решили заняться подбором кодов для своей организации самостоятельно, — воспользуйтесь общероссийским классификатором ОКВЭД ОК 029-2001 (КДЕС Ред. 1).</p>
+					</div>
+				</div>
 				<div class="faq-ooo__item">
 					<div class="faq-ooo__question">Нужен ли Нотариус?</div>
 					<div class="faq-ooo__answer">
@@ -235,31 +274,132 @@
 					</div>
 				</div>
 				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">В какой налоговой открыть ООО?</div>
+					<div class="faq-ooo__answer">
+						<p>На сегодняшний день регистрируют ООО и другие юрлица в единых регистрационных центрах, расположенных на базе межрайонных инспекций ФНС. Регистрация ООО в Ростове-на-Дону осуществляется МИФНС №26, расположенной по адресу пр. Кировский, 100/74 (в непосредственной близости от офиса нашей компании).</p>
+						<p>Благодаря удобному расположению офиса ООО «Верные решения», Вы можете приехать к нам и реализовать все этапы регистрации ООО за одно посещение!</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как выбирать систему налогообложения?</div>
+					<div class="faq-ooo__answer">
+						<p>В РФ есть три вида налогообложения, каждый из которых может выбрать руководитель ООО, исходя из своих интересов:</p>
+						<ul>
+							<li>«Упрощенка» (УСН) с объектом налогообложения «Доходы» — 6% налог.</li>
+							<li>УСН с объектом «Доходы минус расходы» — 10% налог</li>
+							<li>ЕНДВ – налог на вмененный доход.</li>
+						</ul>
+						<p>Первоначально, при регистрации, ООО ставят на основную систему налогообложения (ОСНО), в течение последующего месяца у руководителя есть возможность выбрать себе подходящий вариант из предоставленных упрощенных систем. О переходе на ЕНДВ надо заявить в налоговой в течение 5 дней.</p>
+					</div>
+				</div>
+
+				<div class="faq-ooo__item">
 					<div class="faq-ooo__question">Возможно ли открыть ООО иностранцу?</div>
 					<div class="faq-ooo__answer">
-						<p>Нет, наши специалисты избавят Вас от лишних нотариальных расходов.</p>
-						<p>Услуги нотариуса понадобятся только в том случае, когда сбором документов и подачей заявления занимается доверенное лицо, а не непосредственно учредитель.</p>
-						<p>Стоимость нотариальных расходов (заверение заявления с единственным учредителем + доверенность) составляет примерно 4 000 - 6 000 рублей.</p>
+						<p>Да, регистрация ООО иностранным гражданином разрешена, но процесс достаточно сложен, требует определенной юридической «подкованности». Для того, чтобы ООО «Верные решения» провели процедуру максимально быстро и комфортно, необходимо предоставить:</p>
+						<ul>
+							<li>копию паспорта и нотариально заверенный перевод этого документа для учредителя и директора;</li>
+							<li>Если директор – иностранный гражданин, потребуется дополнительно патент на работу и бумаги, подтверждающие проживание на территории РФ.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Что придется делать после открытия ООО?</div>
+					<div class="faq-ooo__answer">
+						<p>Любому руководителю ООО необходимо сдавать несколько вариантов отчетности, при этом важно правильно рассчитывать налоги, правильно вести бухгалтерский и кадровый учет. Обращайтесь в нашу компанию, Вы получите не только бесплатные и грамотные консультации, но и помощь на каждом этапе работы организации.</p>
+						<p>ООО «Верные решения» также может полностью взять на себя ведении бухгалтерской документации и кадрового учета, с гарантией и по приемлемым ценам. Любые юридические вопросы мы также можем взять на себя.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Нужно ли вести бухучет?</div>
+					<div class="faq-ooo__answer">
+						<p>Даже если ООО пока работает в убыток или не работает вообще, бухгалтерский учет вести придется обязательно, в противном случае к организации могут быть применены огромные штрафные санкции. Есть несколько вариантов, как вести бухгалтерский учет в ООО:</p>
+						<ol>
+							<li>Всю отчетность ведет руководитель.</li>
+							<li>Есть нанятый сотрудник, введенный в штат организации.</li>
+							<li>Найм частного исполнителя.</li>
+							<li>Аутсорсинг отчетности на стороннюю организацию.</li>
+						</ol>
+						<p>Аутсорсинг отчетности на стороннюю организацию.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Нужен ли ООО расчетный счет?</div>
+					<div class="faq-ooo__answer">
+						<p>Это не является обязанностью организации, расчетный счет нужен только для более удобной работы с контрагентами и более простой отчетности. Но наши контролирующие органы делают невозможной работу ООО без расчетного счета, поскольку госпошлины и другие выплаты должны проводиться только со счета организации, даже счет руководителя ООО для этого не подходит.</p>
+						<p>Наша компания поможет Вам быстро и выгодно открыть счет в одном из наших банков-партнеров, обращайтесь!</p>
 					</div>
 				</div>
 				<div class="faq-ooo__item">
 					<div class="faq-ooo__question">Обязательна ли печать ООО?</div>
 					<div class="faq-ooo__answer">
-						<p>Нет, наши специалисты избавят Вас от лишних нотариальных расходов.</p>
-						<p>Услуги нотариуса понадобятся только в том случае, когда сбором документов и подачей заявления занимается доверенное лицо, а не непосредственно учредитель.</p>
-						<p>Стоимость нотариальных расходов (заверение заявления с единственным учредителем + доверенность) составляет примерно 4 000 - 6 000 рублей.</p>
+						<p>Нет, в прошлом (2015) году обязательная заверка документов печатью организации было отменено на законодательном уровне. Однако не все контролирующие органы успели перейти на новый формат, поэтому на данный момент мы рекомендуем нашим клиентам делать печати.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как выбрать юридический адрес?</div>
+					<div class="faq-ooo__answer">
+						<p>Банки, налоговые органы, крупные контрагенты тщательно проверяют соблюдение правил нахождения компаний по месту регистрации. Поводом для проверки и больших проблем с налоговой будет служить факт регистрации новой фирмы по адресу массовой регистрации.</p>
+						<p>Если Ваша компания на начальном этапе не планирует аренду постоянного офиса, а будет брать юридический адрес в аренду, то рекомендуем не гнаться за дешевизной. Иначе Вас ждут такие неприятности как отказ в открытии расчетного счета, отказ в возврате НДС и пр.</p>
 					</div>
 				</div>
 				<div class="faq-ooo__item">
 					<div class="faq-ooo__question">Можно ли использовать домашний адрес?</div>
 					<div class="faq-ooo__answer">
-						<p>Нет, наши специалисты избавят Вас от лишних нотариальных расходов.</p>
-						<p>Услуги нотариуса понадобятся только в том случае, когда сбором документов и подачей заявления занимается доверенное лицо, а не непосредственно учредитель.</p>
-						<p>Стоимость нотариальных расходов (заверение заявления с единственным учредителем + доверенность) составляет примерно 4 000 - 6 000 рублей.</p>
+						<p>Да, ООО можно оформить на домашний адрес учредителя (директора), но только при соблюдении определенных условий (учитывая виды деятельности, систему налогообложения, подбор документации).</p>
+						<p>Обратитесь в ООО «Верные решения» за подробной рекомендацией или закажите эту услугу.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как сформировать уставной капитал?</div>
+					<div class="faq-ooo__answer">
+						<p>Компания может сформировать уставной капитал либо денежными средствами, либо имуществом. Но, при формировании капитала имуществом, необходимо сделать обязательную оценку, что в большинстве случаев не выгодно.</p>
+						<p>Минимальный размер капитала – 10 000 руб., внести УК на счет необходимо в течение 4-х месяцев с момента регистрации компании. При определенных видах деятельности размер уставного капитала может быть выше.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как открыть ООО, если вы находитесь в другом регионе?</div>
+					<div class="faq-ooo__answer">
+						<p>Мы полностью возьмем на себя заботы о регистрации ООО, если вы находитесь далеко от места оформления. Подберем юридический адрес, подготовим пакет документов, сдадим и получим документы в ИФНС.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как правильно вести кадровый учет в ООО?</div>
+					<div class="faq-ooo__answer">
+						<p>Сотрудник, отвечающий за кадры, обязан осуществлять:</p>
+						<ul>
+							<li>оформление приема на работу и увольнения;</li>
+							<li>ведение личных дел работников;</li>
+							<li>учет отпусков и больничных;</li>
+							<li>ведение штатного расписания;</li>
+							<li>своевременную сдачу необходимой отчетности.</li>
+						</ul>
+						<p>Компания «Верные решения» предлагает услугу ведения кадрового учета, которая позволит Вам сэкономить на штатном сотруднике и не переживать за качество учета и отчетности.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какие приказы и инструкции нужно оформлять в ООО?</div>
+					<div class="faq-ooo__answer">
+						<p>На самом деле точного и универсального ответа на этот вопрос нет, если Вам необходима помощь, обращайтесь за консультацией к нашим специалистам. Точно в новом ООО должны быть:</p>
+						<ul>
+							<li>Приказ о назначении директора;</li>
+							<li>Приказ о возложении обязанностей по ведению бухгалтерского учета;</li>
+							<li>Штатное расписание;</li>
+							<li>Учетная политика;</li>
+							<li>Трудовые договора;</li>
+						</ul>
+						<p>Кроме этого необходимо создать множество локальных актов и приказов, без которых любая проверка контролирующими органами может обернуться штрафными санкциями или более серьезными последствиями.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Постановка на учет в ПФР, ФСС, Росстат.</div>
+					<div class="faq-ooo__answer">
+						<p>Налоговый орган после регистрации компании, самостоятельно отправляет данные во все необходимые инстанции.</p>
+						<p>Тем не менее, бывают ситуации, когда необходимо получение регистрационных документов на руки – придется посетить каждый Фонд отдельно. Вы можете поручить получение документов нашему сотруднику.</p>
 					</div>
 				</div>
 			</div>
-			<button type="button" class="btn-faq">Заказать консультацию</button>
+			<button type="button" class="btn-faq jscallback">Заказать консультацию</button>
 		</section>
 		<%= require('html-loader?attrs=false&minimize=false!./common/invitation.html') %>
 <%= require('html-loader?attrs=false&minimize=false!./common/footer.html') %>

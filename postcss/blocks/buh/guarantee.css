@@ -1,0 +1,58 @@
+.buh-guarantee {
+  @mixin container;
+  margin-top: 50px;
+}
+
+.buh-guarantee__wrapper {
+  background: #ebebeb;
+  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+  }
+}
+.buh-guarantee__wrapper img {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.buh-guarantee__details {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
+}
+
+.buh-guarantee__title {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.buh-guarantee__description {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.buh-guarantee__btn {
+
+  @mixin btn;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: #408fe7;
+  padding: 10px 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 250px;
+  }
+
+  &:hover {
+    background-color: #3986db;
+  }
+}

@@ -9,19 +9,19 @@
       г.Ростов-на-Дону, ул. Города Волос, д. 119<br>(вход с ул. Тельмана)
     </div>
     <div class="page-footer__phone">
-      +7 (963) 123-45-67 <br><span>Viber, WhatsApp</span>
+      +7 (928) 600-78-29 <br><span>Viber, WhatsApp</span>
     </div>
   </div>
   <div class="page-footer__bottom">
     <div class="page-footer__company"> &copy; ООО "Верные решения" Все права сохранены</div>
     <ul class="page-footer__links">
-      <li><a href="#">О компании</a></li>
-      <li><a href="#">Политика конфедициальности</a></li>
-      <li><a href="#">Оферта</a></li>
+      <li><a href="/about.html">О компании</a></li>
+      <li><a href="/terms.html">Политика конфиденциальности</a></li>
+      <!-- <li><a href="#">Оферта</a></li> -->
     </ul>
     <div class="page-footer__social">
       <span>Следите за нами:</span>
-      <a href="#"><img src="img/vk.png" alt=""></a>
+      <a href="https://vk.com/wellbiz"><img src="img/vk.png" alt=""></a>
     </div>
   </div>
 </footer>
@@ -31,16 +31,17 @@
   <div class="modal-content__scroll">
     <form class="lead-form" id="leadForm">
       <input type="hidden" id="leadComment">
+      <input type="hidden" id="leadService">
       <div class="lead-form__group">
         <label for="name" class="">Ваше имя <span>(нигде не публикуется)</span></label>
-        <input type="text" id="name">
+        <input type="text" id="leadname">
       </div>
       <div class="lead-form__group">
         <label for="phone" class="">Номер телефона <span>(нигде не публикуется)</span></label>
-        <input type="text" id="phone">
+        <input type="text" id="leadphone">
       </div>
-      <p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
-      <div class="modal-content__error" id="error"></div>
+      <p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="/terms.html" target="_blank">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
+      <div class="modal-content__error" id="leaderror"></div>
       <button class="lead-form__btn" id="submitbtn" type="submit">Отправить запрос</button>
     </form>
   </div>
@@ -57,6 +58,13 @@
       </p>
       <button class="lead-form__btn" id="submitbtn_ok" type="submit">Вернуться на сайт</button>
     </form>
+  </div>
+</div>
+<div class="modal-content hidden modal-content--map" id="map">
+  <button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+  <h2 class="modal-content__title">Как нас найти</h2>
+  <div class="modal-content__scroll">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac7e3a7c10ac04f7085a1786ce90b15d22f7bbd10bdaf25e0c974871a55f6f551&amp;width=100%25&amp;height=494&amp;lang=ru_RU&amp;scroll=true"></script>
   </div>
 </div>
 <div class="modal-overlay hidden"></div>

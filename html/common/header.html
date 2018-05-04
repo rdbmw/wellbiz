@@ -1,42 +1,80 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Консалтинговая компания "Верные решения" - регистрация ООО и ИП, бухгалтерские услуги, составление и сдача отчетности.</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css?v=0.0.01"> -->
-	<script src="js/jquery.documentReady.js"></script>
-	<script src="js/scripts.js?v=0.0.01"></script>
-</head>
-
 <body>
+	<!-- Yandex.Metrika counter -->
+		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22118236 = new Ya.Metrika({ id:22118236, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/22118236" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<!--Google counter-->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-64910830-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	<!--Google counter-->
 	<header class="page-header">
 		<div class="mobilenav-container">
 			<!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
 			<input id="toggle" type="checkbox">
-
 			<!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
-
 			<!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
-			<label class="toggle-container" for="toggle">
+			<!-- <label class="toggle-container" for="toggle"> -->
+			<label class="button-toggle" for="toggle">
 				<!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
-				<span class="button button-toggle"></span>
+				<!-- <span class="button button-toggle"></span> -->
 			</label>
 
 			<!-- Навигация -->
 			<nav class="mobile-nav">
-				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Создание бизнеса</a>
-				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Ведение бизнеса</a>
-				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Ликвидация бизнеса</a>
-				<a rel="nofollow" rel="noreferrer" class="mobile-nav__item" href="">Контакты</a>
+				<div class="backbtn"></div>
+				<ul class="main-nav__items">
+					<li class="main-nav__item main-nav__item--sub">
+						<a class="mobile-nav__item main-nav__link" href="#" data-line="1">Создание бизнеса</a>
+						<ul class="submenu">
+							<li class="submenu__item"><a href="/registratsiya-ip.html">Регистрация ИП</a></li>
+							<li class="submenu__item"><a href="/registratsiya-ooo.html">Регистрация ООО</a></li>
+							<li class="submenu__item"><a href="/litsenziya-na-alkogol.html">Лицензия на алкоголь</a></li>
+							<li class="submenu__item"><a href="/otkrytie-raschetnogo-scheta-v-banke-tsentr-mezhdunarodnyh-raschetov.html">Открытие счета в Банке ЦМР</a></li>
+							<!-- <li class="submenu__item"><a href="#">Регистрация ТСЖ</a></li> -->
+							<!-- <li class="submenu__item"><a href="#">Открытие расчетного счета</a></li> -->
+							<li class="submenu__item"><a href="/arenda-yuridicheskogo-adresa.html">Аренда юридического адреса</a></li>
+							<!-- <li class="submenu__item"><a href="#">Печати</a></li> <--></-->
+						</ul>
+					</li>
+					<li class="main-nav__item main-nav__item--sub">
+						<a class="mobile-nav__item main-nav__link" href="#" data-line="2">Ведение бизнеса</a>
+						<ul class="submenu">
+							<li class="submenu__item"><a href="/vedenie-buhgalterskogo-i-nalogovogo-ucheta.html">Постановка бухгалтерского учета</a></li>
+							<li class="submenu__item"><a href="/sostavlenie-i-sdacha-otchetnosti.html">Подготовка и сдача отчетности</a></li>
+							<li class="submenu__item"><a href="/vozmeshhenie-nds.html">Возмещение НДС</a></li>
+							<!-- <li class="submenu__item"><a href="#">Налоговые проверки</a></li> -->
+							<li class="submenu__item"><a href="/vnesenie-izmenenij-v-dokumenty.html">Внесение изменений</a></li>
+							<li class="submenu__item"><a href="/abonentskoe-yuridicheskoe-obsluzhivanie.html">Абонентское юридическое обслуживание</a></li>
+							<li class="submenu__item"><a href="/vzyskanie-zadolzhennosti.html">Возврат дебиторской задолженности</a></li>
+							<li class="submenu__item"><a href="/proverka-kontragenta.html">Проверка контрагента</a></li>
+							<li class="submenu__item"><a href="/sostavlenie-dogovorov-kontraktov.html">Составление договоров, контрактов</a></li>
+							<li class="submenu__item"><a href="/pravovaya-zashhita.html">Правовая защита</a></li>
+							<li class="submenu__item"><a href="/osparivanie-kadastrovoj-stoimosti.html">Оспаривание кадастровой стоимости</a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item main-nav__item--sub">
+						<a class="mobile-nav__item main-nav__link" href="#" data-line="3">Ликвидация бизнеса</a>
+						<ul class="submenu">
+							<li class="submenu__item"><a href="/likvidatsiya-ip.html">Ликвидация ИП</a></li>
+							<li class="submenu__item"><a href="/likvidatsiya-ooo.html">Ликвидация ООО</a></li>
+							<li class="submenu__item"><a href="/oformlenie-sdelok-po-kuple-prodazhe-biznesa.html">Купля-продажа</a></li>
+							<!-- <li class="submenu__item"><a href="#">Банкротство</a></li> -->
+						</ul>
+					</li>
+					<li class=" main-nav__item" class="main-nav__link"><a class="mobile-nav__item main-nav__link" href="/contacts.html" data-line="4">Контакты</a></li>
+				</ul>
 			</nav>
 		</div>
 		<div class="page-header__logo">
-			<a href="/"><img src="img/logo.png" width="202" height="49" alt=""></a>
+			<a href="/"><img src="img/logo2.png" width="202" height="57" alt=""></a>
 		</div>
-		<nav class="main-nav">
+		<!-- <nav class="main-nav">
 			<ul class="main-nav__items">
 				<li class="main-nav__item main-nav__item--sub">
 					<a class="main-nav__link" href="#">Создание бизнеса</a>
@@ -70,10 +108,10 @@
 				</li>
 				<li class="main-nav__item" class="main-nav__link"><a class="main-nav__link" href="#">Контакты</a></li>
 			</ul>
-		</nav>
+		</nav> -->
 		<div class="phone">
-			<div class="phone__number">+7&nbsp;(963)&nbsp;123&nbsp;45&nbsp;67</div>
-			<div class="phone__description">Viber, WhatsApp</div>
+			<div class="phone__number"><span class="lptracker_phone">+7&nbsp;(928)&nbsp;600&nbsp;78&nbsp;29</span></div>
+			<!-- <div class="phone__description">Viber, WhatsApp</div> -->
 		</div>
 		<button type="button" class="page-header__callback jscallback">Заказать звонок</button>
 	</header>

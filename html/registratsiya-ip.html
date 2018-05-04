@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<%= require('html-loader?attrs=false&minimize=false!./common/assets.html') %>
+</head>
 <%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
 		<section class="top-block">
 			<div class="top-block__wrapper">
@@ -16,8 +24,8 @@
 					</div>
 				</div>
 				<div class="top-block__right">
-					<div class="top-block__title-right">Уменьшите расходы на<br><span>3 000 руб!</span></div>
-					<div class="top-block__description-right">В отличии от других компаний мы зарегистрируем ИП без затрат на нотариальные услуги!<br><br>Это позволит вам сэкономить<br><span>2 000 - 3 000 руб!</span></div>
+					<div class="top-block__title-right">Уменьшите расходы на <br><span>3 000 руб!</span></div>
+					<div class="top-block__description-right">В отличии от других компаний мы зарегистрируем ИП без затрат на нотариальные услуги!<br><div>Это позволит вам сэкономить <br><span>2 000 - 3 000 руб!</span></div></div>
 					<button type="button" class="top-block__btn jscallback">Заказать консультацию</button>
 				</div>
 			</div>
@@ -32,48 +40,38 @@
 					<div class="schema__row1-right">Получение документов<br><span>Открытие расчетного счета, печать и консультации</span></div>
 				</div>
 				<div class="schema__row2">
-					<div class="schema__row2-left">Подготовка документов в день обращения</div>
-					<div class="schema__row2-right">Через три дня</div>
-				</div>
-				<div class="schema__row3">
-					<div class="schema__row3-left">Экономите 1 день. Не берем деньги за срочность!</div>
-					<div class="schema__row3-right">Экономите 1 день. Откроем р/сч в день получения документов!</div>
+					<div class="schema__row2-left">Подготовка документов в день обращения<div>Экономите 1 день. Не берем деньги за срочность!</div></div>
+					<div class="schema__row2-right">Через три дня<div>Экономите 1 день. Откроем р/сч в день получения документов!</div></div>
 				</div>
 			</div>
 			<div class="infographic__details">Всего 4 дня и вы получаете документы об открытии ИП с расчетным счетом, печатью и консультацией бухгалтера по дальнейшему ведению вашего бизнеса!</div>
 			<a href="#tariff" class="btn-do-calc">Рассчитать стоимость</a>
 		</section>
-		<section class="allrus">
+		<section class="allrus allrus--tmp">
 			<div class="allrus__wrapper">
-				<div class="allrus__title">Регистрируем по всей России</div>
-				<div class="allrus__description">Регистрируем ООО в других регионах, дистанционно, а так же онлайн.</div>
+				<div class="allrus__title">Регистрируем ИП по всей России</div>
+				<div class="allrus__description">Откроем ИП в других регионах, дистанционно, а так же онлайн.</div>
 				<div class="allrus__vars">
-					<div class="allrus__var">
-							<div class="allrus__var-title">Регистрация ООО в других регионах РФ для клиентов из Ростова-на-Дону</div>
+					<div class="allrus__var allrus__var--ip allrus__var--first">
+							<div class="allrus__var-title">Регистрация ИП в других регионах РФ для клиентов из Ростова-на-Дону</div>
 							<ul class="allrus__var-list">
 								<li>Подготовим пакет документов</li>
-								<li>Обеспечим отправку документов в ИФНС в другом регионе</li>
-								<li>Проконтролируем регистрацию ООО и получение документов из ИФНС.</li>
+								<li>Обеспечим отправку документов для регистрации ИП в ИФНС в другом регионе</li>
+								<li>Проконтролируем процесс оформления ИП и получение документов из ИФНС.</li>
 							</ul>
 					</div>
-					<div class="allrus__var allrus__var--center">
-							<div class="allrus__var-title">Регистрация ООО в Ростовской области для клиентов из других регионов</div>
+					<div class="allrus__var allrus__var--center allrus__var--ip">
+							<div class="allrus__var-title">Регистрация ИП в Ростовской области для клиентов из других регионов</div>
 						<ul class="allrus__var-list">
-							<li>Подберем юридический адрес</li>
-							<li>Подготовим и вышлем пакет документов по электронной почте</li>
-							<Li>Получим от вас подписанные документы</Li>
-							<li>Подадим и заберем документы из ИФНС</li>
-							<li>Отправим готовые документы вам</li>
+							<li>Подготовим и вышлем пакет документов для Регистрации ИП по электронной почте</li>
+							<Li>Получим от вас подписанные документы и подадим для оформления в ИФНС</Li>
+							<li>Заберем готовые документы из ИФНС и отправим вам</li>
 						</ul>
-					</div>
-					<div class="allrus__var">
-						<div class="allrus__var-title">Регистрация ООО с иностранными учредителями</div>
-						<p>Проведем процедуру регистрации максимально быстро и комфортно для вас!</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="advantages-ooo">
+		<section class="advantages-ooo advantages-ooo--tmp">
 			<div class="advantages-ooo__wrapper">
 				<h2 class="advantages-ooo__title">Наши преимущества</h2>
 				<p class="advantages-ooo__description">Предлагаем услуги высокого качества на выгодных условиях</p>
@@ -94,91 +92,85 @@
 						<div class="advantages-ooo__one-text">
 							<p class="advantages-ooo__one-title">Мы все сделаем за Вас!</p>
 							<p class="advantages-ooo__one-details">
-								В отличие от других он-лайн сервисов, мы не заставим вас заполнять огромные формы, в которых легко запутаться и всего лишь одна ошибка может привести к отказу в регистрации и потере денежных средств.
+								В отличие от других он-лайн сервисов, мы не заставим вас заполнять огромные формы, в которых легко запутаться и всего лишь одна ошибка может привести к отказу в регистрации ИП и потере денежных средств.
 								<br><br>Просто расскажите, чем планируете заниматься и мы все оформим за вас!
 							</p>
 						</div>
 						<img src="img/man2.jpg" alt="" class="advantages-ooo__one-img">
 					</div>
 				</div>
+				<div class="advantages-ooo__online advantages-ooo__online--mobile">
+					<button type="button" class="advantages-ooo__online-btn jscallback">Заказать онлайн</button>
+					<div class="advantages-ooo__online-text">Оставьте заявку и менеджер проконсультирует о схеме работы</div>
+				</div>
 			</div>
 		</section>
-		<%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %> -->
 		<section class="tariff-ooo" >
 			<div class="tariff-ooo__wrapper">
-				<div class="tariff-ooo__title" id="tariff">Стоимость регистрации ООО</div>
+				<div class="tariff-ooo__title" id="tariff">Стоимость регистрации ИП</div>
 				<div class="tariff-ooo__description">Варьируется в зависимости от необходимого вам набора услуг</div>
-				<form class="calc-ooo">
-					<div class="calc-ooo__part calc-ooo__part--border-right">
-						<div class="calc-ooo__title">Выберите опции:</div>
-						<div class="calc-ooo__group calc-ooo__group--top">
-							<label for="num_uch">Количество учредителей:</label><br>
-							<div  class="number">
-								<input type="text" id="num_uch" value="2">
-								<span class="top" id="uch_plus"></span>
-								<span class="bottom" id="uch_minus"></span>
-							</div>
-						</div>
-						<div class="calc-ooo__group">
-							<input type="checkbox" name="" value="" id="address"><span></span>
-							<label for="address">Нужен юридический адрес</label>
-						</div>
-						<div class="calc-ooo__group">
-							<input type="checkbox" name="" value="" id="foreign"><span></span>
-							<label for="foreign">Учредители - иностранцы</label>
-						</div>
-						<div class="calc-ooo__group calc-ooo__group--border">
-							<input type="checkbox" name="" value="" id="account"><span></span>
-							<label for="account">Расчетный счет НЕ в банке-партнере</label>
-						</div>
-						<div class="calc-ooo__group">
+				<div class="tariff-ooo__discount">Акция! При заключении договора на бухгалтерское обслуживание - откроем ИП под ключ БЕСПЛАТНО!</div>
+				<form class="calc-ip">
+					<div class="calc-ip__part calc-ip__part--border-right">
+						<div class="calc-ip__title">Выберите опции:</div>
+						<!-- <div class="calc-ip__group calc-ip__group--top">
 							<input type="checkbox" name="" value="" id="usn"><span></span>
 							<label for="usn">Переход на УСН/ЕНВД</label>
+						</div> -->
+						<div class="calc-ip__group calc-ip__group--top">
+							<!-- <button type="button" class="btn-calc">Рассчитать</button> -->
+							<input type="checkbox" name="" value="" id="onlydocs" checked disabled><span></span>
+							<label for="onlydocs">Подготовка документов</label>
 						</div>
-						<div class="calc-ooo__group calc-ooo__group--border">
+						<div class="calc-ip__group">
+							<input type="checkbox" name="" value="" id="ifns"><span></span>
+							<label for="ifns">Регистрация в ИФНС + расчетный счет</label>
+						</div>
+						<div class="calc-ip__group calc-ip__group--border">
 							<input type="checkbox" name="" value="" id="stamp"><span></span>
 							<label for="stamp">Изготовление печати</label>
 						</div>
-						<div class="calc-ooo__group">
-							<!-- <button type="button" class="btn-calc">Рассчитать</button> -->
-							<input type="checkbox" name="" value="" id="onlydocs"><span></span>
-							<label for="onlydocs">Только подготовка документов</label>
+						<div class="calc-ip__group">
+							<input type="checkbox" name="" value="" id="account"><span></span>
+							<label for="account">Расчетный счет НЕ в банке-партнере</label>
 						</div>
 					</div>
-					<div class="calc-ooo__part calc-ooo__part--border-right">
-						<div class="calc-ooo__title">Расчет с пояснениями:</div>
-						<div class="cal-ooo__tariff">Стоимость: <span id="calc_result">6 500</span><span class="cal-ooo__currency">  руб.</span></div>
-						<div class="cal-ooo__details">
+					<div class="calc-ip__part calc-ip__part--border-right">
+						<div class="calc-ip__title">Расчет с пояснениями:</div>
+						<div class="calc-ip__tariff">Стоимость: <span id="calc_result">1 500</span><span class="calc-ooo__currency">  руб.</span></div>
+						<div class="calc-ip__details">
 							В стоимость входит:
-							<ul class="cal-ooo__list">
-								<li class="cal-ooo__action" id="consultText">Консультация Юриста и Бухгалтера;</li>
-								<li class="cal-ooo__action cal-ooo__action--hide" id="addressText">Предоставление юридического адреса;</li>
-								<li class="cal-ooo__action">Подготовка полного пакета документов для регистрациии ООО;</li>
-								<li class="cal-ooo__action" id="ifnsText">Сдача и получение документов в ИФНС;</li>
-								<li class="cal-ooo__action" id="accountPartnerText">Открытие расчетного счета в банке-партнере;</li>
-								<li class="cal-ooo__action cal-ooo__action--hide" id="accountText">Открытие расчетного счета в любом банке;</li>
-								<li class="cal-ooo__action cal-ooo__action--hide" id="usnText">Переход ООО на УСН/ЕНВД;</li>
-								<li class="cal-ooo__action cal-ooo__action--hide" id="stampText">Изготовление печати;</li>
+							<ul class="calc-ip__list">
+								<li class="calc-ip__action">Подготовка полного пакета документов для регистрации ИП;</li>
+								<li class="calc-ip__action calc-ip__action--hide" id="consultText">Консультация Юриста и Бухгалтера;</li>
+								<li class="calc-ip__action calc-ip__action--hide" id="ifnsText">Сдача и получение документов в ИФНС;</li>
+								<li class="calc-ip__action calc-ip__action--hide" id="accountPartnerText">Открытие расчетного счета в банке-партнере;</li>
+								<li class="calc-ip__action calc-ip__action--hide" id="accountText">Открытие расчетного счета в любом банке;</li>
+								<li class="calc-ip__action calc-ip__action--hide" id="usnText">Перевод ИП на УСН/ЕНВД;</li>
+								<li class="calc-ip__action calc-ip__action--hide" id="stampText">Изготовление печати;</li>
 							</ul>
-							<p class="cal-ooo__comment">Дополнительно оплачиваются госпошлина за открытие ООО (4 000 руб.) и, при необходимости, нотариальные услуги.</p>
+							<p class="calc-ip__comment">Дополнительно оплачиваются госпошлина за открытие ИП (800 руб.) и, при необходимости, нотариальные услуги.</p>
 						</div>
 					</div>
-					<div class="calc-ooo__part">
-						<div class="calc-ooo__title">Заявка на консультацию:</div>
-						<div class="calc-ooo__lead">Оставьте заявку на бесплатную консультацию:</div>
-						<div class="calc-ooo__group calc-ooo__group--lead calc-ooo__group--error" >
+					<div class="calc-ip__part calc-ip__part--lead">
+						<div class="calc-ip__title">Заявка на консультацию:</div>
+						<div class="calc-ip__lead">Оставьте заявку на бесплатную консультацию:</div>
+						<div class="calc-ip__group calc-ip__group--lead" id="for-name">
 							<label for="name">Как к Вам обращаться?<sup>*</sup></label><br>
 							<input type="text" name="" value="" id="name">
 						</div>
-						<div class="calc-ooo__group calc-ooo__group--lead calc-ooo__group--error">
+						<div class="calc-ip__group calc-ip__group--lead" id="for-phone">
 							<label for="phone">Номер телефона<sup>*</sup></label><br>
 							<input type="text" name="" value="" id="phone">
 						</div>
-						<div class="calc-ooo__group calc-ooo__group--lead calc-ooo__group--error">
-							<label for="mail">Ваш электронный адрес<sup>*</sup></label><br>
+						<!-- <div class="calc-ip__group calc-ip__group--lead">
+							<label for="mail">Ваш электронный адрес</label><br>
 							<input type="text" name="" value="" id="mail">
-						</div>
-						<button type="submit" class="btn-lead">Отправить</button>
+						</div> -->
+						<p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="/terms.html" target="_blank">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
+						<div id="sendleaderror"></div>
+						<button type="submit" class="btn-lead" id="sendlead">Отправить</button>
 					</div>
 				</form>
 			</div>
@@ -188,79 +180,112 @@
 				<div class="banks__title">Мы рекомендуем</div>
 				<div class="banks__description">Партнеры, с которыми мы сотрудничаем и которых мы рекомендуем своим клиентам</div>
 				<div class="banks__list">
-					<div class="banks__list-half">
-						<script type="text/javascript" charset="utf-8" src="js/edge_includes/edge.6.0.0.min.js"></script>
-						<style>.edgeLoad-EDGE-952087221 { visibility:hidden; }</style>
-						<script>
-							AdobeEdge.loadComposition('js/edge_includes/240x400', 'EDGE-952087221', {
-								scaleToFit: "none",
-								centerStage: "none",
-								minW: "0px",
-								maxW: "undefined",
-								width: "240px",
-								height: "400px"
-							}, {"dom":{}}, {"dom":{}});
-						</script>
-						<div id="Stage" class="EDGE-952087221"></div>
+					<div class="banks__list-half banks__list-half--left">
+						<div id="Stage" class="EDGE-952087221">
+							<a href="https://alfabank.ru/sme/quick/invitation/?code=ROSVERRESH" target="_blank"><img src="img/banner_alfa.jpg" alt=""></a>
+						</div>
 						<div class="alfa">
 							<div class="alfa__title">Оставьте заявку на открытие счета в Альфа-Банке в удобное время</div>
 							<ul class="alfa__advantages">
 								<li class="alfa__advantage">Высокое качество обслуживания</li>
 								<li class="alfa__advantage">Выгодные условия открытия счета</li>
-								<li class="alfa__advantage">Еще что-то</li>
 							</ul>
-							<button type="button" class="btn-alfa">Открыть счет</button>
+							<a href="https://alfabank.ru/sme/quick/invitation/?code=ROSVERRESH" target="_blank" class="btn-alfa">Открыть счет</a>
 						</div>
 					</div>
-					<div class="banks__list-half">
+					<div class="banks__list-half banks__list-half--right">
 						<div class="banks__list-title">Наши партнеры:</div>
-						<div class="banks__logo"><img src="img/bank_open.png" alt=""></div>
-						<div class="banks__logo"><img src="img/bank_alfa.png" alt=""></div>
-						<div class="banks__logo"><img src="img/bank_vtb.png" alt=""></div>
-						<div class="banks__logo"><img src="img/bank_rosbank.png" alt=""></div>
+						<div class="banks__logo  banks__logo--sber"><img src="img/bank_sber.svg" alt=""></div>
+						<div class="banks__logo"><img src="img/bank_vozr.png" alt=""></div>
+						<div class="banks__logo"><img src="img/bank_psb.png" alt=""></div>
+						<div class="banks__logo"><img src="img/bank_raif.png" alt=""></div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %> -->
 		<section class="faq-ooo">
 			<div class="faq-ooo__title">Ответы на частые вопросы</div>
-			<div class="faq-ooo__description">Если вы не найдете ответ на свой вопрос, то вы можете <a href="#">заказать консультацию</a> и мы свяжемся с вами в близжайшее время</div>
+			<div class="faq-ooo__description">Если вы не найдете ответ на свой вопрос, то вы можете <a href="#" class="jscallback">заказать консультацию</a> и мы свяжемся с вами в ближайшее время</div>
 			<div class="faq-ooo__list">
 				<div class="faq-ooo__item">
-					<div class="faq-ooo__question">Нужен ли Нотариус?</div>
+					<div class="faq-ooo__question">Какие документы нужны для регистрации ИП?</div>
 					<div class="faq-ooo__answer">
-						<p>Нет, наши специалисты избавят Вас от лишних нотариальных расходов.</p>
-						<p>Услуги нотариуса понадобятся только в том случае, когда сбором документов и подачей заявления занимается доверенное лицо, а не непосредственно учредитель.</p>
-						<p>Стоимость нотариальных расходов (заверение заявления с единственным учредителем + доверенность) составляет примерно 4 000 - 6 000 рублей.</p>
+						<p>Если Вы обращаетесь к нам за помощью в регистрации ИП, то понадобится только паспорт и ИНН. Все остальное мы возьмем на себя. В случае самостоятельной регистрации индивидуального предпринимателя Вам потребуется заполнить заявление по форме № Р21001, оплатить пошлину 800р. и принести копию паспорта.</p>
+						<p>Внимание! Любая ошибка при предоставлении и оформлении документов приведет к отказу в регистрации ИП.</p>
 					</div>
 				</div>
 				<div class="faq-ooo__item">
-					<div class="faq-ooo__question">Возможно ли открыть ООО иностранцу?</div>
+					<div class="faq-ooo__question">Какие документы вы получите после оформления ИП?</div>
 					<div class="faq-ooo__answer">
-						<p>Нет, наши специалисты избавят Вас от лишних нотариальных расходов.</p>
-						<p>Услуги нотариуса понадобятся только в том случае, когда сбором документов и подачей заявления занимается доверенное лицо, а не непосредственно учредитель.</p>
-						<p>Стоимость нотариальных расходов (заверение заявления с единственным учредителем + доверенность) составляет примерно 4 000 - 6 000 рублей.</p>
+						<p>Как только процедура открытия ИП будет закончена, а Вы об этом будете уведомлены, на руки Вы получите следующие бумаги:</p>
+						<ul>
+							<li>Свидетельство о госрегистрации индивидуального предпринимателя</li>
+							<li>Лист записи, подтверждающий внесение данных в госреестр ИП (ЕГРИП).</li>
+						</ul>
 					</div>
 				</div>
 				<div class="faq-ooo__item">
-					<div class="faq-ooo__question">Обязательна ли печать ООО?</div>
+					<div class="faq-ooo__question">Как выбрать коды ОКВЭД?</div>
 					<div class="faq-ooo__answer">
-						<p>Нет, наши специалисты избавят Вас от лишних нотариальных расходов.</p>
-						<p>Услуги нотариуса понадобятся только в том случае, когда сбором документов и подачей заявления занимается доверенное лицо, а не непосредственно учредитель.</p>
-						<p>Стоимость нотариальных расходов (заверение заявления с единственным учредителем + доверенность) составляет примерно 4 000 - 6 000 рублей.</p>
+						<p>В зависимости от деятельности, которую будет вести ИП, можно выбрать любое количество кодов ОКВЭД, используя общероссийский классификатор ОКВЭД ОК 029-2001 (КДЕС Ред. 1).</p>
+						<p>Если Вы обращаетесь к нам за помощью, то необходимые коды ОКВЭД мы подберем сами при подготовке документов для регистрации ИП.</p>
 					</div>
 				</div>
 				<div class="faq-ooo__item">
-					<div class="faq-ooo__question">Можно ли использовать домашний адрес?</div>
+					<div class="faq-ooo__question">Нужен ли нотариус для регистрации ИП?</div>
 					<div class="faq-ooo__answer">
-						<p>Нет, наши специалисты избавят Вас от лишних нотариальных расходов.</p>
-						<p>Услуги нотариуса понадобятся только в том случае, когда сбором документов и подачей заявления занимается доверенное лицо, а не непосредственно учредитель.</p>
-						<p>Стоимость нотариальных расходов (заверение заявления с единственным учредителем + доверенность) составляет примерно 4 000 - 6 000 рублей.</p>
+						<p>Нотариальное удостоверение документов необходимо только в одном случае – если их будет сдавать не будущий предприниматель, а его представитель. Стоимость нотариальных расходов (заверение заявления + доверенность) составляет примерно 2000 - 3000 рублей.</p>
+						<p>В нашей компании мы поможем Вам открыть ИП без лишних нотариальных расходов.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Где открыть ИП?</div>
+					<div class="faq-ooo__answer">
+						<p>Индивидуальный предприниматель оформляется по месту регистрации (жительства) физического лица. На текущий момент, функция регистрирующего органа передана от районных инспекций межрайонным инспекциям федеральной налоговой службы (единым регистрационным центрам). Регистрация ИП в Ростове-на-Дону осуществляется МИФНС №26, расположенной по адресу пр. Кировский, 100/74 (в непосредственной близости от офиса нашей компании).</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Выбор системы налогообложения</div>
+					<div class="faq-ooo__answer">
+						<p>В обязательном порядке, после регистрации, любой ИП находится на общей системе уплаты налогов (ОСНО). В течение месяца руководитель ИП может перейти на любой из подходящих ему видов упрощенной системы налогообложения. Для этого необходимо подать заявление в налоговую. Варианты для ИП:</p>
+						<ul>
+							<li>«Упрощенка» (УСН) с объектом налогообложения «Доходы» — 6% налог.</li>
+							<li>УСН с объектом «Доходы минус расходы» — 10% налог</li>
+							<li>УСН с получением патента (для некоторых видов деятельности)</li>
+							<li>ЕНДВ – налог на вмененный доход.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как открыть ИП, если прописан в другом регионе?</div>
+					<div class="faq-ooo__answer">
+						<p>Наша компания организовывает регистрацию ИП в другом регионе (либо наоборот в Ростове-на-Дону, если Вы проживаете в другом городе), обеспечивая необходимый документооборот с помощью курьеров и юридическую поддержку в процессе регистрации. Вам не придется никуда ехать!</p>
+						<p>Отличный вариант для тех, кто хочет зарегистрировать ИП, но проживает не по прописке и далеко от своего региона.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как открыть ИП иностранным гражданам?</div>
+					<div class="faq-ooo__answer">
+						<p>Для иностранных граждан возможность зарегистрироваться, как индивидуальный предприниматель, ограничена. Если у вас есть вид на жительство (ВНЖ) или разрешение на временное проживание (РВП), то возможность работать в России как ИП Вам дана законодательно. Прочие категории иностранных граждан могут создать на территории РФ ООО.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Что необходимо сделать после регистрации ИП?</div>
+					<div class="faq-ooo__answer">
+						<p>Впереди тщательная работа по правильному налоговому исчислению, поскольку регулярно ждать от Вас взносы будет пенсионный Фонд и Фонд социального страхования, и многие другие. Кроме того, ИП обязан сдавать в срок несколько вариантов отчетности, в зависимости от выбранной системы налогообложения.</p>
+						<p>Наши специалисты гарантируют бесплатную информационную поддержку и подробные консультации по всем этапам работы ИП и ведения документации.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Взносы ИП в ФСС и ПФР</div>
+					<div class="faq-ooo__answer">
+						<p>Пенсионный фонд и Фонд соцстрахования должны получать выплаты от ИП, несмотря на его работу или ее отсутствие. Это обязательные налоги, которые придется платить, даже если Вы работаете «в минус».</p>
+						<p>При «упрощенке» можно уменьшать сумму налога, если включить в него налоги в ПФР и ФСС. Правильно сделать это уменьшение помогут специалисты нашей организации.</p>
 					</div>
 				</div>
 			</div>
-			<button type="button" class="btn-faq">Заказать консультацию</button>
+			<button type="button" class="btn-faq jscallback">Заказать консультацию</button>
 		</section>
 		<%= require('html-loader?attrs=false&minimize=false!./common/invitation.html') %>
 <%= require('html-loader?attrs=false&minimize=false!./common/footer.html') %>

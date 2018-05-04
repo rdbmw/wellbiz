@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<%= require('html-loader?attrs=false&minimize=false!./common/assets.html') %>
+</head>
+<%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
+		<section class="top-block top-block--izm">
+			<div class="top-block__wrapper">
+				<div class="top-block__left">
+					<img src="img/izmdecor.png" alt="" class="top-block__decoration">
+					<div class="top-block__details">
+						<h1 class="top-block__title">Внесение изменений в документы юридических лиц<span>От изменений в Устав до Купли-Продажи компании</span></h1>
+						<div class="top-block__description">Если у Вас возникла необходимость внесения изменений в документы, то во избежание ошибок, обратитесь за помощью к нашим специалистам</div>
+					</div>
+					<img src="img/womanizm.png" alt="" class="top-block__img">
+				</div>
+				<div class="top-block__right">
+					<div class="top-block__title-right">Нужно внести несколько изменений в документы?</div>
+					<div class="top-block__description-right">Мы готовы рассмотреть ваш случай индивидуально! И мы сделаем вам скидку!</div>
+					<button type="button" class="top-block__btn jscallback">Получить скидку</button>
+					<div class="top-block__decoration-right">%</div>
+				</div>
+			</div>
+		</section>
+		<section class="egrul">
+			<h2 class="egrul__slogan">Вы не знаете какие изменения нужны в Вашем случае?</h2>
+			<p class="egrul__description">Все события в жизни компании можно разделить на два случая:</p>
+			<div class="egrul__variants">
+				<div class="egrul__left">
+					<div class="egrul__variant">Изменения только в ЕГРЮЛ</div>
+					<div class="egrul__details">Регистрацию изменений в ЕГРЮЛ проводить нужно, но при этом нет необходимости вносить изменения в учредительные документы организации, если произошло любое из следующих событий: сменился руководитель (директор) общества, изменился размер долей участников, изменился состав участников или акционеров, изменились виды деятельности, произошел переход долей обществу либо распределение обществом своих долей среди участников.</div>
+				</div>
+				<div class="egrul__right">
+					<div class="egrul__variant">Изменения и в ЕГРЮЛ и в учредительных документах</div>
+					<div class="egrul__details">Это более сложная процедура, требующая максимальной ответственности и формирование более объемного пакета документов. Внести изменения в учредительные документы нужно, если произошло одно из следующих событий: компания изменила название, изменился размер уставного капитала, изменился юридический адрес и он указан в Уставе или другие значительные изменения данных, содержащихся в Уставе Общества.</div>
+				</div>
+			</div>
+		</section>
+	<section class="izm-cases">
+		<h2 class="izm-cases__title">Список типовых ситуаций</h2>
+		<div class="izm-cases__list">
+			<div class="izm-case">
+				<div class="izm-case__title">Смена названия ООО</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">Если вы решили изменить бренд компании, род деятельности или при прочих возможных обстоятельствах - не обязательно открывать новую организацию. Можно сменить наименование действующей организации и продолжить работу.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 13001, Устав, квитанция на оплату госпошлины.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: 800руб.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Лист записи о смене названия, Устав (новый), ОГРН/ИНН.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Оплата госпошлины</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Смена директора ООО</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">Смену директора в компании производят учредители по различным причинам: срок трудового договора подошёл к концу, текущий директор не справляется с обязанностями или, наоборот, злоупотребляет ими, кто-то из учредителей был директором, но решил взять наемного сотрудника, смерть директора и пр.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН нового директора.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 14001.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение или протокол о смене директора, Лист записи о смене директора.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Изменение Устава ООО</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">Изменение устава общества может понадобиться в разных ситуациях. Приведение в соответствие текущему законодательству, смена региона деятельности ООО, отражение специфических договоренностей между учредителями по управлению обществом и т.п.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 13001, Устав или лист изменений к Уставу, квитанция на оплату госпошлины.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: 800руб.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение или протокол о внесении изменений, Лист записи, Устав (новый).</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Оплат госпошлины</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Добавление ОКВЭД для ИП</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">При расширении направлений деятельности ИП необходимо привести в соответствие перечень ОКВЭД, зарегистрированных в ЕГРЮЛ.
+						<ul>
+							<li>Необходимые документы: ОГРНИП, Паспорт и ИНН директора.</li>
+							<li>Подготавливаемые документы: форма 24001.</li>
+							<li>Срок подготовки пакета документов: 1 час.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: не требуется.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Лист записи о добавлении ОКВЭД.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Добавление ОКВЭД для ООО (без изменения основного кода)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">При расширении направлений деятельности ООО необходимо привести в соответствие перечень ОКВЭД, зарегистрированных в ЕГРЮЛ.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 14001.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение или протокол об изменении ОКВЭД, Лист записи о добавлении ОКВЭД.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Добавление ОКВЭД для ООО (с изменением основного кода)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">При расширении направлений деятельности ООО необходимо привести в соответствие перечень ОКВЭД, зарегистрированных в ЕГРЮЛ.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 13001, Устав, квитанция на оплату госпошлины.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: 800руб.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение или протокол об изменении ОКВЭД, Лист записи о добавлении ОКВЭД, Устав (новый).</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Оплата госпошлины</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Смена юридического адреса ООО (внутри муниципалитета без изменения Устава)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">В случае изменения юридического адреса необходимо предварительно проанализировать географию переезда компании и формулировки в учредительных документах. От этого может зависеть процедура внесения изменений. Самый простой случай - переезд внутри района, при этом в Уставе прописан только город.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора, договор аренды.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 14001.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение или Протокол о смене юридического адреса, Лист записи, Свидетельство о постановке на учет при смене районной налоговой.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Смена юридического адреса ООО (внутри муниципалитета с изменением Устава)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">В случае изменения юридического адреса необходимо предварительно проанализировать географию переезда компании и формулировки в учредительных документах. От этого может зависеть процедура внесения изменений. Если в Уставе прописан юридический адрес, то необходимо дополнительно внести изменения в Устав.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора, договор аренды.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 14001, Устав, квитанция на оплату госпошлины.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: 800руб.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение или протокол о смене юридического адреса, Лист записи, Устав (новый).</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Оплата госпошлины</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Смена юридического адреса ООО (другой муниципалитет/регион)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">В случае изменения юридического адреса необходимо предварительно проанализировать географию переезда компании и формулировки в учредительных документах. От этого может зависеть процедура внесения изменений.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора, договор аренды.</li>
+							<li>Подготавливаемые документы: Решения/Протоколы, формы 14001 и 13001, Устав, квитанция на оплату госпошлины.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: 800руб.</li>
+							<li>Нотариальное заверение: от 3000руб. (заверение 2х форм)</li>
+							<li>Срок регистрации изменений в налоговом органе: 31 рабочий день (1й этап - 5 дней, перерыв 21 день, 2й этап - 5 дней).</li>
+							<li>Итоговые документы: Решение или протокол о смене юридического адреса, Листы записи, Устав (новый), Свидетельство о постановке на учет.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+							<div class="izm-case__schema-step">Ожидаем 21 день</div>
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Оплата госпошлины</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Увеличение (Уменьшение) уставного капитала ООО</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">Минимальный размер уставного капитала для ООО - 10&nbsp;000руб. Изменение размера уставного капитала может быть связано с открытием нового направления деятельности и требованиями законодательства. Так же при изменении состава учредителей возможно как увеличение уставного капитала ООО, так и его уменьшение при условии соответствия минимальному размеру УК ООО.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 13001, Устав, квитанция на оплату госпошлины.</li>
+							<li>Срок подготовки пакета документов: 2-5 часов.</li>
+							<li>Оплата госпошлины: 800руб.</li>
+							<li>Нотариальное заверение: Решение/Протокол от 5 000 рублей, форма 13001 от 1500 рублей.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение или протокол об изменении уставного капитала, Лист записи, Устав (новый).</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Оплат госпошлины</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Купля-Продажа ООО (нотариальная сделка)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">Изменение участников ООО зачастую является хорошей альтернативой ликвидации ООО, если удается найти покупателей. Кроме того нередки случаи, когда привлекая инвесторов для развития компании, обязательном условием получения финансирования является продажа доли в компании инвесторам.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора, Паспорт продавца, Паспорт покупателя.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, форма 14001.</li>
+							<li>Срок подготовки пакета документов: 3-5 часов.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: от 25000 рублей (нотариальная сделка).</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Лист записи.</li>
+						</ul>
+				</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Оформление сделки у нотариуса</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Купля-Продажа ООО (через ввод-вывод участника с увеличением УК)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора, Паспорт учредителя, Паспорт покупателя.</li>
+							<li>Подготавливаемые документы: Решения/Протоколы, Заявление о выходе участника, Заявление о вводе участника, формы 14001 и 13001, Устав, квитанция на оплату госпошлины.</li>
+							<li>Срок подготовки пакета документов: 3-5 часов.</li>
+							<li>Оплата госпошлины: 800руб.</li>
+							<li>Нотариальное заверение: от 12000 рублей (Решение/Протокол от 5 000 рублей, заявления о выходе/вводе участника от 2 000 рублей, формы от 1500руб.).</li>
+							<li>Срок регистрации изменений в налоговом органе: 10 рабочих дней.</li>
+							<li>Итоговые документы: Договор купли-продажи, Решения/Протоколы, Листы записи</li>
+						</ul>
+				</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Оплат госпошлины</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Купля-Продажа доли, принадлежащей Обществу</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН покупателя, Паспорт и ИНН директора.</li>
+							<li>Подготавливаемые документы: Договор купли-продажи, Решение/Протокол, форма 14001.</li>
+							<li>Срок подготовки пакета документов: 1-2 часов.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Договор купли-продажи, Решение/Протокол, Лист записи.</li>
+						</ul>
+				</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Выход  участника из Общества</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">Одна из самых распространенных причин - добровольный выход одного из участников общества. При этом соответствующая доля ООО передается Обществу.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора.</li>
+							<li>Подготавливаемые документы: Заявление о выходе участника, форма 14001, Решение/Протокол. </li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: заявление о выходе участника от 2 000 рублей, форма 14001 от 1500 рублей.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение/Протокол, Лист записи.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Распределение долей с Общества на участника</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора</li>
+							<li>Подготавливаемые документы: форма 14001, Решение/Протокол.</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: от 1500руб.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Решение/Протокол, Лист записи.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение пакета документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Восстановление Уставных документов</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">
+						<ul>
+							<li>Необходимые документы: Паспорт и ИНН учредителя, Паспорт и ИНН директора, ОГРН/ИНН/КПП</li>
+							<li>Подготавливаемые документы:  Решение/Протокол, формы для восстановления документов.</li>
+							<li>Срок подготовки пакета документов: 3 часа.</li>
+							<li>Оплата госпошлины: в зависимости от перечня восстанавливаемых документов.</li>
+							<li>Нотариальное заверение: не требуется.</li>
+							<li>Срок регистрации изменений в налоговом органе: 10 рабочих дней.</li>
+							<li>Итоговые документы: ОГРН/ИНН, Устав (копия), Решение/ Протокол, Приказ на директора, Лист записи.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Внесение записи о недостоверности сведений в ЕГРЮЛ (по участнику)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">
+						<ul>
+							<li>Необходимые документы: Заявление о выходе; ОГРН, ИНН, Устав </li>
+							<li>Подготавливаемые документы: Заявление</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: не требуется.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Лист записи.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Внесение записи о недостоверности сведений в ЕГРЮЛ (по директору)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав</li>
+							<li>Подготавливаемые документы: Заявление</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: не требуется.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Лист записи.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Внесение записи о недостоверности сведений в ЕГРЮЛ (по юридическому адресу)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав</li>
+							<li>Подготавливаемые документы: Заявление</li>
+							<li>Срок подготовки пакета документов: 1-2 часа.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: не требуется.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Лист записи.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Вступление в наследство</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">При смерти участника общества его доля переходит наследникам. Чтобы наследники вступили в законное право учреждения компанией, необходимо собрать документы по наследству, зарегистрировать изменения в налоговом органе и продолжать рабочий процесс.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора</li>
+							<li>Подготавливаемые документы: форма 14001, Решение/Протокол.</li>
+							<li>Срок подготовки пакета документов: 2-5 часов.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: от 1500 рублей.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Лист записи о внесении изменений.</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Дарение ООО (Дарение доли в ООО)</div>
+				<div class="izm-case__details">
+					<div class="izm-case__parameters">
+						<div class="izm-case__parameter izm-case__parameter--true">Изменение ЕГРЮЛ</div>
+						<div class="izm-case__parameter">Изменение учредительных документов</div>
+					</div>
+					<div class="izm-case__description">Если у вас есть компания и вы хотите передать ее родственнику, не обязательно пользоваться услугой купли-продажи ООО. Можно совершить дарение ООО.
+						<ul>
+							<li>Необходимые документы: ОГРН, ИНН, Устав, Паспорт и ИНН директора, Паспорт и ИНН дарителя, Паспорт и ИНН получателя.</li>
+							<li>Подготавливаемые документы: Решение/Протокол, согласие двух сторон (дарителя и получателя), согласие заинтересованных сторон, нотариально заверенный договор, форма 14001.</li>
+							<li>Срок подготовки пакета документов: 2-5 часов.</li>
+							<li>Оплата госпошлины: не требуется.</li>
+							<li>Нотариальное заверение: договор дарения от 3 000 рублей, форма 14001 от 1500 рублей.</li>
+							<li>Срок регистрации изменений в налоговом органе: 5 рабочих дней.</li>
+							<li>Итоговые документы: Лист записи о внесении изменений</li>
+						</ul>
+					</div>
+					<div class="izm-case__schema">
+						<div class="izm-case__schema-title">Пошаговая инструкция:</div>
+						<div class="izm-case__schema-steps">
+							<div class="izm-case__schema-step">Подготовка пакета документов</div>
+							<div class="izm-case__schema-step">Заверение пакета документов у нотариуса</div>
+							<div class="izm-case__schema-step">Подача и получение документов в ИФНС</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+		<section class="izm-attention">
+			<div class="izm-attention__decor">!</div>
+			<div class="izm-attention__details">
+				<div class="izm-attention__title">Внимание!</div>
+				<div class="izm-attention__description">Процедура внесения изменений требует особого внимания и ответственности. Чтобы избежать отказа, поручите эту процедуру профессиональным юристам с большим опытом в данном направлении.<br><br>Это позволит сократить финансовые издержки, которые могут появиться в случае ошибок.</div>
+			</div>
+			<div class="izm-attention__action">
+				<div class="izm-attention__action-title">Мы будем рады сотрудничеству с Вами!</div>
+				<button type="button" class="izm-attention__btn jscallback">Заказать консультацию</button>
+			</div>
+		</section>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %> -->
+		<section class="tariff-ooo tariff-ooo--buh" >
+			<div class="tariff-ooo__wrapper">
+				<div class="tariff-ooo__title" id="tariff">Стоимость внесения изменений</div>
+				<div class="tariff-ooo__description">Варьируется в зависимости от типа и количества необходимых операций.</div>
+				<div class="tariff-ooo__discount">Внимание! При необходимости внесения нескольких изменений - предоставляем скидки!</div>
+				<form class="calc-izm">
+					<div class="calc-ip__part calc-ip__part--border-right">
+						<div class="calc-ip__title">Не знаете какие изменения нужны?</div>
+						<div class="calc-ip__details">
+							Если вы не знаете как оформить изменения в документах вашей компании, то вы можете оставить заявку на консультацию с юристом. <br><br>Мы бесплатно проанализируем вашу ситуацию и:
+							<ul>
+								<li>подберем оптимальную схему внесения изменений,</li>
+								<li>рассчитаем стоимость услуг,</li>
+								<li>обозначим сроки регистрации.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="calc-ip__part calc-ip__part--border-right">
+						<div class="calc-ip__title">Стоимость внесения изменений:</div>
+						<div class="calc-ip__tariff">Цена от: <span id="calc_result">3&nbsp;000</span><span class="calc-ooo__currency">руб.</span></div>
+						<div class="calc-ip__details">
+							В стоимость входит:
+							<ul class="calc-ip__list">
+								<li class="calc-ip__action">исчерпывающая консультация по рассматриваемым вопросам;</li>
+								<li class="calc-ip__action">подготовка комплекта документов и проверка их на соответствие законодательству;</li>
+								<li class="calc-ip__action">подача специалистами документов в соответствующую инстанцию и получение листа записи из ЕГРЮЛ о внесении изменений в сведения о юридическом лице.</li>
+							</ul>
+							<p class="calc-ip__comment">Госпошлина и услуги нотраиуса в стоимость услуг не входят.</p>
+						</div>
+					</div>
+					<div class="calc-ip__part calc-ip__part--lead">
+						<div class="calc-ip__title">Заявка на бесплатную консультацию:</div>
+						<div class="calc-ip__lead">Оставьте заявку на бесплатную консультацию:</div>
+						<div class="calc-ip__group calc-ip__group--lead" id="for-name">
+							<label for="name">Как к Вам обращаться?<sup>*</sup></label><br>
+							<input type="text" name="" value="" id="name">
+						</div>
+						<div class="calc-ip__group calc-ip__group--lead" id="for-phone">
+							<label for="phone">Номер телефона<sup>*</sup></label><br>
+							<input type="text" name="" value="" id="phone">
+						</div>
+						<!-- <div class="calc-ip__group calc-ip__group--lead">
+							<label for="mail">Ваш электронный адрес</label><br>
+							<input type="text" name="" value="" id="mail">
+						</div> -->
+						<p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="/terms.html" target="_blank">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
+						<div id="sendleaderror"></div>
+						<button type="submit" class="btn-lead" id="sendlead">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %> -->
+		<!-- <section class="faq-ooo">
+			<div class="faq-ooo__title">Ответы на частые вопросы ???</div>
+			<div class="faq-ooo__description">Если вы не найдете ответ на свой вопрос, то вы можете <a href="#" class="jscallback">заказать консультацию</a> и мы свяжемся с вами в ближайшее время</div>
+			<div class="faq-ooo__list">
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Кто может не вести бухгалтерский учет?</div>
+					<div class="faq-ooo__answer">
+						<p>По закону только индивидуальные предприниматели, которые работают на УСН, либо применяют ЕНВД, могут не вести бухгалтерию в полном объеме. При этом они сохраняют за собой право пользоваться бланками бухгалтерской отчетности, например, при расчетах с контрагентами.</p>
+						<p>ИП на «Упрощенке» обязаны вести Книгу учета доходов и расходов, чтобы правильно выполнять свои налоговые обязательства.</p>
+						<p>ООО всегда ведут бухгалтерский учет в полном объеме с помощью штатного сотрудника либо сторонней организаций. Никаких исключений в этом случае нет.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какие штрафы за неправильное ведение учета?</div>
+					<div class="faq-ooo__answer">
+						<p>Если проверка налоговыми сотрудниками выявит нарушения в бухгалтерской документации и отчетности, то штрафные санкции будут наложены сразу: первое нарушение — 10 000, повторное — 30 000.</p>
+						<p>В том случае, если выявляются недочеты не за один отчетный период, штрафы могут быть намного выше. При этом, если проверяющие выяснят, что Вы своими действиями пытались снизить налоги и уменьшить налогооблагаемую базу, то в бюджет уйдет еще и 20% от суммы налога, который организация бы заплатила при правильном расчете. Эта сумма не может быть ниже 40 000.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Ежемесячное обслуживание или ежеквартальное?</div>
+					<div class="faq-ooo__answer">
+						<p>Ежемесячное бухгалтерское обслуживание – это возможность полностью отказаться от штатного бухгалтера, получив качественное обслуживание во всех бухгалтерских мелочах. В комплекс услуг входит полноценное ведение учета и обеспечение сдачи всей необходимой отчетности.</p>
+						<p>Ежеквартальное бухгалтерское сопровождение – Вы получаете грамотно подготовленную квартальную отчетность без ведения бухгалтерского учета. В этом режиме можно получить небольшие бухгалтерские услуги.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Во сколько обойдется ведение бухгалтерского учета?</div>
+					<div class="faq-ooo__answer">
+						<p>На консультации или во время заключения договора мы, совместно с Вами, рассчитываем объем бухгалтерских услуг, необходимых именно для Вашей организации. В итоговую сумму будет включены такие нюансы, как сфера деятельности предприятия, размер документооборота, режим используемой системы налогообложения. Наши цены приемлемы даже для малого бизнеса и гораздо выгоднее, чем найм штатного бухгалтера.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Что входит в полное ежемесячное обслуживание?</div>
+					<div class="faq-ooo__answer">
+						<p>Наша компания оказывает широкий спектр услуг по ведению бухгалтерского учета. Ежемесячно наши специалисты будут:</p>
+						<ul>
+							<li>формировать первичную документацию (счета-фактуры, акты, накладные и т.д.) с занесением их в базу 1С;</li>
+							<li>составлять и проводить платежные поручения;</li>
+							<li>рассчитывать и начислять заработную плату и дополнительные выплаты сотрудникам;</li>
+							<li>рассчитывать и проверять целесообразность налоговых выплат;</li>
+							<li>рассчитывать и проверять целесообразность налоговых выплат;</li>
+							<li>Обеспечивать индивидуальный подход и давать грамотные консультации по любому вопросу в рамках договора на оказание бухгалтерских услуг;</li>
+						</ul>
+						<p>Бонусом клиент получает подробные и полезные консультации по оптимизации налогообложения и законному уменьшению налогооблагаемой базы.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Можно ли ваши услуги учесть как расходы?</div>
+					<div class="faq-ooo__answer">
+						<p>Большинство наших клиентов, действительно, смогут с нами сэкономить еще и на налоге. Есть несколько вариантов:</p>
+						<ol>
+							<li>Если у Вас ОСН (общая система налогообложения), то сумму наших бухгалтерских услуг Вы включаете в затраты, перед тем, как рассчитать налог на прибыль (п.36 ст.264 НК РФ).</li>
+							<li>Для УСН «доходы минус расходы» услуги компании «Верные решения» включаются в расходы для расчета единого налога. (п. 15 ст. 346.16 НК РФ).</li>
+							<li>При УСН на 6% налогов только на доходы, расходы на бухгалтерское обслуживание не учитываются.</li>
+						</ol>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">А если начинается налоговая проверка?</div>
+					<div class="faq-ooo__answer">
+						<p>Наша компания полностью сопроводит налоговую проверку и обеспечит ее положительный результат. Вашего участия в этом процессе не потребуется, для специалистов «Верных решений» налоговая проверка – обычный рабочий момент, который не пугает, не вызывает паники, не стопорит нашу работу.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Кто возместит штрафные санкции?</div>
+					<div class="faq-ooo__answer">
+						<p>Наши специалисты полностью берут на себя ответственность за свою работу, но от ошибок или недочетов не застрахован никто. Если штрафы будут наложены из-за наших недочетов, то сумма штрафов и пеней будет возмещена Вам в полном объеме.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какие гарантии, что вы нас не бросите при проверке?</div>
+					<div class="faq-ooo__answer">
+						<p>Наша ответственность полностью оформлена договором на оказание услуг бухгалтерского учета. Более того, мы не боимся налоговых проверок, это обычные рабочие моменты. Если Вашу компанию преследуют незаконно или наложили необоснованные штрафные санкции, — специалисты ООО «Верные решения» представят Вас в суде и обжалуют незаконные решения налоговиков.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Какую ответственность вы несете?</div>
+					<div class="faq-ooo__answer">
+						<p>Если Вы перейдете к нам на бухгалтерское обслуживание, то, согласно договора, мы отвечаем финансово и юридически за все санкции, наложенные после проверки, если это произошло по нашей вине. Подробно наша ответственность описана в документации, оформляющей наши отношения (договор).</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как передавать первичную документацию?</div>
+					<div class="faq-ooo__answer">
+						<p>Мы предлагаем несколько вариантов передачи документации нашим специалистам, Вы можете выбрать подходящий: курьерская доставка; сканы документов по электронной почте; самостоятельная доставка бумаг в наш офис.</p>
+						<p>Все нюансы (вид доставки, периодичность, список необходимых документов) будут обговорены перед заключением договора об оказании бухгалтерских услуг и обязательно зафиксированы в документах. Гарантия сохранности документов и конфиденциальности информации также прописана в договоре.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Вы будете делать нам новую базу или возьмете нашу?</div>
+					<div class="faq-ooo__answer">
+						<p>Нашим специалистам необходимо предоставить Вашу базу для проверки. Если после тщательного анализа не будет выявлено никаких критичных проблем, недочетов или существенных ошибок, то возможна работа в Вашей базе. В том случае, если Ваша база не соответствует стандартам, — мы создаем новую, переносим все необходимое в нее (справочники, остатки, последние данные из Вашей отчетности) и приступаем к работе.</p>
+						<p>Тот же алгоритм работы действителен и если Вы вели бухгалтерию в любой другой программе, формирующей отчетность.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Как перейти к вам на бухгалтерское обслуживание?</div>
+					<div class="faq-ooo__answer">
+						<p>Очень просто, получите выгрузку из базы бухгалтерской программы, в которой ведется учет. Этого достаточно, чтобы мы начали бухгалтерское сопровождение Вашего бизнеса в полном объеме.</p>
+					</div>
+				</div>
+				<div class="faq-ooo__item">
+					<div class="faq-ooo__question">Нужно ли доплачивать за программу 1С?</div>
+					<div class="faq-ooo__answer">
+						<p>Общая сумма, которую Вы заплатите за обслуживание, прописана в договоре на услуги бухгалтерского учета с нашей организацией. Никаких дополнительных выплат или затрат у Вас не будет. Бухгалтерская программа также дополнительно не оплачивается.</p>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-faq jscallback">Заказать консультацию</button>
+		</section> -->
+		<%= require('html-loader?attrs=false&minimize=false!./common/invitation.html') %>
+<%= require('html-loader?attrs=false&minimize=false!./common/footer.html') %>

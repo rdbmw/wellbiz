@@ -1,20 +1,36 @@
 $point: calc(100%/3*2);
 
 .top-block {
-  background: linear-gradient(to right, #f3f4f2 $point, #ebebeb $point);
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, #f3f4f2 $point, #ebebeb $point);
+  }
 }
 
 .top-block__wrapper {
   @mixin container;
   display: flex;
+  flex-wrap:wrap;
 }
 
 .top-block__left {
   padding-top: 17px;
   background-color: #f3f4f2;
-  width: calc(100%/3*2);
+  width: calc(100%/3*3);
   display: flex;
   position: relative;
+  align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100%/3*2);
+  }
 }
 
 .top-block__decoration {
@@ -30,13 +46,32 @@ $point: calc(100%/3*2);
   margin-left: 6.5%;
   flex-shrink: 0;
   z-index: 1;
+  display:none;
+
+  @media (min-width: $tablet-width) {
+    display:block;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .top-block__details {
-  margin-top: 55px;
-  margin-left: 12.3%;
-  padding-right: 3%;
+  margin-top: 15px;
+  padding: 10px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-left: 10.3%;
+    padding: 0px;
+    padding-right: 3%;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+
 }
 
 .top-block__title {
@@ -46,12 +81,12 @@ $point: calc(100%/3*2);
   line-height: 33px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 19px;
 
   & span {
     /*font-family: 'Open Sans', sans-serif;*/
     font-size: 18px;
-    line-height: 33px;
+    line-height: 22px;
     font-weight: 700;
   }
 }
@@ -67,6 +102,7 @@ $point: calc(100%/3*2);
   margin: 0;
   padding: 0;
   margin-top: 15px;
+  margin-bottom: 5px;
   margin-right: 2%;
   list-style: none;
 }
@@ -87,13 +123,21 @@ $point: calc(100%/3*2);
 .top-block__right {
   padding-top: 17px;
   background-color: #ebebeb;
-  width: calc(100%/3*1);
+  width: calc(100%/3*3);
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100%/3*1);
+  }
 }
 
 .top-block__title-right {
   padding-right: 5%;
-  margin-top: 60px;
-  margin-left: 15%;
+  margin-top: 20px;
+  margin-left: 5%;
   color: $color-slider;
   font-size: 18px;
   line-height: 32px;
@@ -102,29 +146,70 @@ $point: calc(100%/3*2);
   & span {
     font-size: 24px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    margin-left: 15%;
+    display: block;
+  }
 }
 
 .top-block__description-right {
   padding-right: 5%;
-  margin-top: 30px;
-  margin-left: 15%;
+  margin-top: 10px;
+  margin-left: 5%;
   color: $color-slider;
   font-size: 14px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15%;
+  }
 
   & span {
     font-size: 16px;
     font-weight: 700;
   }
+
+  & div {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: baseline;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .top-block__btn {
   padding-right: 5%;
-  margin-top: 45px;
-  margin-left: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+
   @mixin btn;
   background-color: #ff5b5b;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 35%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-left: 15%;
+    margin-bottom: 0px;
+  }
 
   &:hover {
     background-color: #ed5353;

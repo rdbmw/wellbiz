@@ -8,10 +8,16 @@
   width: 100%;
   text-align: center;
   color: $color-slider;
-  font-size: 30px;
-  line-height: 25px;
-  font-weight: 400;
   margin-top: 50px;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 25px;
+  }
 }
 
 .infographic__description {
@@ -30,15 +36,40 @@
 
 .schema {
   width: 100%;
-  background: transparent url('../public/img/arrows.png') center 205px no-repeat;
+  display: flex;
+  background: transparent url('../public/img/arrows90.png') no-repeat;
+  background-position: 150px 78px;
+  background-size: auto 70%;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background: transparent url('../public/img/arrows.png') no-repeat;
+    background-position: center 220px;
+    background-size: 76% auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center 205px;
+    background-size: auto auto;
+  }
 }
 
 .schema__row1 {
-  width: 100%;
   display: flex;
+
   justify-content: space-between;
   align-items: flex-start;
   flex-shrink: 0;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+
 }
 
 .schema__row1-left, .schema__row1-center, .schema__row1-right {
@@ -53,20 +84,38 @@
 }
 
 .schema__row1-left {
-  margin-left: 7%;
-  width: 160px;
-  background: transparent url('../public/img/2man.png') 45px 0px no-repeat;
+  width: 150px;
+  background: transparent url('../public/img/2man.png') no-repeat;
+  background-position: 45px 0px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 7%;
+    width: 160px;
+    background-position: 45px 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .schema__row1-center {
-  width: 160px;
-  background: transparent url('../public/img/sheet.png') 45px 0px no-repeat;
+  width: 150px;
+  background: transparent url('../public/img/sheet.png') no-repeat;
+  background-position: 45px 0px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    background-position: 45px 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .schema__row1-right {
-  margin-right: 6%;
-  width: 180px;
-  background: transparent url('../public/img/manflag.png') 57px 0px no-repeat;
+  width: 150px;
+  background: transparent url('../public/img/manflag.png') no-repeat;
+  background-position: 57px 0px;
 
   & span {
     color: #616161;
@@ -74,15 +123,33 @@
     line-height: 19px;
     font-weight: 400;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6%;
+    width: 180px;
+    background-position: 57px 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+
 }
 
 .schema__row2 {
   margin-top: 5px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-shrink: 0;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .schema__row2-left, .schema__row2-right {
@@ -90,14 +157,51 @@
   font-size: 13px;
   line-height: 19px;
   font-weight: 400;
+  width: 150px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  & div {
+    color: #e64545;
+    margin-top: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 30px;
+    }
+  }
 }
 
 .schema__row2-left {
-  margin-left: 20.7%;
+  margin-left: 20px;
+  margin-top: 150px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: 12%;
+    margin-top: 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15%;
+  }
 }
 
 .schema__row2-right {
-  margin-right: 28%;
+  margin-left: 20px;
+  margin-bottom: 140px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 13%;
+  }
 }
 
 .schema__row3 {
@@ -129,13 +233,19 @@
 }
 
 .infographic__details {
-  padding: 0 20%;
-  margin-top: 35px;
+  padding: 0 3%;
+  margin-top: 15px;
   width: 100%;
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    padding: 0 20%;
+  }
 }
 
 .btn-do-calc {

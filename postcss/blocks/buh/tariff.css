@@ -1,0 +1,12 @@
+.tariff-ooo--buh {
+  & .calc-ip__group--flex {
+    display: flex;
+  }
+}
+
+.tariff_group-title  {
+  padding: 5px 0px 5px 30px;
+  &--border {
+    border-top: 1px solid #e2e2e2;
+  }
+}

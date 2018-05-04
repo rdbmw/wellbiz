@@ -1,6 +1,9 @@
 .invitation {
   padding-bottom: 20px;
-  background-color: #f7f7f7;
+  
+  @media (min-width: $tablet-width) {
+    background-color: #f7f7f7;
+  }
 }
 
 .invitation__wrapper {

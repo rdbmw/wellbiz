@@ -1,0 +1,103 @@
+.izm-attention {
+  @mixin container;
+  margin-top: 47px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.izm-attention__decor {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 3px solid #ff6e6e;
+    border-radius: 50%;
+    color: #ff6e6e;
+    font-size: 22px;
+    line-height: 54px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.izm-attention__details {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 7% 0 39px;
+    width: 51%;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 24.5% 0 39px;
+    width: 43%;
+  }
+}
+
+.izm-attention__title {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.izm-attention__description {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+.izm-attention__action {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 28%;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
+}
+
+
+
+.izm-attention__action-title {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
+  }
+}
+
+.izm-attention__btn {
+  @mixin btn;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #ff5b5b;
+  margin-top: 10px;
+  margin-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+
+  &:hover {
+    background-color: #ed5353;
+  }
+}

@@ -3,23 +3,21 @@ $transition-duration: 0.5s;
 $transition-delay: 0.07s;
 
  /*Basic styles */
+
 .mobilenav-container {
   position: absolute;
   top: 0px;
-  left: 0px;
-  /*border: 1px solid #ccc;*/
-  border-radius: 5px;
+  /*left: 0px;*/
+  /*position: relative;*/
+  /*margin: 35px auto 0;
+  width: 300px;
+  height: 534px;*/
+  /*background-color: #533557;*/
   overflow: hidden;
-  z-index: 51;
+  z-index: 41;
 
-  &--wide {
-    width: 100%;
-    background: #fff;
-
-    @media (min-width: $tablet-width) {
-      width: 50%;
-    }
-
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -32,12 +30,26 @@ $transition-delay: 0.07s;
   top: -100%;
 }
 
+#toggle:focus {
+  & ~ .toggle-container .button-toggle {
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
 /*Styles for the 'open' state, if the checkbox is checked*/
 #toggle:checked {
    /*Any element you need to change the style if menu is open goes here, using the sibling selector (~) as follows*/
 
    /*Making the "X" icon using `:before` and `:after` pseudo-elements*/
-  & ~ .button-toggle {
+  & ~ .toggle-container .button-toggle {
+    /*box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);*/
+     box-shadow: 0 0 0 550px rgba(255, 255, 255, 1), inset 0 0 0 20px rgba(255, 255, 255, 1);
+
+    &:hover {
+      /*box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);*/
+      box-shadow: 0 0 0 550px rgba(255, 255, 255, 1), inset 0 0 0 20px rgba(255, 255, 255, 1), 0 0 0 8px rgba(255, 255, 255, 1), inset 0 0 0 20px rgba(255, 255, 255, 1);
+    }
+
     &:before {
       transform: translateY(-50%) rotate(45deg) scale(1);
     }
@@ -47,19 +59,20 @@ $transition-delay: 0.07s;
     }
   }
 
-  &:focus ~ .button-toggle {
-     box-shadow: none;
+  &:focus ~ .toggle-container .button-toggle {
+    /*box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 0 0 550px rgba(255, 255, 255, 1), inset 0 0 0 20px rgba(255, 255, 255, 1), 0 0 0 8px rgba(255, 255, 255, 1), inset 0 0 0 20px rgba(255, 255, 255, 1);
   }
 
   /* Open nav*/
   & ~ .mobile-nav {
-    margin-top: 40px;
-    margin-left: 15px;
+    margin-bottom: 100px;
     pointer-events: auto;
+    transform: translate(50px, 50px);
 
      /*Restoring nav items from "lines" in the menu icon*/
     .mobile-nav__item {
-      color: $text-color;
+      color: #ff5b5b;
       letter-spacing: 0;
       height: 40px;
       line-height: 40px;
@@ -68,11 +81,9 @@ $transition-delay: 0.07s;
       transform: scaleY(1);
       transition: $transition-duration, opacity 0.1s;
 
-      text-decoration: none;
-
        /*Setting delays for the nav items in open transition*/
       @for $i from 1 through $items {
-        &[data-line="$i"] {
+        &:nth-child($i) {
           $delay: calc(($items - $i) * $transition-delay);
           transition-delay: $delay;
           &:before {
@@ -86,11 +97,6 @@ $transition-delay: 0.07s;
         opacity: 0;
       }
     }
-
-    & .main-nav__item:hover .submenu {
-      opacity: 1;
-      transform: scaleY(1) translate(-15px, 0px);
-    }
   }
 }
 
@@ -102,16 +108,16 @@ $transition-delay: 0.07s;
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-top: 10px;
+  margin: 20px;
   margin-left: 15px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 100%;
   transition: calc($transition-duration + 0.1s);
 
   @media (min-width: $tablet-width) {
-    /*margin: 25px;*/
+    margin: 25px;
   }
 
    /*Shadow on hover*/
@@ -143,31 +149,32 @@ $transition-delay: 0.07s;
   }
 }
 
+
 /* Menu */
 
 .mobile-nav {
   display: inline-block;
-  margin: 10px;
+  margin: 20px 100px 25px 10px;
    /*Don't want pointer-events as menu is closed*/
   pointer-events: none;
   transition: $transition-duration;
 
-  width: 100%;
-  box-sizing: border-box;
-
   @media (min-width: $tablet-width) {
-    /*margin: 25px 100px 25px 20px;*/
+    margin: 25px 100px 25px 20px;
   }
 }
 
  /*Showing nav items as lines, making up the hamburger menu icon*/
 .mobile-nav__item {
+  position: relative;
   display: inline-block;
+  float: left;
+  clear: both;
   color: transparent;
   font-size: 14px;
   letter-spacing: -6.2px;
-  height: 6px;
-  line-height: 3px;
+  height: 7px;
+  line-height: 7px;
   text-transform: uppercase;
   white-space: nowrap;
   transform: scaleY(0.2);
@@ -175,7 +182,7 @@ $transition-delay: 0.07s;
 
    /*Setting delays for the nav items in close transition*/
   @for $i from 1 through $items {
-    &[data-line="$i"] {
+    &:nth-child($i) {
       $delay: calc(($i - 1) * $transition-delay);
       transition-delay: $delay;
       &:before {
@@ -185,21 +192,21 @@ $transition-delay: 0.07s;
   }
 
    /*Adjusting width for the first line*/
-  &[data-line="1"] {
+  &:nth-child(1) {
     letter-spacing: -6.99px;
   }
 
    /*Adjusting width for the second line*/
-  &[data-line="2"] {
+  &:nth-child(2) {
     letter-spacing: -6.65px;
   }
 
-  &[data-line="3"] {
+  &:nth-child(3) {
     letter-spacing: -7.44px;
   }
 
    /*Adjusting from the fourth element onwards*/
-  &[data-line="4"] {
+  &:nth-child(n + 4) {
     letter-spacing: -8px;
     margin-top: -7px;
     opacity: 0;
@@ -217,91 +224,4 @@ $transition-delay: 0.07s;
     transform: translateY(-50%) scaleY(5);
     transition: $transition-duration;
   }
-}
-
-.main-nav__items {
-  list-style: none;
-  margin:0;
-  padding:0;
-  position: relative;
-  font-size: 0px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.mobilenav-container--wide .main-nav__items {
-  margin-bottom: 50px;
-}
-
-.submenu {
-  padding: 10px 20px;
-  display: table;
-  list-style-type: none;
-  background: #fff;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 250px;
-  opacity: 0;
-  transform: scaleY(1) translate(1000px, 0px);
-  transform-origin: 0 0;
-  transition: .5s ease-in-out;
-  border-top: solid 1px $color-menu;
-  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.21);
-}
-
-.submenu__item {
-  white-space: nowrap;
-}
-
-.submenu__item a {
-  text-decoration: none;
-  font-size: $fs_small;
-  color: $text-color;
-  line-height: 30px;
-
-  &:hover {
-    color: $color-menu-active;
-  }
-}
-
-.backbtn {
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  width: 30px;
-  height: 2px;
-  background: $color-menu-active;
-
-  transform: scaleY(1) translate(1000px, 0px);
-  transform-origin: 0 0;
-  transition: .5s ease-in-out;
-
-
-  &:before, &:after {
-    position: absolute;
-    content: '';
-    right: 0;
-    width: 15px;
-    height: 2px;
-    background-color: #EC7263;
-  }
-
-  &:before {
-    top: -3px;
-    transform: rotate(25deg);
-  }
-
-  &:after {
-    top: 3px;
-    transform: rotate(-25deg);
-  }
-}
-
-.backbtn--active {
-  opacity: 1;
-  transform: scaleY(1) translate(0px, 0px);
 }

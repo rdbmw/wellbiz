@@ -3,6 +3,9 @@
   margin-left: 10px;
   padding-left: 40px;
   background: transparent url('../public/img/phone.png') no-repeat;
+  order: 2;
+  min-height: 25px;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0px;
@@ -12,6 +15,11 @@
 
 .phone__number {
   font-weight: 700;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .phone__description {

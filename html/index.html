@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<%= require('html-loader?attrs=false&minimize=false!./common/assets.html') %>
+</head>
 <%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
 		<section class="slider-wrapper">
 			<div class="slider" id="top-slider">

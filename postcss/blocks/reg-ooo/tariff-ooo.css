@@ -1,6 +1,9 @@
 .tariff-ooo {
-  background: linear-gradient(#fff 417px, #f7f7f7 417px);
   padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(#fff 417px, #f7f7f7 417px);
+  }
 }
 
 .tariff-ooo__wrapper {
@@ -13,10 +16,17 @@
   width: 100%;
   text-align: center;
   color: $color-slider;
-  font-size: 30px;
-  line-height: 25px;
-  font-weight: 400;
   margin-top: 45px;
+
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 25px;
+  }
 }
 
 .tariff-ooo__description {
@@ -29,23 +39,54 @@
   font-weight: 400;
 }
 
-.calc-ooo {
+.tariff-ooo__discount {
   margin-top: 44px;
+  padding: 20px;
+  width: 100%;
+  /*border: 1px solid #e2e2e2;*/
+  background: #438ad9;
+  color: #f6f6f6;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calc-ooo, .calc-ip, .calc-buh, .calc-izm {
+
   width: 100%;
   border: 1px solid #e2e2e2;
   display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+  }
+
+
 }
 
-.calc-ooo__part {
-  width : calc(100%/3*1);
+.calc-ooo__part, .calc-ip__part {
+  width: calc(100%);
   background: #fff;
 
   &--border-right {
     border-right: 1px solid #e2e2e2;
   }
+
+  @media (min-width: $tablet-width) {
+    width: calc(100%/3*1);
+    /*&--lead {
+      width: calc(100%/3*1);
+    }*/
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
-.calc-ooo__title {
+.calc-ooo__title, .calc-ip__title {
   padding-top: 20px;
   padding-bottom: 17px;
   padding-left: 6.7%;
@@ -55,7 +96,7 @@
   background: #f3f3f3;
 }
 
-.calc-ooo__group {
+.calc-ooo__group, .calc-ip__group {
   position: relative;
   padding-left: 30px;
   padding-right: 5px;
@@ -63,23 +104,28 @@
   padding-bottom: 9px;
 }
 
-.calc-ooo__group--top {
+.calc-ooo__group--top, .calc-ip__group--top {
   padding-left: 30px;
   padding-right: 5px;
   padding-top: 17px;
   padding-bottom: 20px;
 }
+.calc-ip__group--top {
+  padding-bottom: 9px;
+}
 
-.calc-ooo__group--border {
+
+.calc-ooo__group--border, .calc-ip__group--border {
   padding-top: 25px;
   border-top: 1px solid #e2e2e2;
 }
 
-.calc-ooo__group--top .number {
+.calc-ooo__group--top .number, .calc-ip__group--top .number {
   margin-top: 6px;
 }
 
-.calc-ooo__group input[type="checkbox"] {
+.calc-ooo__group input[type="checkbox"], .calc-ip__group input[type="checkbox"],
+.calc-ooo__group input[type="radio"], .calc-ip__group input[type="radio"] {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -89,11 +135,12 @@
   cursor: pointer;
 }
 
-.calc-ooo__group--border input[type="checkbox"] {
+.calc-ooo__group--border input[type="checkbox"], .calc-ip__group--border input[type="checkbox"],
+.calc-ooo__group--border input[type="radio"], .calc-ip__group--border input[type="radio"] {
   top: 28px;
 }
 
-.calc-ooo__group span {
+.calc-ooo__group span, .calc-ip__group span {
   display: inline-block;
   position: relative;
   width: 20px;
@@ -105,7 +152,7 @@
   z-index: 1;
 }
 
-.calc-ooo__group input:checked + span::after {
+.calc-ooo__group input:checked + span::after, .calc-ip__group input:checked + span::after {
   position: absolute;
   content: '';
   width: 20px;
@@ -113,7 +160,7 @@
   background: transparent url('../public/img/v.svg') center center no-repeat;
 }
 
-.calc-ooo__group label {
+.calc-ooo__group label, .calc-ip__group label {
   padding-left: 10px;
   font-size: 14px;
   line-height: 30px;
@@ -122,18 +169,18 @@
   cursor: pointer;
 }
 
-.calc-ooo__group--top label {
+.calc-ooo__group--top label  {
   padding-left: 0px;
 }
 
-.calc-ooo__group .number {
+.calc-ooo__group .number, .calc-ip__group .number {
   display: inline-block;
   position: relative;
   width: 60px;
   height: 36px;
 }
 
-.calc-ooo__group .number input{
+.calc-ooo__group .number input, .calc-ip__group .number input{
   display: block;
   width: 30px;
   height: 36px;
@@ -191,7 +238,7 @@
   }
 }
 
-.cal-ooo__tariff {
+.calc-ooo__tariff, .calc-ip__tariff {
   padding-top: 12px;
   padding-left: 20px;
   font-size: 14px;
@@ -200,7 +247,7 @@
   color: #252525;
 }
 
-.cal-ooo__tariff span {
+.calc-ooo__tariff span, .calc-ip__tariff span {
   padding-left: 15px;
   font-size: 26px;
   line-height: 30px;
@@ -208,21 +255,22 @@
   font-weight: 700;
 }
 
-.cal-ooo__tariff .cal-ooo__currency {
+.calc-ooo__tariff .calc-ooo__currency, .calc-ip__tariff .calc-ip__currency {
   font-size: 14px;
   color: #ff5b5b;
 }
 
-.cal-ooo__details {
+.calc-ooo__details, .calc-ip__details {
   padding-top: 8px;
   padding-left: 20px;
+  padding-right: 5px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: #252525;
 }
 
-.cal-ooo__list {
+.calc-ooo__list, .calc-ip__list {
   margin: 0;
   padding: 0;
   margin-top: 13px;
@@ -230,7 +278,7 @@
   margin-right: 10%;
 }
 
-.cal-ooo__action {
+.calc-ooo__action, .calc-ip__action {
   padding-left: 20px;
   position: relative;
   margin-top: 15px;
@@ -255,19 +303,25 @@
    }
 }
 
-.cal-ooo__comment {
+.calc-ooo__comment, .calc-ip__comment {
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-right: 10%;
   position: relative;
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
   color: #252525;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }
 
-.calc-ooo__lead {
+.calc-ooo__lead, .calc-ip__lead {
   padding-top: 17px;
   padding-left: 29px;
   padding-bottom: 12px;
@@ -277,11 +331,11 @@
   color: #252525;
 }
 
-.calc-ooo__group--lead {
+.calc-ooo__group--lead, .calc-ip__group--lead {
   padding-bottom: 14px;
 }
 
-.calc-ooo__group--error {
+.calc-ooo__group--error, .calc-ip__group--error {
   &::before {
     position: absolute;
     content: '';
@@ -311,7 +365,7 @@
   }
 }
 
-.calc-ooo__group--lead label {
+.calc-ooo__group--lead label, .calc-ip__group--lead label {
   padding-left: 0px;
   font-size: 13px;
   line-height: 30px;
@@ -323,10 +377,10 @@
   }
 }
 
-.calc-ooo__group--lead input {
+.calc-ooo__group--lead input, .calc-ip__group--lead input {
   margin-top: 9px;
   display: block;
-  width: 330px;
+  width: 200px;
   height: 36px;
   border-radius: 3px;
   background-color: #f2f2f2;
@@ -341,6 +395,14 @@
   &:focus {
     outline: 1px solid #ff5b5b;
   }
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 330px;
+  }
 }
 
 .btn-lead {
@@ -350,8 +412,28 @@
   margin-top: 11px;
   margin-left: 30px;
   margin-bottom: 50px;
+  position: relative;
 
   &:hover {
     background-color: #ed5353;
   }
+}
+
+#sendleaderror {
+  margin: 10px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: red;
+}
+
+.calc-ooo__part .lead-pd, .calc-ip__part .lead-pd {
+  margin: 0 30px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #7e7e7e;
+  text-align: left;
+  vertical-align: top;
+
 }

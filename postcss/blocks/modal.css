@@ -20,6 +20,10 @@
 
   @media (min-width: $desktop-width) {
   }
+
+  &--map {
+    width: 75%;
+  }
 }
 
 .modal-content__close {
@@ -81,6 +85,11 @@
 .modal-content__scroll {
   max-height: calc(100vh - 170px);
   overflow-y: auto;
+}
+
+
+.modal-content--map .modal-content__scroll {
+  padding: 10px;
 }
 
 .lead-form {

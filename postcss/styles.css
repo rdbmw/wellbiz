@@ -18,7 +18,7 @@
 @import 'blocks/invitation.css';
 @import 'blocks/page-footer.css';
 @import 'blocks/modal.css';
-/* reg-ooo */
+/* reg-ooo reg-ip */
 @import 'blocks/reg-ooo/top-block.css';
 @import 'blocks/reg-ooo/infographic.css';
 @import 'blocks/reg-ooo/allrus.css';
@@ -26,3 +26,14 @@
 @import 'blocks/reg-ooo/tariff-ooo.css';
 @import 'blocks/reg-ooo/banks.css';
 @import 'blocks/reg-ooo/faq-ooo.css';
+/* buh */
+@import 'blocks/buh/top-block.css';
+@import 'blocks/buh/reviews.css';
+@import 'blocks/buh/toggle.css';
+@import 'blocks/buh/guarantee.css';
+@import 'blocks/buh/tariff.css';
+/* izm */
+@import 'blocks/izm/top-block.css';
+@import 'blocks/izm/egrul.css';
+@import 'blocks/izm/cases.css';
+@import 'blocks/izm/attention.css';

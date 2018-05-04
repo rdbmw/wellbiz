@@ -1,0 +1,71 @@
+.egrul {
+  @mixin container;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.egrul__slogan {
+  padding: 0 10px;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-bottom: 0px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+.egrul__description {
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-top: 0px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 50px;
+  }
+}
+.egrul__variants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
+}
+
+.egrul__left,
+.egrul__right {
+  flex-basis: 100%;
+  border: 1px solid #f2f2f2;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 48.65%;
+  }
+}
+
+.egrul__variant {
+  background: #f2f2f2;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+  padding: 27px;
+  min-height: 42px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 21px;
+  }
+}
+
+.egrul__details {
+  font-size: 14px;
+  line-height: 30px;
+  padding: 27px;
+}
