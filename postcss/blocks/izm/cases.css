@@ -92,6 +92,7 @@
 .izm-case--active .izm-case__details {
   padding: 23px 29px 11px 29px;
   max-height: 5000px;
+  line-height: 23px;
 }
 
 .izm-case__parameters {

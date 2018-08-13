@@ -2,6 +2,10 @@
   background-color: #f7f7f7;
 }
 
+.reviews--ofis {
+  background-color: #fff;
+}
+
 .reviews__wrapper {
   @mixin container;
   text-align: center;
@@ -39,6 +43,26 @@
   justify-content: space-between;
   margin: 0 2.5%;
 }
+
+.reviews-gallery {
+  flex-wrap: nowrap;
+  padding-bottom: 50px;
+}
+
+.reviews-gallery a {
+  flex-basis: 20%;
+  margin: 0 10px;
+}
+
+.reviews-gallery--ofis a {
+  flex-basis: auto;
+}
+
+.reviews-gallery a img {
+  width: 100%;
+  max-width: 200px;
+}
+
 
 .review {
   flex-basis: 100%;

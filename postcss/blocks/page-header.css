@@ -12,7 +12,7 @@
   flex-shrink: 0;
   width: 202px;
   height: 57px;
-  margin-left: 115px;
+  /*margin-left: 115px;*/
   order: 0;
 
   @media (min-width: $tablet-width) {

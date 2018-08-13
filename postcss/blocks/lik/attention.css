@@ -1,0 +1,14 @@
+.izm-attention--lik {
+  & .izm-attention__details {
+    @media (min-width: $desktop-width) {
+      padding: 0 10% 0 39px;
+      width: 55%;
+    }
+  }
+
+  & .izm-attention__action {
+    @media (min-width: $desktop-width) {
+      width: 25%;
+    }
+  }
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<%= require('html-loader?attrs=false&minimize=false!./common/assets.html') %>
+</head>
+<%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
+		<section class="top-block top-block--buh">
+			<div class="top-block__wrapper">
+				<div class="top-block__left">
+					<img src="img/decorbuh.png" alt="" class="top-block__decoration" style="left:35%">
+					<div class="top-block__details">
+						<h1 class="top-block__title top-block__title--nds">Сопровождение внешнеэкономической деятельности<br><span>Возмещение НДС при экспорте-импорте товаров</span></h1>
+						<div class="top-block__description">Специалисты нашей компании имеют большой опыт в сопровождении ВЭД, а так же устойчивые контакты с банками, ЦРМБанком, таможней и таможенными брокерами, логистическими компаниями, занимающимися автомобильными и ЖД перевозками.</div>
+					</div>
+					<img src="img/womanbuh.png" alt="" class="top-block__img">
+				</div>
+				<div class="top-block__right">
+					<div class="top-block__title-right">Есть вопросы по ведению деятельности?</div>
+					<div class="top-block__description-right">Научим как вернуть НДС в полном объеме и избежать отказа</div>
+					<button type="button" class="top-block__btn jscallback">Записаться на бесплатную консультацию</button>
+				</div>
+			</div>
+		</section>
+		<section class="reviews  reviews--buh">
+		  <div class="reviews__wrapper">
+		    <h2 class="reviews__slogan">Возместили более 180 000 000 руб. НДС нашим клиентам в 2017 году</h2>
+				<p class="reviews__description--main">Накоплен большой опыт взаимодействия с ИФНС и работы с возражениями</p>
+		    <p class="reviews__description">Импорт-экспорт продуктов питания, бытовых товаров, строительных материалов, твердого топлива, сжиженного газа - сфера деятельности наших клиентов весьма разнообразна. Приходите в офис и убедитесь в реальности отзывов! </p>
+		    <div class="reviews__list">
+		      <div class="review">
+						<div class="review__author">
+							<img src="img/avatar1.jpg" alt="" class="review__avatar">
+							<div class="review__details">
+								<div class="review__author-name"><strong>Экспорт продуктов питания</strong><br>11.01.2018</div>
+							</div>
+						</div>
+		        <div class="review__text review__text--big">
+		          <p><strong>Отказ в подтверждении нулевой ставки, номинальность директора</strong><br><br>Мы молодая компания, занимающаяся экспортом продуктов питания, получили отказ в подтверждении нулевой ставки...</p>
+		          <button type="button" class="review__more" data-full="0">•</button>
+		        </div>
+		      </div>
+		      <div class="review">
+						<div class="review__author">
+		          <img src="img/avatar2.jpg" alt="" class="review__avatar">
+		          <div class="review__details">
+		            <div class="review__author-name"><strong>Торговля углем</strong><br>01.03.2018</div>
+		          </div>
+		        </div>
+		        <div class="review__text review__text--big">
+		          <p><strong>Привлечение к ответственности за совершение налогового правонарушения</strong><br><br>Компания вела самостоятельный бухгалтерский учет, в результате неверного оформления и сбора документов систематически сдавались корректировки отчетности...</p>
+							<button type="button" class="review__more" data-full="1">•</button>
+		        </div>
+		      </div>
+		      <div class="review">
+						<div class="review__author">
+		          <img src="img/avatar3.jpg" alt="" class="review__avatar">
+		          <div class="review__details">
+		            <div class="review__author-name"><strong>Оптовая торговля канцелярией</strong><br>08.03.2018</div>
+		          </div>
+		        </div>
+		        <div class="review__text review__text--big">
+							<p><strong>Бухгалтерское сопровождение с даты регистрации компании</strong><br><br>Обратились в «Верные решения» с просьбой помочь в регистрации компании, которая будет заниматься оптовой торговлей канцелярскими товарами...</p>
+							<button type="button" class="review__more" data-full="2">•</button>
+						</div>
+		      </div>
+		    </div>
+
+		  </div>
+		</section>
+		<div class="review-full hidden">
+		  <button class="review-full__close" type="button" title="Закрыть" data-full="0">Закрыть</button>
+		  <div class="review-full__author">
+		    <img src="img/avatar1.jpg" alt="" class="review-full__avatar">
+		    <div class="review-full__details">
+		      <div class="review-full__author-name">Экспорт продуктов питания, 11.01.2018</div>
+		      <div class="review-full__rating">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		      </div>
+		    </div>
+		  </div>
+		  <p class="review-full__text">
+				Мы молодая компания, занимающаяся экспортом продуктов питания, получили отказ в подтверждении нулевой ставки по НДС и в возмещении НДС из бюджета за 1 кв. 2017г., по результатам проверки был начислен налог к уплате и стоял вопрос о признании номинальности директора.<br><br>
+				Обратились в «Верные решения» с просьбой проверить сданные отчеты и предоставленную первичную документацию. В результате совместной работы специалистов юридического отдела и отдела бухгалтерского учета, был снят вопрос о номинальности директора, в октябре 2017г. получено возмещение НДС из бюджета за 2 кв. 2017г. и в декабре 2017 г. за 1 кв. 2017 г. на общую на сумму 894 000 руб.<br><br>
+				Чтобы избежать отказа теперь будем готовить пакеты документов для возмещения НДС только силами сотрудников ВР.
+		  </p>
+		</div>
+		<div class="review-full hidden">
+		  <button class="review-full__close" type="button" title="Закрыть" data-full="1">Закрыть</button>
+		  <div class="review-full__author">
+		    <img src="img/avatar2.jpg" alt="" class="review-full__avatar">
+		    <div class="review-full__details">
+		      <div class="review-full__author-name">Торговля углем, 01.03.2018</div>
+		      <div class="review-full__rating">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		      </div>
+		    </div>
+		  </div>
+		  <p class="review-full__text">
+				Компания вела самостоятельный бухгалтерский учет, в результате неверного оформления и сбора документов систематически сдавались корректировки отчетности по НДС, что привело к регулярным запросам со стороны налоговых органов (45 требований за 3 месяца), невозможности закрыть налоговые периоды за 2016 г.- 2 кв. 2017 г. и
+				получить законное возмещение НДС из бюджета.<br><br>
+				По результатам камеральной проверки была начислена существенная сумма налога к уплате в бюджет - более 8 000 000,00 руб. Обратились в «Верные решения» в августе 2017 г. с просьбой откорректировать сданные отчеты по НДС начиная с 1 кв. 2016 г. с целью возмещения из бюджета уплаченного НДС и подтверждения нулевой ставки.<br><br>
+				В результате нам не пришлось оплачивать доначисленный налог, в январе-феврале 2018 г. получено возмещение НДС из бюджета за 1-4 кв. 2016 г., 1-3 кв. 2017г. на общую сумму 12 230 000 руб. Так же получено решение об отказе в привлечении к ответственности за совершение налогового правонарушения.
+		  </p>
+		</div>
+		<div class="review-full hidden">
+		  <button class="review-full__close" type="button" title="Закрыть" data-full="2">Закрыть</button>
+		  <div class="review-full__author">
+		    <img src="img/avatar3.jpg" alt="" class="review-full__avatar">
+		    <div class="review-full__details">
+		      <div class="review-full__author-name">Оптовая торговля канцелярией, 08.03.2018</div>
+		      <div class="review-full__rating">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		        <img src="img/star.png" alt="">
+		      </div>
+		    </div>
+		  </div>
+		  <p class="review-full__text">
+				Обратились в «Верные решения» с просьбой помочь в регистрации компании, которая будет заниматься оптовой торговлей канцелярскими товарами, бумажной продукцией, прессы, оборудования, продуктами питания, импорт-экспорт.<br><br>
+				Компанию зарегистрировали быстро, четко без каких бы то ни было проволочек, в день получения документов нам предложили бухгалтерское сопровождение, своего бухгалтера пока не было, и мы приняли решение принять предложение о дальнейшем сотрудничестве с компанией «Верные решения».<br><br>
+				Заключили договор на бухгалтерское сопровождение в сентябре 2016г., и ни разу не пожалели. Вся отчетность сдается своевременно и правильно, что подтверждается регулярностью и своевременностью подтверждения нулевой ставки и получения возмещения по НДС.
+		  </p>
+		</div>
+		<section class="egrul">
+			<h2 class="egrul__slogan">Внешнеэкономическая деятельность требует большей ответственности</h2>
+			<p class="egrul__description" style="line-height: 26px;">Организации, ведущие внешнеэкономическую деятельность, находятся под пристальным контролем со стороны контролирующих органов, в том числе налоговой инспекции.</p>
+			<div class="egrul__variants">
+				<div class="egrul__left" style="flex-basis: 100%">
+					<div class="egrul__variant">При неправильном ведении учета операций по внешнеэкономической деятельности возможны следующие риски:</div>
+					<div class="egrul__details" style="padding: 10px;">
+						<ul>
+							<li>Блокировка расчетного счета и невозможность проведения расчетов с	контрагентами, оплаты налогов и т.д.</li>
+							<li>Отказ в подтверждении нулевой ставки, что приведет к доначислению НДС и необходимости оплаты доначисленного налога и пени.</li>
+							<li>Отказ в возмещении НДС.</li>
+							<li>Требование со стороны налоговой инспекции вернуть возмещенную ранее сумму НДС.</li>
+							<li>Руководитель организации и собственник несут солидарную материальную ответственность за неправильное ведение учета.</li>
+							<li>Дисквалификация руководителя и собственника организации.</li>
+							<li>Выявление в ходе проверки недостоверности или искажение учета может стать причиной для выездной проверки.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="buh-guarantee">
+			<div class="buh-guarantee__wrapper" style="margin: 0">
+				<img src="img/decorbuh2.png" alt="" class="">
+				<div class="buh-guarantee__details">
+					<div class="buh-guarantee__title">Получите гарантии качества оказываемых услуг!</div>
+					<div class="buh-guarantee__description">Наша 100% ответственность перед вами будет оформлена договором.</div>
+				</div>
+				<button type="button" class="buh-guarantee__btn jscallback">Узнать о гарантиях</button>
+			</div>
+		</section> -->
+		<section class="advantages-ooo advantages-ooo--tmp advantages-ooo--buh">
+			<div class="advantages-ooo__wrapper">
+				<h2 class="advantages-ooo__title">Наши преимущества</h2>
+				<p class="advantages-ooo__description">Предлагаем услуги высокого качества на выгодных условиях</p>
+				<div class="advantages-ooo__list">
+					<div class="advantages-ooo__four">
+						<div class="advantages-ooo__items">
+							<div class="advantages-ooo__item advantages-ooo__item--pic1">Максимально<br>быстро</div>
+							<div class="advantages-ooo__item advantages-ooo__item--pic2">Без скрытых<br>платежей	</div>
+							<div class="advantages-ooo__item advantages-ooo__item--pic3">Персональная<br>ответственность<br>специалиста</div>
+							<div class="advantages-ooo__item advantages-buh__item--pic4">Обратная связь от<br>специалиста<br>по услуге</div>
+						</div>
+						<div class="advantages-ooo__online">
+							<button type="button" class="advantages-ooo__online-btn jscallback">Заказать звонок</button>
+							<div class="advantages-ooo__online-text">Оставьте заявку и менеджер проконсультирует о схеме работы</div>
+						</div>
+					</div>
+					<div class="advantages-ooo__one">
+						<div class="advantages-ooo__one-text">
+							<p class="advantages-ooo__one-title">Получите гарантии качества оказываемых услуг!</p>
+							<p class="advantages-ooo__one-details">
+								Специалист несет персональную ответственность за качество и сроки предоставления услуг.
+								<br><br>
+								Наша 100% ответственность перед вами будет оформлена договором.
+							</p>
+						</div>
+						<img src="img/man2.jpg" alt="" class="advantages-ooo__one-img">
+					</div>
+				</div>
+				<div class="advantages-ooo__online advantages-ooo__online--mobile">
+					<button type="button" class="advantages-ooo__online-btn jscallback">Заказать звонок</button>
+					<div class="advantages-ooo__online-text">Оставьте заявку и менеджер проконсультирует о схеме работы</div>
+				</div>
+			</div>
+		</section>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %> -->
+		<section class="izm-cases" style="margin-top:30px;">
+			<h2 class="izm-cases__title">Услуги по сопровождению внешнеэкономической деятельности</h2>
+			<div class="izm-cases__list">
+				<div class="izm-case">
+					<div class="izm-case__title">Взаимодействие с банками, брокерами, таможенными органами</div>
+					<div class="izm-case__details">
+						Организации, которые занимаются внешнеэкономической деятельностью должны понимать, что в их работе очень важно правильно подобрать партнеров и выстроить взаимодействие между всеми структурами, которые задействованы в их деятельности. Одно слабое звено, которое оформит документ с ошибками или несвоевременно предоставит его в контролирующие органы, может оказать негативное влияние на результат деятельности всей компании.
+					</div>
+				</div>
+				<div class="izm-case">
+					<div class="izm-case__title">Организация бухгалтерского учета</div>
+					<div class="izm-case__details">
+						Ведение бухгалтерского учета для организаций, ведущих внешнеэкономическую деятельность? требует большого опыта и объема знаний. Отсутствие опыта и знаний в этой области может привести к негативным последствиям, а именно неправильное формирование налоговой базы по НДС, налогу на прибыль, штрафные санкции и усиленный контроль со стороны налоговых органов.
+					</div>
+				</div>
+				<div class="izm-case">
+					<div class="izm-case__title">Контроль за соблюдением критериев налоговой нагрузки</div>
+					<div class="izm-case__details">
+						Одним из критериев для отбора кандидатов для усиленного контроля со стороны налоговой инспекции является соблюдение критериев налоговой нагрузки. По общему правилу организация должна придерживаться среднеотраслевого регионального уровня налоговой нагрузки.<br>
+						При несоблюдении уровня налоговой нагрузки возможны следующие негативные последствия: постоянные запросы из налоговой о даче пояснений по низкому уровню налоговой нагрузки, вызовы в налоговую на комиссии по низкой налоговой нагрузке для дачи устных пояснений.<br>
+						Кроме того, низкая налоговая нагрузка является одним из критериев отбора организации на выездную налоговую проверку.
+					</div>
+				</div>
+				<div class="izm-case">
+					<div class="izm-case__title">Оформление сделок экспорта-импорта в рамках законодательства</div>
+					<div class="izm-case__details">
+						Внешнеэкономическая деятельность в России регламентируется большим количеством нормативных актов и законов, которые либо напрямую касаются данной сферы деятельности, либо оказывают на нее непосредственное влияние, а также общепризнанные нормы международного права и международные договоры в области экономических отношений.<br>
+						При проведении налоговой проверки на основании ст. 165 НК РФ в инспекцию предоставляется полный пакет документов, в том числе контракты, ГТД, счета-фактуры, товаросопроводительные документы и т.д. Каждый документ должен быть оформлен в соответствии с требованиями законодательства и малейшая ошибка может повлечь отказ в возмещении НДС и подтверждении нулевой ставки, поэтому на каждом этапе Вам необходим надежный и опытный партнер.
+					</div>
+				</div>
+				<div class="izm-case">
+					<div class="izm-case__title">Ведение и заполнение специальных программ, в т.ч. ПИК-НДС</div>
+					<div class="izm-case__details">
+						При предоставлении документов на возмещение НДС и подтверждение нулевой ставки налоговые органы требуют предоставить в электронном виде заполненные специальные программы, в которые занесена информация по всем сделкам и контрагентам.<br>
+						Заполнение данных программ не является обязанностью налогоплательщика, но просьба сделать это не нарушает их права. Налогоплательщик сам заинтересован выполнить данные рекомендации, т.к. заполнение и предоставление этой информации позволяет сократить сроки на проверку (хотя по факту это не всегда происходит) и помочь налоговой в более тщательном и качественном проведении проверки с целью профилактики отказов от возмещения из-за технических ошибок. <br>
+						Правильность заполнения информации имеет большое значение при вынесении решения о возмещении НДС и подтверждении нулевой ставки, поэтому эту работу лучше доверить профессионалам и наши специалисты имеют большой опыт по заполнению данных программ.
+					</div>
+				</div>
+				<div class="izm-case">
+					<div class="izm-case__title">Сбор пакета документов для подтверждения нулевой ставки по НДС</div>
+					<div class="izm-case__details">
+						Подготовка пакета документов очень ответственный момент, т.к. полнота и правильность формирования пакета на прямую влияет на результат налоговой проверки. При подготовке пакета наши специалисты опираются не только на нормативные акты, которые регламентируют содержимое, порядок, сроки предоставления пакета, но и на наш большой опыт работы с инспекцией по вопросам подтверждения нулевой ставки и возмещения НДС.
+					</div>
+				</div>
+				<div class="izm-case">
+					<div class="izm-case__title">Представление интересов клиента в ИФНС</div>
+					<div class="izm-case__details">
+						Получение возмещения НДС и подтверждение нулевой ставки это сложный и трудоемкий процесс. В ходе проверки первоначального пакета документов и декларации у инспектора возникает множество вопросов, ответы на эти вопросы должны быть сформулированы четко и своевременно, т.к. они на прямую влияют на результат проверки и решение налоговой инспекции.
+					</div>
+				</div>
+				<div class="izm-case">
+					<div class="izm-case__title">Юридическое сопровождение руководителя в ИФНС</div>
+					<div class="izm-case__details">
+						В ходе проверки налоговая инспекция в обязательном порядке вызывает руководителя для проведения допроса под протокол. Излишне данная информация или предоставленная не совсем корректно может повлечь за собой дополнительные проверки (в т.ч. и выездную), принятии решения налоговой инспекции о неполном возмещении и подтверждении нулевой ставки или же об отказе в возмещении и подтверждении нулевой ставки. Решение налоговой инспекции об отказе или неполном подтверждении нулевой ставки влечет за собой доначисление налога и пени по НДС. <br>
+						Наши специалисты проводят консультацию перед посещением налоговой инспекции, в ходе которой разъясняют на какие вопросы и в каком контексте в рамках законодательства РФ руководитель должен отвечать.
+					</div>
+				</div>
+
+				<div class="izm-case">
+					<div class="izm-case__title">Прохождение проверки ИФНС</div>
+					<div class="izm-case__details">
+						Прохождение налоговой проверки по подтверждению нулевой ставки и возмещению НДС состоит из нескольких этапов и проходит в течении 3 месяцев. Она состоит из:
+						<ul>
+							<li>составление и сдача отчетности по НДС;</li>
+							<li>формирование и сдача в налоговую инспекцию пакета документов по подтверждению нулевой ставки;</li>
+							<li>прохождение проверки;</li>
+							<li>ответы на запросы инспекции; </li>
+							<li>подготовка и предоставление дополнительных документов по запросу налоговой инспекции;</li>
+							<li>подготовка и предоставление дополнительных документов по запросу налоговой инспекции;</li>
+							<li>заполнение и предоставление в инспекцию специальных программ;</li>
+						</ul>
+						На всех этапах прохождения проверки Вам понадобится работа команды с опытом прохождения таких проверок, наши специалисты помогли множеству компаний наладить работу с инспекцией и получить положительные решения по подтверждению нулевой ставки и возмещению НДС.
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="tariff-ooo tariff-ooo--buh tariff-ooo--banki" >
+			<div class="tariff-ooo__wrapper">
+				<div class="tariff-ooo__title" id="tariff">Стоимость услуг</div>
+				<div class="tariff-ooo__description" style="margin: 10px 0px;">Оплата услуг может производится поэтапно</div>
+				<!-- <div class="tariff-ooo__discount">Внимание! При необходимости внесения нескольких изменений - предоставляем скидки!</div> -->
+				<form class="calc-izm">
+					<div class="calc-ip__part calc-ip__part--border-right">
+						<div class="calc-ip__title">Нужен анализ?</div>
+						<div class="calc-ip__details">
+							<p class="calc-ip__comment">Для оценки возможности возмещения НДС оставьте заявку на консультацию специалиста. Мы бесплатно проанализируем вашу ситуацию и:</p>
+							<ul class="calc-ip__list">
+								<li class="calc-ip__action">оценим правильность ведения учета,</li>
+								<li class="calc-ip__action">обозначим поэтапную схему возмещения НДС,</li>
+								<li class="calc-ip__action">рассчитаем стоимость наших услуг.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="calc-ip__part ">
+						<div class="calc-ip__title">В стоимость входит:</div>
+						<!-- <div class="calc-ip__tariff">Цена: <span id="calc_result" style="font-size: 14px;">после бесплатной консультации</span><span class="calc-ooo__currency"></span></div> -->
+						<div class="calc-ip__details">
+
+							<ul class="calc-ip__list">
+								<li class="calc-ip__action">исчерпывающая консультация по рассматриваемым вопросам;</li>
+								<li class="calc-ip__action">подготовка комплекта документов и проверка их на соответствие законодательству;</li>
+								<li class="calc-ip__action">подача специалистами документов в соответствующую инстанцию и получение документов.</li>
+							</ul>
+							<p class="calc-ip__comment">Госпошлина и услуги нотариуса в стоимость услуг не входят.</p>
+						</div>
+					</div>
+					<!-- <div class="calc-ip__part calc-ip__part--lead">
+						<div class="calc-ip__title">Бесплатная консультация:</div>
+						<div class="calc-ip__lead">Оставьте заявку на бесплатную консультацию:</div>
+						<div class="calc-ip__group calc-ip__group--lead" id="for-name">
+							<label for="name">Как к Вам обращаться?<sup>*</sup></label><br>
+							<input type="text" name="" value="" id="name">
+						</div>
+						<div class="calc-ip__group calc-ip__group--lead" id="for-phone">
+							<label for="phone">Номер телефона<sup>*</sup></label><br>
+							<input type="text" name="" value="" id="phone">
+						</div>
+						<div class="calc-ip__group calc-ip__group--lead">
+							<label for="mail">Ваш электронный адрес</label><br>
+							<input type="text" name="" value="" id="mail">
+						</div>
+						<p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="/terms.html" target="_blank">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
+						<div id="sendleaderror"></div>
+						<button type="submit" class="btn-lead" id="sendlead">Отправить</button>
+					</div> -->
+				</form>
+
+				<div class="izm-attention__details izm-attention--price">
+					<div class="izm-attention__title">Стоимость: от 5 000 руб.</div>
+					<div class="izm-attention__description">стоимость уточняйте после бесплатной консультации</div>
+				</div>
+				<div class="izm-attention__action izm-attention--price" >
+					<!-- <div class="izm-attention__action-title">Мы будем рады сотрудничеству с Вами!</div> -->
+					<button type="button" class="izm-attention__btn jscallback">Записаться на бесплатную консультацию</button>
+				</div>
+			</div>
+		</section>
+		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %> -->
+
+		<%= require('html-loader?attrs=false&minimize=false!./common/invitation.html') %>
+<%= require('html-loader?attrs=false&minimize=false!./common/footer.html') %>

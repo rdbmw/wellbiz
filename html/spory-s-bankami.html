@@ -7,7 +7,7 @@
 	<%= require('html-loader?attrs=false&minimize=false!./common/assets.html') %>
 </head>
 <%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
-		<section class="top-block top-block--izm">
+		<section class="top-block top-block--izm top-block--banki">
 			<div class="top-block__wrapper">
 				<div class="top-block__left">
 					<img src="img/izmdecor.png" alt="" class="top-block__decoration">
@@ -18,115 +18,430 @@
 					<img src="img/slide1.png" alt="" class="top-block__img" style="margin-top: 52px;">
 				</div>
 				<div class="top-block__right">
-					<div class="top-block__title-right">Нужно оценить судебные перспективы?</div>
+					<div class="top-block__title-right">Нужно оценить судебные перспективы кредитного спора?</div>
 					<div class="top-block__description-right">Закажите бесплатную консультацию и мы оценим шансы в вашем споре с банком</div>
-					<button type="button" class="top-block__btn jscallback">Получить консультацию</button>
-					<div class="top-block__decoration-right">%</div>
+					<button type="button" class="top-block__btn jscallback">Записаться на бесплатную консультацию</button>
+					<!-- <div class="top-block__decoration-right">%</div> -->
 				</div>
 			</div>
 		</section>
-	<section class="izm-cases">
+		<section class="reviews reviews--buh">
+			<div class="reviews__wrapper">
+				<h2 class="reviews__slogan">Обезопасьте свой бизнес, сотрудничая с нами</h2>
+				<p class="reviews__description">Приходите на бесплатную консультацию и убедитесь в реальности отзывов</p>
+				<div class="reviews__list">
+					<div class="review">
+						<div class="review__author">
+							<img src="img/avatar1.jpg" alt="" class="review__avatar">
+							<div class="review__details">
+								<div class="review__author-name"><strong>Торговля пивом</strong><br>01.02.2018</div>
+							</div>
+						</div>
+						<div class="review__text review__text--big">
+							<p><strong>Урегулирование задолженности перед бюджетом и кредиторами</strong><br><br>Торговая компания обратилась за помощью для урегулирования вопроса по задолженности перед бюджетами и кредиторам. Общество долгое время работало на рынке продаж пива...</p>
+							<button type="button" class="review__more" data-full="0">•</button>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__author">
+							<img src="img/avatar2.jpg" alt="" class="review__avatar">
+							<div class="review__details">
+								<div class="review__author-name"><strong>Сельхозпредприятие</strong><br>01.12.2017</div>
+							</div>
+						</div>
+						<div class="review__text review__text--big">
+							<p><strong>Спасение компании от процедуры банкротства</strong><br><br>Сельхозпредприятие обратилось с проблемой нехватки средств на погашение кредита. Банк решил ввести процедуру банкротства и начал принимать меры по реализации залогового имущества...</p>
+							<button type="button" class="review__more" data-full="1">•</button>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__author">
+							<img src="img/avatar3.jpg" alt="" class="review__avatar">
+							<div class="review__details">
+								<div class="review__author-name"><strong>Сотрудник компании</strong><br>08.03.2018</div>
+							</div>
+						</div>
+						<div class="review__text review__text--big">
+							<p><strong>Освобождение от обязанности гасить «чужие» кредиты</strong><br><br>Сотрудник компании оформил по просьбе директора кредит на свое имя, а также стал поручителем по другим кредитам своего руководителя. В результате непогашения кредитов руководителем...</p>
+							<button type="button" class="review__more" data-full="2">•</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<div class="review-full hidden">
+			<button class="review-full__close" type="button" title="Закрыть" data-full="0">Закрыть</button>
+			<div class="review-full__author">
+				<img src="img/avatar1.jpg" alt="" class="review-full__avatar">
+				<div class="review-full__details">
+					<div class="review-full__author-name">Торговля пивом, 01.02.2018</div>
+					<div class="review-full__rating">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+					</div>
+				</div>
+			</div>
+			<p class="review-full__text">
+				<strong>С какой проблемой обратился клиент?</strong><br>
+				Торговая компания обратилась за помощью для урегулирования вопроса по задолженности перед бюджетами и кредиторам. Общество долгое время работало на рынке продаж пива и пивных напитков. Однако в 2016 году произошел спад реализации продукции в связи с проводимой государством программой «Здоровая Россия». Таким образом, у Общества возникли проблемы с нехваткой денежных средств для оплаты налогов и кредитов, что могло повлечь за собой реализацию залогового имущества и уголовное преследование за неуплату налогов.<br><br>
+				<strong>Решение:</strong><br>
+				Юристы компании «Верные решения» разработали соглашение о расторжении кредитного договора с фиксацией суммы долга, т.е. приостановкой начисления процентов и штрафных санкций, а также соглашение о погашении кредитных обязательств путем реализации имущества через торги, которые будут проходить под контролем государственного органа.<br><br>
+				<strong>Результат:</strong><br>
+				Финансовая выгода клиента составила 1 033 553 руб. (Дело № 2-1619/2017 – Советский районный суд г. Ростова-на-Дону)
+			</p>
+		</div>
+		<div class="review-full hidden">
+			<button class="review-full__close" type="button" title="Закрыть" data-full="1">Закрыть</button>
+			<div class="review-full__author">
+				<img src="img/avatar2.jpg" alt="" class="review-full__avatar">
+				<div class="review-full__details">
+					<div class="review-full__author-name">Сельхозпредприятие, 01.12.2017</div>
+					<div class="review-full__rating">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+					</div>
+				</div>
+			</div>
+			<p class="review-full__text">
+				<strong>С какой проблемой обратился клиент?</strong><br>
+				Сельхозпредприятие обратилось с поблемой нехватки средств на погашение кредита. Банк решил ввести процедуру банкротства и начал принимать меры по реализации залогового имущества. Клиенту важно было сохранить свой производственный комплекс, т.к. на нем велась деятельность компании.<br><br>
+				<strong>Решение:</strong><br>
+				Юристы компании «Верные решения» подготовили все документы для защиты интересов клиента в судебном процессе. В результате судебных разбирательств иск кредитора удовлетворен частично, т.е. взыскана задолженность в размере фактически признанном клиентом, также судом отказано в удовлетворении требований банка по взысканию процентов за пользование кредитом, обращении взыскания на заложенное имущество. Остановлены начисления процентов, пеней, штрафов. Установлен удобный график погашения. Имущество компании было защищено.<br><br>
+				<strong>Результат:</strong><br>
+				Организация продолжает свою деятельность. Финансовая выгода клиента: сохранение имущества, которое клиент продолжает использовать в своей хозяйственной деятельности, погашение задолженности по щадящему графику, остановка начисления процентов. Основная выгода клиента заключается в избежание проведения процедуры банкротства и реализации имущества с молотка. (Дело № 2-19/2016 – Зерноградский районный суд Ростовской области).
+		</p>
+		</div>
+		<div class="review-full hidden">
+			<button class="review-full__close" type="button" title="Закрыть" data-full="2">Закрыть</button>
+			<div class="review-full__author">
+				<img src="img/avatar3.jpg" alt="" class="review-full__avatar">
+				<div class="review-full__details">
+					<div class="review-full__author-name">Сотрудник компании, 08.03.2018</div>
+					<div class="review-full__rating">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+						<img src="img/star.png" alt="">
+					</div>
+				</div>
+			</div>
+			<p class="review-full__text">
+				<strong>С какой проблемой обратился клиент?</strong><br>
+				Сотрудник компании оформил по просьбе директора кредит на свое имя, а также стал поручителем по другим кредитам своего руководителя. В результате непогашения кредитов руководителем, возникла задолженность, которая легла на плечи сотрудника. Банк стал списывать задолженность в размере 100% средств, поступающих на карту сотрудника, в связи с чем, он остался без средств к существованию. Директор отказывался погашать свои задолженности.<br><br>
+				<strong>Решение:</strong><br>
+				Специалисты компании «Юрист» разобрали ситуацию, в которую попал клиент. Разработали план конкретных решений, для снятия финансовой ответственности с сотрудника. Разработали и подали исковое заявления в Кировский районный суд г.Ростова-на-Дону. В результате судебных разбирательств был получен исполнительный лист на имя директора клиента о взыскании с него сумм долга.<br><br>
+				<strong>Результат:</strong><br>
+				Снятие всех требований банка с клиента. Экономия клиента составила 800 000 руб.
+			</p>
+		</div>
+		<section class="advantages-ooo advantages-ooo--tmp advantages-ooo--buh">
+			<div class="advantages-ooo__wrapper">
+				<h2 class="advantages-ooo__title">Наши преимущества</h2>
+				<p class="advantages-ooo__description">Предлагаем услуги высокого качества на выгодных условиях</p>
+				<div class="advantages-ooo__list">
+					<div class="advantages-ooo__four">
+						<div class="advantages-ooo__items">
+							<div class="advantages-ooo__item advantages-ooo__item--pic1">Максимально<br>быстро</div>
+							<div class="advantages-ooo__item advantages-ooo__item--pic2">Без скрытых<br>платежей	</div>
+							<div class="advantages-ooo__item advantages-ooo__item--pic3">Персональная<br>ответственность<br>специалиста</div>
+							<div class="advantages-ooo__item advantages-buh__item--pic4">Обратная связь от<br>специалиста<br>по услуге</div>
+						</div>
+						<div class="advantages-ooo__online">
+							<button type="button" class="advantages-ooo__online-btn jscallback">Заказать звонок</button>
+							<div class="advantages-ooo__online-text">Оставьте заявку и менеджер проконсультирует о схеме работы</div>
+						</div>
+					</div>
+					<div class="advantages-ooo__one">
+						<div class="advantages-ooo__one-text">
+							<p class="advantages-ooo__one-title">Получите гарантии качества оказываемых услуг!</p>
+							<p class="advantages-ooo__one-details">
+								Специалист несет персональную ответственность за качество и сроки предоставления услуг.
+								<br><br>
+								Наша 100% ответственность перед вами будет оформлена договором.
+							</p>
+						</div>
+						<img src="img/man2.jpg" alt="" class="advantages-ooo__one-img">
+					</div>
+				</div>
+				<div class="advantages-ooo__online advantages-ooo__online--mobile">
+					<button type="button" class="advantages-ooo__online-btn jscallback">Заказать звонок</button>
+					<div class="advantages-ooo__online-text">Оставьте заявку и менеджер проконсультирует о схеме работы</div>
+				</div>
+			</div>
+		</section>
+		<section class="izm-attention izm-attention--banki">
+			<div class="izm-attention__decor">!</div>
+			<div class="izm-attention__details">
+				<div class="izm-attention__title">Внимание!</div>
+				<div class="izm-attention__description">Разбирательство с банками требует особого внимания и ответственности. Чтобы избежать отказа, поручите эту процедуру профессиональным юристам с большим опытом в данном направлении. Это позволит сократить финансовые издержки, которые могут появиться в случае ошибок.</div>
+			</div>
+			<div class="izm-attention__action">
+				<!-- <div class="izm-attention__action-title">Мы будем рады сотрудничеству с Вами!</div> -->
+				<button type="button" class="izm-attention__btn jscallback">Записаться на бесплатную консультацию</button>
+			</div>
+		</section>
+	<section class="izm-cases izm-cases--lik">
 		<h2 class="izm-cases__title">Список типовых ситуаций</h2>
 		<div class="izm-cases__list">
-			<div class="izm-case">
-				<div class="izm-case__title">Исполнение кредитных обязательств </div>
+			<!-- <div class="izm-case">
+				<div class="izm-case__title">Подбор оптимальной схемы кредитования</div>
 				<div class="izm-case__details">
-					<div class="izm-case__description">?
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Правовой анализ документов Клиентов, в том числе финансовых, с целью определения наиболее выгодных условий кредитования.</li>
+							<li>Формирование пакета документов и предоставление в кредитные организации.</li>
+							<li>Юридическое сопровождение при заключении кредитных договоров.</li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
+			<div class="izm-case">
+				<div class="izm-case__title">Неисполнение кредитных обязательств</div>
+				<div class="izm-case__details">Основными причинами такой ситуации могут быть: ухудшение финансового состояния, упадок потребительского спроса, неправильные управленческие решения и т.д.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Анализ финансового состояния клиента.</li>
+							<li>Оказание помощи в переговорах с кредитором.</li>
+							<li>Рефинансирование или реструктуризация долга.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="izm-case">
-				<div class="izm-case__title">Неправильное начисление процентов и комиссий</div>
+				<div class="izm-case__title">Начисление банком пени, штрафов</div>
 				<div class="izm-case__details">
-					<div class="izm-case__description">
-						?
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Определение правомерности начисления пени и штрафов.</li>
+							<li>Проверка расчетов пени и штрафов.</li>
+							<li>Проведение процедур по списанию штрафов и пени (внесудебные, судебные).</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="izm-case">
-				<div class="izm-case__title">Залоговое имущество</div>
-				<div class="izm-case__details">
-					<div class="izm-case__description">
-						?
+				<div class="izm-case__title">Защита имущества, находящегося в залоге</div>
+				<div class="izm-case__details">Если не выполняются кредитные обязательства, то кредитор имеет право начать
+				процедуру обращения взыскания на имущество, которое находится в залоге, как один из
+				предусмотренных законом методов защиты своих финансовых интересов. Специалисты компании "Верные решения" не дадут банку забрать имущество и реализовать его за бесценок. Так же, при необходимости, мы окажем юридическую поддержку процедуры реализации имущества и поможем реализовать его по рыночной цене.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Внесудебное и судебное представление интересов клиента.</li>
+							<li>Сопровождение при оценке имущества.</li>
+							<li>Участие в процедуре обращения взыскания на имущество.</li>
+							<li>Расторжение договора залога (при наличии соответствующих условий).</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="izm-case">
-				<div class="izm-case__title">Страховка по кредиту</div>
-				<div class="izm-case__details">
-					<div class="izm-case__description">
-						?
+				<div class="izm-case__title">Защита имущества третьего лица, находящегося в залоге</div>
+				<div class="izm-case__details">При обеспечении кредита залогом имущества третьих лиц в кредитном договоре
+появляется еще один участник – залогодатель, который расплачивается по долгам
+заемщика своим имуществом, если должник не вернет кредит. В залог передают как
+движимое, так и недвижимое имущество: земельные участки, квартиру, офисы, транспорт
+и т.д.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Проверка правовой природы договора залога.</li>
+							<li>Внесудебное и судебное представление интересов клиента.</li>
+							<li>Сопровождение при оценке имущества.</li>
+							<li>Участие в процедуре обращения взыскания на имущество.</li>
+							<li>Расторжение договора залога (при наличии соответствующих условий).</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="izm-case">
-				<div class="izm-case__title">Истребование денег с банковских счетов</div>
+				<div class="izm-case__title">Защита поручителя по кредиту</div>
 				<div class="izm-case__details">
-					<div class="izm-case__description">
-						?
+					Сутью поручительства является то, что поручитель со своего согласия возлагает на себя
+обязательство перед кредитором нести ответственность за должника в случае
+неисполнения последним его обязательства перед кредитором.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Защита имущества поручителя.</li>
+							<li>Внесудебное и судебное урегулирование.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="izm-case">
-				<div class="izm-case__title">
-					Одностороннее изменение договора
-				</div>
+				<div class="izm-case__title">Закредитованность компании</div>
 				<div class="izm-case__details">
-					<div class="izm-case__description">
-						?
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Анализ финансового состояния клиента.</li>
+							<li>Разработка методов (способов)	выхода из закредитованности, финансовое оздоровление.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="izm-case">
-				<div class="izm-case__title">Защита залога, имущества, денежных средств</div>
-				<div class="izm-case__details">
-					<div class="izm-case__description">
-						?
+				<div class="izm-case__title">Остановка роста долга компании</div>
+				<div class="izm-case__details">Способы остановки роста долга: реструктуризация, рефинансирование, расторжение кредитного договора (судебное разбирательство), подведение долга к списанию, финансовое оздоровление.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Анализ финансового состояния клиента.</li>
+							<li>Определение способа остановки	долга.</li>
+							<li>Рекомендации по общению с кредиторами, оказание содействия при общении с кредиторами.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Реструктуризация долга</div>
+				<div class="izm-case__details">Данная процедура останавливает увеличение задолженности по кредитному договору.
+Плюсы: перестают начисляться штрафные санкции, сумма платежей снижается за счет
+увеличения срока выплаты, фиксируется сумма долга.
+Минусы: необоснованное увеличение суммы долга, увеличивается срок выплаты,
+допустив просрочку по реструктуризации возвращается вся сумма кредита или заново
+начнется начисление процентов.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Определение законности выставленной банком суммы и начисленных штрафов.</li>
+							<li>Представление интересов клиента при подписании документов о	реструктуризации.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Рефинансирование долга</div>
+				<div class="izm-case__details">Процесс рефинансирования предполагает оформление совершенно нового кредита для выполнения взятых на себя кредитных обязательств.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Подбор кредитной организации с учетом финансового состояния клиента и	экономической ситуации на рынке.</li>
+							<li>Анализ условий рефинансирования выбранного клиентом банка.</li>
+							<li>Юридическое сопровождение	клиента до заключения договора по рефинансированию.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Отказ Банка исполнять платежное поручение</div>
+				<div class="izm-case__details">На основании Федерального закона от 07.08.2001 № 15-ФЗ «О противодействии
+легализации (отмыванию) доходов, полученных преступным путем, и финансированию
+терроризма» и писем ЦБ РФ Банк может отказать в переводе денежных средств в рамках
+хозяйственных договоров, т.к. посчитал транзакцию подозрительной.
+
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Неправомерное списание денежных средств со счета</div>
+				<div class="izm-case__details">Причины необоснованного списания денежных средств с расчетного счета компании делятся на две группы. Первая: банк списывает деньги по собственной инициативе - погашение штрафов, пеней, различных кредитных обязательств. При этом банк может осуществить такие списания в независимости от того есть ли у него право на безакцептное списание или нет. К второй группе можно отнести мошеннические действия третьих лиц - списание банком денежных средств на основе подложных исполнительных листов, платежных поручений, переданных банку неуполномоченным лицом и т.п.
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Блокировка банковского счета</div>
+				<div class="izm-case__details">Безусловная блокировка расчетного счета означает, что приостанавливаются все
+банковские операции по нему. Основные причины блокировки счета: инициатива
+налогового органа, инициатива Банка на основании ст.76 НК РФ, Федерального закона
+от 07.08.2001 № 115-ФЗ «О противодействии легализации (отмыванию) доходов,
+полученных преступным путем, и финансированию терроризма», письма ЦБ РФ.
+<div class="izm-case__description">Перечень проводимых работ:
+	<ul>
+		<li>Анализ ситуации и составлении претензии в банк и ЦБ.</li>
+	</ul>
+</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Безакцептное списание</div>
+				<div class="izm-case__details">По общему правилу денежные средства со счета своего клиента Банк вправе списать
+только при наличии его согласия – акцепта. Однако из этого правила есть исключение,
+которое позволяет Банку списывать деньги со счета своего клиента и без его согласия –
+безакцептное списание. Основные причины безакцептного списания: согласие Клиента,
+исполнительный лист или постановление судебного пристава-исполнителя, требование
+налогового органа, взыскание недоимки по страховым взносам и т.д.
+				</div>
+			</div>
+			<!-- <div class="izm-case">
+				<div class="izm-case__title">Получение банковской гарантии</div>
+				<div class="izm-case__details">Банковская гарантия – это письменное обязательство банка (гаранта) о принятии на себя
+по просьбе другого лица (принципала) обязательства уплатить указанному им третьему
+лицу (бенефициару) определенную денежную сумму в соответствии с условиями
+данного гарантом обязательства независимо от действительности обеспечиваемого такой
+гарантией обязательства.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Анализ соответствия требованиям банка, т.е. анализ финансовых документов Клиентов с целью определения возможности получения банковской гарантии.</li>
+							<li>Формирование пакета документов и предоставление в кредитные организации.</li>
+							<li>Юридическое сопровождение при заключении договоров банковской гарантии.</li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
+			<div class="izm-case">
+				<div class="izm-case__title">Судебный спор с банком</div>
+				<div class="izm-case__details">Виды споров с банками: защита имущества, расторжение кредитного договора, защита поручителей, отказ в выдачи кредита, отказ банка от заключения договора
+банковского счета, нарушение банком банковской тайны, списание денежных без
+согласия клиента, блокирование счетов и т.д.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Внесудебная защита (составление претензий и жалоб, проверка документов,	анализ финансового состояния клиентов и т.д.)</li>
+							<li>Судебная защита (подача иска,	представление интересов клиента в судебном заседании и т.д.).</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="izm-case">
+				<div class="izm-case__title">Оформление кредита по поручению руководителя</div>
+				<div class="izm-case__details">Возникают ситуации, когда руководители компании предлагают сотрудникам оформить
+кредиты на личные нужды, а потом их тратят на цели предприятия. При этом ответственность по погашению кредита полностью ложится на работника.
+					<div class="izm-case__description">Перечень проводимых работ:
+						<ul>
+							<li>Оформление правовых документов между работодателем и сотрудником.</li>
+							<li>Защита интересов в суде, представление интересов в правоохранительных органах.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-
-		<section class="izm-attention">
-			<div class="izm-attention__decor">!</div>
-			<div class="izm-attention__details">
-				<div class="izm-attention__title">Внимание!</div>
-				<div class="izm-attention__description">Разбирательство с банками требует особого внимания и ответственности. Чтобы избежать отказа, поручите эту процедуру профессиональным юристам с большим опытом в данном направлении.<br><br>Это позволит сократить финансовые издержки, которые могут появиться в случае ошибок.</div>
-			</div>
-			<div class="izm-attention__action">
-				<div class="izm-attention__action-title">Мы будем рады сотрудничеству с Вами!</div>
-				<button type="button" class="izm-attention__btn jscallback">Заказать консультацию</button>
-			</div>
-		</section>
 		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %> -->
-		<section class="tariff-ooo tariff-ooo--buh" >
+		<section class="tariff-ooo tariff-ooo--banki" >
 			<div class="tariff-ooo__wrapper">
 				<div class="tariff-ooo__title" id="tariff">Стоимость услуг</div>
-				<div class="tariff-ooo__description">Оплата услуг может производится поэтапно</div>
+				<!-- <div class="tariff-ooo__description">Оплата услуг может производится поэтапно</div> -->
 				<!-- <div class="tariff-ooo__discount">Внимание! При необходимости внесения нескольких изменений - предоставляем скидки!</div> -->
+
 				<form class="calc-izm">
 					<div class="calc-ip__part calc-ip__part--border-right">
-						<div class="calc-ip__title">Не знаете что предпринять?</div>
+						<div class="calc-ip__title">Для анализа ситуации нужны следующие документы:</div>
 						<div class="calc-ip__details">
-							Если вы не знаете как вести себя в споре с банком, то вы можете оставить заявку на консультацию с юристом. <br><br>Мы бесплатно проанализируем вашу ситуацию и:
-							<ul>
-								<li>подберем оптимальный план действий,</li>
-								<li>рассчитаем стоимость услуг,</li>
-								<li>обозначим сроки и результат.</li>
+							<ul class="calc-ip__list">
+								<li class="calc-ip__action">Устав, учредительный договор.</li>
+								<li class="calc-ip__action">Свидетельство о постановке на налоговый учет.</li>
+								<li class="calc-ip__action">Свидетельство о внесении записи в ЕГРЮЛ или в ЕГРИП.</li>
+								<li class="calc-ip__action">Кредитный договор.</li>
+								<li class="calc-ip__action">График ежемесячных платежей.</li>
+								<li class="calc-ip__action">Договор поручительства.</li>
+								<li class="calc-ip__action">Договор залога.</li>
 							</ul>
 						</div>
 					</div>
-					<div class="calc-ip__part calc-ip__part--border-right">
-						<div class="calc-ip__title">Стоимость:</div>
-						<div class="calc-ip__tariff">Цена: <span id="calc_result">???</span><span class="calc-ooo__currency">руб.</span></div>
+					<div class="calc-ip__part">
+						<div class="calc-ip__title">В стоимость входит:</div>
+						<!-- <div class="calc-ip__tariff">Цена: <span id="calc_result" style="font-size: 14px;">после бесплатной консультации</span><span class="calc-ooo__currency"></span></div> -->
 						<div class="calc-ip__details">
-							В стоимость входит:
-							????
+
+							<ul class="calc-ip__list">
+								<li class="calc-ip__action">исчерпывающая консультация по рассматриваемым вопросам;</li>
+								<li class="calc-ip__action">подготовка комплекта документов и проверка их на соответствие законодательству;</li>
+								<li class="calc-ip__action">подача специалистами документов в соответствующую инстанцию и получение документов.</li>
+							</ul>
+							<p class="calc-ip__comment">Госпошлина и услуги нотариуса в стоимость услуг не входят.</p>
 						</div>
 					</div>
-					<div class="calc-ip__part calc-ip__part--lead">
+					<!-- <div class="calc-ip__part calc-ip__part--lead">
 						<div class="calc-ip__title">Заявка на бесплатную консультацию:</div>
 						<div class="calc-ip__lead">Оставьте заявку на бесплатную консультацию:</div>
 						<div class="calc-ip__group calc-ip__group--lead" id="for-name">
@@ -137,15 +452,35 @@
 							<label for="phone">Номер телефона<sup>*</sup></label><br>
 							<input type="text" name="" value="" id="phone">
 						</div>
-						<!-- <div class="calc-ip__group calc-ip__group--lead">
+						<div class="calc-ip__group calc-ip__group--lead">
 							<label for="mail">Ваш электронный адрес</label><br>
 							<input type="text" name="" value="" id="mail">
-						</div> -->
+						</div>
 						<p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="/terms.html" target="_blank">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
 						<div id="sendleaderror"></div>
 						<button type="submit" class="btn-lead" id="sendlead">Отправить</button>
-					</div>
+					</div> -->
 				</form>
+				<!-- <div class="calc-ip__price">
+					<div class="calc-ip__price-text">Стоимость: от 2 000 руб. <br>стоимость уточняйте после бесплатной консультации</div>
+					<div class="calc-ip__price-btn">
+						<div class="izm-attention__action-title">Мы будем рады сотрудничеству с Вами!</div>
+						<button type="button" class="izm-attention__btn jscallback">Записаться на бесплатную консультацию</button>
+					</div>
+				</div> -->
+
+				<div class="izm-attention__details izm-attention--price">
+					<div class="izm-attention__title">Стоимость: от 5 000 руб.</div>
+					<div class="izm-attention__description">стоимость уточняйте после бесплатной консультации</div>
+				</div>
+				<div class="izm-attention__action izm-attention--price" >
+					<!-- <div class="izm-attention__action-title">Мы будем рады сотрудничеству с Вами!</div> -->
+					<button type="button" class="izm-attention__btn jscallback">Записаться на бесплатную консультацию</button>
+				</div>
+
+
+
+
 			</div>
 		</section>
 		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/reviews.html') %> -->

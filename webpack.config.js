@@ -107,6 +107,14 @@ module.exports = {
     generateHTML('likvidatsiya-ooo','Ликвидация ООО в Ростове-на-Дону. Поможем закрыть ООО в 2018 году - консалтинговая компания "Верные решения".'),
     generateHTML('predstavitelstvo-v-sudah','Представительство в судах - консалтинговая компания "Верные решения".'),
     generateHTML('spory-s-bankami','Споры с банками - консалтинговая компания "Верные решения".'),
+    generateHTML('vozmeshhenie-nds','Внешнеэкономическая деятельность, возмещение НДС - консалтинговая компания "Верные решения".'),
+    generateHTML('contacts','Контакты - консалтинговая компания "Верные решения".'),
+    // generateHTML('about','О компании - консалтинговая компания "Верные решения".'),
+    generateHTML('ofis-na-chas','Офис на час - консалтинговая компания "Верные решения".'),
+    generateHTML('arenda-yuridicheskogo-adresa','Аренда юридического адреса г. Ростов-на-Дону - консалтинговая компания "Верные решения".'),
+    generateHTML('patent-na-rabotu','Патент на работу для иностранных граждан - консалтинговая компания "Верные решения".'),
+    generateHTML('kadrovye-uslugi','Кадровые услуги - консалтинговая компания "Верные решения".'),
+    generateHTML('likvidatsiya-ip','Ликвидация ИП - консалтинговая компания "Верные решения".'),
     new HtmlWebpackExcludeAssetsPlugin()
     // new HtmlWebpackHarddiskPlugin()
   ],

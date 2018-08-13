@@ -1,0 +1,72 @@
+.tariff-ooo--banki {
+  background: none;
+
+  & .calc-ooo__part, .calc-ip__part {
+    @media (min-width:  $tablet-width) {
+      width: calc(100%/2*1);
+    }
+  }
+
+  & .calc-izm {
+    margin-top: 20px;
+  }
+
+  & .calc-ip__action {
+    margin-top: 5px;
+  }
+
+  & .calc-ooo__comment, .calc-ip__comment {
+    margin-top: 0;
+  }
+}
+
+.izm-attention--price {
+  margin-top: 10px;
+
+  & .izm-attention__btn {
+    @media (min-width:  $tablet-width) {
+      margin-top: 0px;
+    }
+  }
+
+  & .izm-attention__description {
+    margin-top: 0px;
+    font-style: italic;
+  }
+}
+
+.izm-attention__details.izm-attention--price {
+  padding: 0;
+  width: 100%;
+
+  @media (min-width:  $tablet-width) {
+    padding: 0 20% 0 0px;
+    width: 45%;
+  }
+
+}
+
+.izm-attention__action.izm-attention--price {
+  width: 100%;
+
+  @media (min-width:  $tablet-width) {
+    width: 35%;
+  }
+
+  & .izm-attention__btn {
+    margin-left: 0;
+  }
+}
+
+.izm-attention__details.izm-attention--price.izm-attention--ooo {
+  @media (min-width: $tablet-width) {
+    padding: 0 5% 0 0px;
+    width: 65%;
+  }
+}
+
+.izm-attention__action.izm-attention--price.izm-attention--ooo {
+  @media (min-width: $tablet-width) {
+    width: 29%;
+  }
+}

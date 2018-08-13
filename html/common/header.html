@@ -14,101 +14,88 @@
 		</script>
 	<!--Google counter-->
 	<header class="page-header">
-		<div class="mobilenav-container">
-			<!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
-			<input id="toggle" type="checkbox">
-			<!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
-			<!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
-			<!-- <label class="toggle-container" for="toggle"> -->
-			<label class="button-toggle" for="toggle">
-				<!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
-				<!-- <span class="button button-toggle"></span> -->
-			</label>
-
 			<!-- Навигация -->
-			<nav class="mobile-nav">
-				<div class="backbtn"></div>
+			<nav class="main-nav">
+				<div id="hamburger-menu"><span></span><span></span><span></span></div>
 				<ul class="main-nav__items">
 					<li class="main-nav__item main-nav__item--sub">
-						<a class="mobile-nav__item main-nav__link" href="#" data-line="1">Создание бизнеса</a>
+						<span class="icon-plus"></span>
+						<a class="main-nav__link" href="#">Создание бизнеса</a>
 						<ul class="submenu">
-							<li class="submenu__item"><a href="/registratsiya-ip.html">Регистрация ИП</a></li>
-							<li class="submenu__item"><a href="/registratsiya-ooo.html">Регистрация ООО</a></li>
-							<li class="submenu__item"><a href="/litsenziya-na-alkogol.html">Лицензия на алкоголь</a></li>
-							<li class="submenu__item"><a href="/otkrytie-raschetnogo-scheta-v-banke-tsentr-mezhdunarodnyh-raschetov.html">Открытие счета в Банке ЦМР</a></li>
-							<!-- <li class="submenu__item"><a href="#">Регистрация ТСЖ</a></li> -->
-							<!-- <li class="submenu__item"><a href="#">Открытие расчетного счета</a></li> -->
-							<li class="submenu__item"><a href="/arenda-yuridicheskogo-adresa.html">Аренда юридического адреса</a></li>
-							<!-- <li class="submenu__item"><a href="#">Печати</a></li> <--></-->
+							<div class="submenu__group">
+								<div class="submenu__title">Регистрация</div>
+								<li class="submenu__item"><a href="/registratsiya-ip.html">Регистрация ИП</a></li>
+								<li class="submenu__item"><a href="/registratsiya-ooo.html">Регистрация ООО</a></li>
+							</div>
+							<div class="submenu__group">
+								<div class="submenu__title">Прочее</div>
+								<li class="submenu__item"><a href="/arenda-yuridicheskogo-adresa.html">Аренда юридического адреса</a></li>
+								<li class="submenu__item"><a href="/otkrytie-raschetnogo-scheta-v-banke-tsentr-mezhdunarodnyh-raschetov.html">Открытие счета в Банке ЦМР</a></li>
+							</div>
 						</ul>
 					</li>
 					<li class="main-nav__item main-nav__item--sub">
-						<a class="mobile-nav__item main-nav__link" href="#" data-line="2">Ведение бизнеса</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="/vedenie-buhgalterskogo-i-nalogovogo-ucheta.html">Постановка бухгалтерского учета</a></li>
-							<li class="submenu__item"><a href="/sostavlenie-i-sdacha-otchetnosti.html">Подготовка и сдача отчетности</a></li>
-							<li class="submenu__item"><a href="/vozmeshhenie-nds.html">Возмещение НДС</a></li>
-							<!-- <li class="submenu__item"><a href="#">Налоговые проверки</a></li> -->
-							<li class="submenu__item"><a href="/vnesenie-izmenenij-v-dokumenty.html">Внесение изменений</a></li>
-							<li class="submenu__item"><a href="/abonentskoe-yuridicheskoe-obsluzhivanie.html">Абонентское юридическое обслуживание</a></li>
-							<li class="submenu__item"><a href="/vzyskanie-zadolzhennosti.html">Возврат дебиторской задолженности</a></li>
-							<li class="submenu__item"><a href="/proverka-kontragenta.html">Проверка контрагента</a></li>
-							<li class="submenu__item"><a href="/sostavlenie-dogovorov-kontraktov.html">Составление договоров, контрактов</a></li>
-							<li class="submenu__item"><a href="/pravovaya-zashhita.html">Правовая защита</a></li>
-							<li class="submenu__item"><a href="/osparivanie-kadastrovoj-stoimosti.html">Оспаривание кадастровой стоимости</a></li>
+						<span class="icon-plus"></span>
+						<a class="main-nav__link" href="#">Ведение бизнеса</a>
+						<ul class="submenu submenu--middle">
+							<div class="submenu__group">
+								<div class="submenu__title">Бухгалтерский учет и отчетность</div>
+								<li class="submenu__item"><a href="/vedenie-buhgalterskogo-i-nalogovogo-ucheta.html">Постановка бухгалтерского учета</a></li>
+								<li class="submenu__item"><a href="/vosstanovlenie-buhgalterskogo-ucheta.html">Восстановление бухгалтерского учета</a></li>
+								<li class="submenu__item"><a href="/sostavlenie-i-sdacha-otchetnosti.html">Подготовка и сдача отчетности</a></li>
+								<li class="submenu__item"><a href="/alkogolnaya-deklaratsiya.html">Декларация по алкоголю</a></li>
+							</div>
+							<div class="submenu__group">
+								<div class="submenu__title">Налоги</div>
+								<li class="submenu__item"><a href="/vozmeshhenie-nds.html">Возмещение НДС</a></li>
+								<li class="submenu__item"><a href="/optimizatsiya-nalogooblozheniya.html">Оптимизация налогов</a></li>
+								<li class="submenu__item"><a href="/optimizatsiya-nalogooblozheniya.html">Налоговый споры</a></li>
+							</div>
+							<div class="submenu__group">
+								<div class="submenu__title">Юридические услуги</div>
+								<li class="submenu__item"><a href="/vnesenie-izmenenij-v-dokumenty.html">Внесение изменений</a></li>
+								<li class="submenu__item"><a href="/abonentskoe-yuridicheskoe-obsluzhivanie.html">Корпоративное право</a></li>
+								<li class="submenu__item"><a href="/sostavlenie-dogovorov-kontraktov.html">Составление договоров, контрактов</a></li>
+								<li class="submenu__item"><a href="/pravovaya-zashhita.html">Правовая защита</a></li>
+								<li class="submenu__item"><a href="/proverka-kontragenta.html">Проверка контрагента</a></li>
+							</div>
+							<div class="submenu__group">
+								<div class="submenu__title">Арбитраж</div>
+								<li class="submenu__item"><a href="/vzyskanie-zadolzhennosti.html">Возврат дебиторской задолженности</a></li>
+								<li class="submenu__item"><a href="/predstavitelstvo-v-sudah.html">Представительство в судах</a></li>
+								<li class="submenu__item"><a href="/spory-s-bankami.html">Споры с банками</a></li>
+							</div>
+							<div class="submenu__group">
+								<div class="submenu__title">Прочее</div>
+								<li class="submenu__item"><a href="/kadrovye-uslugi.html">Кадровые услуги</a></li>
+								<li class="submenu__item"><a href="/ofis-na-chas.html">Офис на час</a></li>
+								<li class="submenu__item"><a href="/podgotovka-3-ndfl.html">3-НДФЛ</a></li>
+							</div>
 						</ul>
 					</li>
 					<li class="main-nav__item main-nav__item--sub">
-						<a class="mobile-nav__item main-nav__link" href="#" data-line="3">Ликвидация бизнеса</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="/likvidatsiya-ip.html">Ликвидация ИП</a></li>
-							<li class="submenu__item"><a href="/likvidatsiya-ooo.html">Ликвидация ООО</a></li>
-							<li class="submenu__item"><a href="/oformlenie-sdelok-po-kuple-prodazhe-biznesa.html">Купля-продажа</a></li>
-							<!-- <li class="submenu__item"><a href="#">Банкротство</a></li> -->
+						<span class="icon-plus"></span>
+						<a class="main-nav__link" href="#">Ликвидация бизнеса</a>
+						<ul class="submenu submenu--third">
+							<div class="submenu__group">
+								<div class="submenu__title">Ликвидация</div>
+								<li class="submenu__item"><a href="/likvidatsiya-ip.html">Ликвидация ИП</a></li>
+								<li class="submenu__item"><a href="/likvidatsiya-ooo.html">Ликвидация ООО</a></li>
+							</div>
+							<div class="submenu__group">
+								<div class="submenu__title">Прочее</div>
+								<li class="submenu__item"><a href="/oformlenie-sdelok-po-kuple-prodazhe-biznesa.html">Купля-продажа ООО</a></li>
+							</div>
 						</ul>
 					</li>
-					<li class=" main-nav__item" class="main-nav__link"><a class="mobile-nav__item main-nav__link" href="/contacts.html" data-line="4">Контакты</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="/contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
-		</div>
 		<div class="page-header__logo">
-			<a href="/"><img src="img/logo2.png" width="202" height="57" alt=""></a>
+
+			<a href="/"><img src="img/logo3_white.jpg" width="202" height="56" alt=""></a>
+
 		</div>
-		<!-- <nav class="main-nav">
-			<ul class="main-nav__items">
-				<li class="main-nav__item main-nav__item--sub">
-					<a class="main-nav__link" href="#">Создание бизнеса</a>
-					<ul class="submenu">
-						<li class="submenu__item"><a href="/registratsiya-ip.html">Регистрация ИП</a></li>
-						<li class="submenu__item"><a href="/registratsiya-ooo.html">Регистрация ООО</a></li>
-						<li class="submenu__item"><a href="#">Регистрация ТСЖ</a></li>
-						<li class="submenu__item"><a href="#">Открытие расчетного счета</a></li>
-						<li class="submenu__item"><a href="#">Аренда юридического адреса</a></li>
-						<li class="submenu__item"><a href="#">Печати</a></li>
-					</ul>
-				</li>
-				<li class="main-nav__item main-nav__item--sub">
-					<a class="main-nav__link" href="#">Ведение бизнеса</a>
-					<ul class="submenu">
-						<li class="submenu__item"><a href="#">Постановка бухгалтерского учета</a></li>
-						<li class="submenu__item"><a href="#">Подготовка и сдача отчетности</a></li>
-						<li class="submenu__item"><a href="#">Возмещение НДС</a></li>
-						<li class="submenu__item"><a href="#">Налоговые проверки</a></li>
-						<li class="submenu__item"><a href="#">Внесение изменений</a></li>
-					</ul>
-				</li>
-				<li class="main-nav__item main-nav__item--sub">
-					<a class="main-nav__link" href="#">Ликвидация бизнеса</a>
-					<ul class="submenu">
-						<li class="submenu__item"><a href="#">Ликвидация ИП</a></li>
-						<li class="submenu__item"><a href="#">Ликвидация ООО</a></li>
-						<li class="submenu__item"><a href="#">Купля-продажа</a></li>
-						<li class="submenu__item"><a href="#">Банкротство</a></li>
-					</ul>
-				</li>
-				<li class="main-nav__item" class="main-nav__link"><a class="main-nav__link" href="#">Контакты</a></li>
-			</ul>
-		</nav> -->
 		<div class="phone">
 			<div class="phone__number"><span class="lptracker_phone">+7&nbsp;(928)&nbsp;600&nbsp;78&nbsp;29</span></div>
 			<!-- <div class="phone__description">Viber, WhatsApp</div> -->

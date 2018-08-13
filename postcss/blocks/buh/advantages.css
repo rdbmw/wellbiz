@@ -1,0 +1,9 @@
+.advantages-ooo--buh {
+  background: none;
+}
+
+.advantages-ooo--buh .advantages-ooo__one-text {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 120px;
+  }
+}

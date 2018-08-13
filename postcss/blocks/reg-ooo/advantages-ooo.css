@@ -47,7 +47,6 @@
 .advantages-ooo__list {
   display: flex;
   flex-wrap: wrap;
-  flex-wrap: wrap;
   margin-top: 14px;
 
   @media (min-width: $tablet-width) {
@@ -57,18 +56,20 @@
 }
 
 .advantages-ooo__four {
+  /*display: flex;*/
   padding-bottom: 20px;
-  flex-basis: calc(100%/3*3);
+  /*width: calc(100%/3*3);*/
+  width: 320px;
   background: #f6f6f6;
 
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0px;
-    flex-basis: calc(100%/3*1);
+    width: calc(100%/3*1);
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: calc(100%/2);
+    width: calc(100%/2);
   }
 }
 
@@ -121,8 +122,13 @@
   background: transparent url('../public/img/men.png') 30px 0px  no-repeat;
 }
 
+.advantages-buh__item--pic4 {
+  background: transparent url('../public/img/2man.png') 20px 0px  no-repeat;
+}
+
+
 .advantages-ooo__online {
-  margin-top: 53px;
+  margin-top: 28px;
   padding: 10px;
   width: 100%;
   background: #438ad9;
@@ -222,6 +228,8 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 49%;
+    margin-top: 0px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {

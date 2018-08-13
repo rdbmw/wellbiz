@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<%= require('html-loader?attrs=false&minimize=false!./common/assets.html') %>
+</head>
+<%= require('html-loader?attrs=false&minimize=false!./common/header.html') %>
+	<section class="contacts">
+		<!-- <h1 class="contacts__title">Как нас найти</h1> -->
+		<div class="contacts__map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5540ee284b8181711673afa4d214eb70b990c9710802f051671d82a65aab234a&amp;width=100%25&amp;height=494&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div>
+		<div class="contacts__info">
+			<div class="contacts__column">
+				<h2>Контакты</h2>
+				<p><strong>Тел.</strong>:<span class="lptracker_phone">+7 (928) 229-24-26</span></p>
+				<p><strong>Viber, WhatsApp</strong>: +7 (928) 600 78 29</p>
+				<p><strong>e-mail</strong>: <a href="mailto:office@well-business.ru">office@well-business.ru</a></p>
+				<p><strong>skype</strong>: vernie_resheniya</p>
+			</div>
+			<div class="contacts__column">
+				<h2>Офис "Центральный"</h2>
+				<p><strong>Адрес</strong>: г. Ростов-на-Дону, ул. Города Волос, д.119 (угол пер. Журавлева/ул. Тельмана, вход с ул. Тельмана)</p>
+				<p><strong>Режим работы</strong>: пн.-пт. 9.00-18.00, без перерыва.</p>
+			</div>
+			<div class="contacts__column">
+				<h2>Офис "Западный"</h2>
+				<p><strong>Адрес</strong>: г. Ростов-на-Дону, ул. 339-й Стрелковой Дивизии, 31</p>
+				<p><strong>Режим работы</strong>: пн.-пт. 9.00-18.00, без перерыва.</p>
+			</div>
+		</div>
+	</section>
+
+<%= require('html-loader?attrs=false&minimize=false!./common/footer.html') %>

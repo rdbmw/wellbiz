@@ -1,0 +1,7 @@
+.top-block--banki {
+  & .top-block__btn {
+    @media (min-width: $desktop-width) {
+      padding: 14px 20px;
+    }
+  }
+}

@@ -25,8 +25,8 @@
 				</div>
 				<div class="top-block__right">
 					<div class="top-block__title-right">Уменьшите расходы на <br><span>6 000 руб!</span></div>
-					<div class="top-block__description-right">В отличии от других компаний мы зарегистрируем ООО без затрат на нотариальные услуги!<br><br><div>Это позволит вам сэкономить <br><span>4 000 - 6 000 руб!</span></div></div>
-					<button type="button" class="top-block__btn jscallback">Заказать консультацию</button>
+					<div class="top-block__description-right">В отличии от других компаний мы зарегистрируем ООО без затрат на нотариальные услуги!<br><br><div>Это позволит вам сэкономить<br><span>от 4000 до 6000 руб.</span></div></div>
+					<button type="button" class="top-block__btn jscallback">Заказать бесплатную консультацию</button>
 				</div>
 			</div>
 		</section>
@@ -45,7 +45,7 @@
 				</div>
 			</div>
 			<div class="infographic__details">Всего 4 дня и вы получаете готовую компанию с расчетным счетом, печатью и консультацией бухгалтера по дальнейшему ведению вашего бизнеса!</div>
-			<a href="#tariff" class="btn-do-calc">Рассчитать стоимость</a>
+			<!-- <a href="#tariff" class="btn-do-calc">Рассчитать стоимость</a> -->
 		</section>
 		<section class="allrus">
 			<div class="allrus__wrapper">
@@ -87,7 +87,7 @@
 							<div class="advantages-ooo__item advantages-ooo__item--pic1">Максимально<br>быстро</div>
 							<div class="advantages-ooo__item advantages-ooo__item--pic2">По минимальной<br>цене</div>
 							<div class="advantages-ooo__item advantages-ooo__item--pic3">Без пробок и лишних<br>поездок</div>
-							<div class="advantages-ooo__item advantages-ooo__item--pic4">Мы обслуживаем<br>без очередей</div>
+							<div class="advantages-ooo__item advantages-buh__item--pic4">Подробная консультация<br>специалиста</div>
 						</div>
 						<div class="advantages-ooo__online">
 							<button type="button" class="advantages-ooo__online-btn jscallback">Заказать онлайн</button>
@@ -111,13 +111,27 @@
 				</div>
 			</div>
 		</section>
+		<section class="reviews">
+		  <div class="reviews__wrapper">
+		    <h2 class="reviews__slogan">Отзывы наших клиентов</h2>
+		    <p class="reviews__description">Отзывы клиентов - лучший показатель качества предоставляемых услуг</p>
+		    <div class="reviews__list reviews-gallery">
+					<a href="img/reviews/arhano.jpg"><img src="img/reviews/arhano_thumb.jpg"></a>
+					<a href="img/reviews/evrostek.jpg"><img src="img/reviews/evrostek_thumb.jpg"></a>
+					<a href="img/reviews/victotiya.jpg"><img src="img/reviews/victotiya_thumb.jpg"></a>
+		    </div>
+		    <!-- <button type="button" class="reviews__more">Все отзывы</button> -->
+		  </div>
+		</section>
+
+		<script>baguetteBox.run('.reviews-gallery');</script>
 		<!-- <%= require('html-loader?attrs=false&minimize=false!./common/stuff.html') %> -->
 		<section class="tariff-ooo" >
 			<div class="tariff-ooo__wrapper">
 				<div class="tariff-ooo__title" id="tariff">Стоимость регистрации ООО</div>
 				<div class="tariff-ooo__description">Варьируется в зависимости от необходимого вам набора услуг</div>
-				<div class="tariff-ooo__discount">Акция! При заключении договора на бухгалтерское обслуживание - откроем ООО под ключ БЕСПЛАТНО!</div>
-				<form class="calc-ooo">
+				<!-- <div class="tariff-ooo__discount">Акция! При заключении договора на бухгалтерское обслуживание - откроем ООО под ключ БЕСПЛАТНО!</div> -->
+				<!-- <form class="calc-ooo">
 					<div class="calc-ooo__part calc-ooo__part--border-right">
 						<div class="calc-ooo__title">Выберите опции:</div>
 						<div class="calc-ooo__group calc-ooo__group--top">
@@ -137,7 +151,7 @@
 							<label for="foreign">Учредители - иностранцы</label>
 						</div>
 						<div class="calc-ooo__group calc-ooo__group--border">
-							<!-- <button type="button" class="btn-calc">Рассчитать</button> -->
+							<button type="button" class="btn-calc">Рассчитать</button>
 							<input type="checkbox" name="" value="" id="onlydocs" checked disabled><span></span>
 							<label for="onlydocs">Только подготовка документов</label>
 						</div>
@@ -145,10 +159,10 @@
 							<input type="checkbox" name="" value="" id="ifns"><span></span>
 							<label for="ifns">Регистрация в ИФНС + расчетный счет</label>
 						</div>
-						<!-- <div class="calc-ooo__group">
+						<div class="calc-ooo__group">
 							<input type="checkbox" name="" value="" id="usn"><span></span>
 							<label for="usn">Переход на УСН/ЕНВД</label>
-						</div> -->
+						</div>
 						<div class="calc-ooo__group calc-ooo__group--border">
 							<input type="checkbox" name="" value="" id="stamp"><span></span>
 							<label for="stamp">Изготовление печати</label>
@@ -187,15 +201,23 @@
 							<label for="phone">Номер телефона<sup>*</sup></label><br>
 							<input type="text" name="" value="" id="phone">
 						</div>
-						<!-- <div class="calc-ooo__group calc-ooo__group--lead">
+						<div class="calc-ooo__group calc-ooo__group--lead">
 							<label for="mail">Ваш электронный адрес<sup>*</sup></label><br>
 							<input type="text" name="" value="" id="mail">
-						</div> -->
+						</div>
 						<p class="lead-pd">Отправляя данные через форму заявки, вы принимаете <a href="/terms.html" target="_blank">политику конфиденциальности</a> и соглашаетесь с обработкой персональных данных.</p>
 						<div id="sendleaderror"></div>
 						<button type="submit" class="btn-lead" id="sendlead">Отправить</button>
 					</div>
-				</form>
+				</form>-->
+				<div class="izm-attention__details izm-attention--price izm-attention--ooo">
+					<div class="izm-attention__title">Стоимость: от 3 500 руб.</div>
+					<div class="izm-attention__description">стоимость уточняйте после бесплатной консультации. При заключении договора на <a href="/vedenie-buhgalterskogo-i-nalogovogo-ucheta.html" target="_blank">бухгалтерское обслуживание</a> - откроем ООО под ключ <strong>БЕСПЛАТНО!</strong></div>
+				</div>
+				<div class="izm-attention__action izm-attention--price izm-attention--ooo" >
+					<!-- <div class="izm-attention__action-title">Мы будем рады сотрудничеству с Вами!</div> -->
+					<button type="button" class="izm-attention__btn jscallback">Записаться на бесплатную консультацию</button>
+				</div>
 			</div>
 		</section>
 		<section class="banks">
@@ -398,8 +420,11 @@
 						<p>Тем не менее, бывают ситуации, когда необходимо получение регистрационных документов на руки – придется посетить каждый Фонд отдельно. Вы можете поручить получение документов нашему сотруднику.</p>
 					</div>
 				</div>
+				<div  style="width:45%;padding: 9px 10px;">
+				</div>
+				</div>
 			</div>
-			<button type="button" class="btn-faq jscallback">Заказать консультацию</button>
+			<button type="button" class="btn-faq jscallback">Заказать бесплатную консультацию</button>
 		</section>
 		<%= require('html-loader?attrs=false&minimize=false!./common/invitation.html') %>
 <%= require('html-loader?attrs=false&minimize=false!./common/footer.html') %>

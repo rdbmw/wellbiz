@@ -1,27 +1,94 @@
 @media (min-width: $desktop-width) {
-  #toggle, .button-toggle, .backbtn {
-    display: none;
-  }
-
-  .mobilenav-container {
-    flex-grow: 1;
-    position: static;
-    order: 1;
-    overflow: initial;
-  }
-
-  .mobile-nav {
+  .main-nav {
     margin: 0px;
     display: flex;
     flex-grow: 1;
-    pointer-events: auto;
+    order: 1;
   }
 
   .main-nav__items {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    left:0%!important;
   }
+
+  .main-nav__items {
+    list-style: none;
+    margin:0;
+    padding:0;
+    position: relative;
+    font-size: 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .submenu {
+    padding: 10px 20px;
+    display: flex!important;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background: #fff;
+    position: absolute;
+    /*left: 0px;
+    top: 0px;*/
+    /*z-index: 1;*/
+    box-sizing: border-box;
+    /*width: 100%;*/
+    /*min-height: 250px;*/
+    opacity: 0;
+    transform: scaleY(0) translate(0px, 0px);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+    border-top: solid 1px $color-menu;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.21);
+  }
+
+  .submenu {
+    left: -5px;
+    top: 100%;
+    width: 580px;
+    /*opacity: 0;*/
+    /*transform: scaleY(0) translate(0px, 0px);*/
+    z-index: 49;
+    /*min-height: auto;*/
+
+  }
+
+  .submenu--middle {
+    left: -170px;
+  }
+
+  .submenu--third {
+    left: -330px;
+  }
+
+
+  .submenu__group {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-basis: 45%;
+  }
+
+  .submenu__title {
+    font-weight: 700;
+  }
+
+  .submenu__item {
+    white-space: nowrap;
+  }
+
+  .submenu__item a {
+    text-decoration: none;
+    font-size: $fs_small;
+    color: $text-color;
+    line-height: 30px;
+
+    &:hover {
+      color: $color-menu-active;
+    }
+  }
+
 
   .main-nav__item {
     padding-top: 14px;
@@ -61,16 +128,7 @@
     }
   }
 
-  .submenu {
-    left: -20px;
-    top: 100%;
-    width: 180px;
-    opacity: 0;
-    transform: scaleY(0) translate(0px, 0px);
-    z-index: 49;
-    min-height: auto;
-    
-  }
+
   .main-nav__item:hover .submenu {
     opacity: 1;
     transform: scaleY(1);

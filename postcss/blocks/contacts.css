@@ -1,0 +1,21 @@
+.contacts {
+  @mixin container;
+}
+
+.contacts__map {
+  margin-top: 50px;
+}
+
+.contacts__info {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__column {
+  flex-basis: 30%;
+}
+
+.contacts__column p {
+  line-height: 20px;
+}

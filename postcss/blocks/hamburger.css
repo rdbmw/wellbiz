@@ -1,0 +1,124 @@
+@media (max-width: $desktop-width) {
+#hamburger-menu {
+  position: relative;
+  width: 25px;
+  height: 20px;
+  margin: 15px;
+}
+#hamburger-menu span {
+  content:"";
+  opacity: 1;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #ff4848;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: .4s ease-in-out;
+}
+#hamburger-menu span:nth-child(1) {
+    top: 0;
+}
+#hamburger-menu span:nth-child(2) {
+    top: 9px;
+}
+#hamburger-menu span:nth-child(3) {
+    top: 18px;
+}
+#hamburger-menu.open span:nth-child(1) {
+    top: 9px;
+    transform: rotate(135deg);
+}
+#hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+#hamburger-menu.open span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-135deg);
+}
+
+
+.main-nav__items {
+    list-style: none;
+    padding-left: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.21);
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: -200%;
+}
+.main-nav__items li:first-of-type {
+    border-top: 0;
+}
+
+.main-nav__item {
+    padding: 20px;
+    border-top: 1px solid #dbdcd2;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+
+.main-nav__link {
+  letter-spacing: normal;
+  text-decoration: none;
+  font-size: $fs_small;
+  color: $text-color;
+  text-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+.submenu  {
+  list-style: none;
+  padding: 5px 0px 10px 20px;
+  display: none;
+}
+
+.submenu__item {
+  margin: 10px 0px;
+}
+.submenu__item a {
+  text-decoration: none;
+  font-size: $fs_small;
+  color: $text-color;
+  /*line-height: 30px;*/
+
+  &:hover {
+    color: $color-menu-active;
+  }
+}
+
+.main-nav__item span[class^='icon-'] {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    top: calc(50% - 16px);
+}
+.main-nav__item span.icon-plus, .main-nav__item  span.icon-minus {
+    transform-origin: 50% 50%;
+    transition: all .5s ease;
+}
+.main-nav__item span.icon-plus {
+    transform: rotate(90deg);
+}
+.icon-minus:before {
+    content: "\2013"
+}
+.icon-plus:before {
+    content: "+"
+}
+
+.submenu__title {
+  font-weight: 700;
+  font-size: 13px;
+}
+}

@@ -77,11 +77,15 @@ $point: calc(100%/3*2);
 .top-block__title {
   /*font-family: 'Myriad Pro', sans-serif;*/
   color: $color-slider;
-  font-size: 32px;
+  font-size: 26px;
   line-height: 33px;
   font-weight: 400;
   margin: 0;
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+  }
 
   & span {
     /*font-family: 'Open Sans', sans-serif;*/
@@ -89,6 +93,7 @@ $point: calc(100%/3*2);
     line-height: 22px;
     font-weight: 700;
   }
+
 }
 
 .top-block__description {
@@ -196,13 +201,13 @@ $point: calc(100%/3*2);
   padding-right: 5%;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 20%;
+  margin-left: 5%;
 
   @mixin btn;
   background-color: #ff5b5b;
 
   @media (min-width: $tablet-width) {
-    margin-left: 35%;
+    margin-left: 5%;
   }
 
   @media (min-width: $desktop-width) {

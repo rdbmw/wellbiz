@@ -49,7 +49,7 @@
   font-size: 13px;
   line-height: 18px;
   color: #e3e3e3;
-  margin-right: 6%;
+  margin-right: 4.5%;
   margin-top: 10px;
 
   @media (min-width: $tablet-width) {
@@ -58,10 +58,11 @@
 }
 
 .page-footer__phone {
-  padding-left: 45px;
+  padding-left: 30px;
   background: transparent url('../public/img/phone_footer.png') no-repeat;
+  background-size: 22px;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 22px;
   color: #fff;
   margin-top: 10px;
 
@@ -69,10 +70,10 @@
     margin-top: 9px;
   }
 
-  & span {
+  /*& span {
     font-size: 12px;
     color: #acacac;
-  }
+  }*/
 }
 
 /* ПЕРЕДЕЛАТЬ ЛИНИю!!!! */
@@ -121,11 +122,16 @@
   font-size: 13px;
   line-height: 18px;
   color: #fff;
-  margin-right: 7.5%;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    margin-right: 3.5%;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 7.5%;
+  }
+
 }
 
 .page-footer__links li a{

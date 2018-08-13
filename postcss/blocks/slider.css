@@ -135,7 +135,7 @@
   margin-bottom: 0px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -144,7 +144,7 @@
   margin-top: 15px;
 
   @media (min-width: $desktop-width) {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 

@@ -1,4 +1,6 @@
 .tariff-ooo--buh {
+  background: none;
+
   & .calc-ip__group--flex {
     display: flex;
   }

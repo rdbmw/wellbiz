@@ -38,6 +38,14 @@
     margin-right: 2%;
   }
 
+  & .top-block__btn {
+    margin-left: 5%;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 12%;
+    }
+  }
+
   & .top-block__title-right {
     margin-top: 0px;
 
